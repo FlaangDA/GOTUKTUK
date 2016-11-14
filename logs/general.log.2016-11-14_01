@@ -1,0 +1,243 @@
+2016-11-14 01:16:08,039 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 01:16:08,041 [ERROR] default: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 01:16:08,041 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyy@gmail.com"}
+2016-11-14 01:16:08,535 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 01:16:08,535 [ERROR] default: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 01:16:08,535 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Henrik", "phone": "95936294", "dob": "2016-01-17", "lastname": "Borthen", "nationality": "Norwegian", "email": "henrik.borthen@gmail.com"}
+2016-11-14 01:16:08,723 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 01:16:08,723 [ERROR] default: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 01:16:08,723 [ERROR] default: {"phone": "98237897", "password2": "267ec600500", "facebookurl": "www.facebook.com", "firstname": "Henrik", "password1": "267ec600500", "dob": "2016-01-17", "lastname": "Browne", "email": "henrik.browne@gmail.com"}
+2016-11-14 01:16:08,927 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 01:16:08,927 [ERROR] default: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 01:16:08,927 [ERROR] default: {"phone": "98237897", "password2": "267ec600500", "facebookurl": "www.facebook.com", "firstname": "Sveinung", "password1": "267ec600500", "dob": "2016-01-17", "lastname": "Sjoetveit", "email": "sveinung.Sjoetveit@gmail.com"}
+2016-11-14 01:16:09,942 [DEBUG] default: Torgeir Fladbyy
+2016-11-14 01:16:09,945 [DEBUG] default: True
+2016-11-14 01:16:09,980 [DEBUG] default: Torgeir Fladbyy
+2016-11-14 01:16:09,982 [DEBUG] default: True
+2016-11-14 01:16:09,993 [WARNING] django.request: Not Found: /finish_trip/
+2016-11-14 01:16:09,995 [DEBUG] default: <tr><th><label for="id_name">Name:</label></th><td><input id="id_name" maxlength="100" name="name" type="text" value="packagedeal1" required /></td></tr>
+<tr><th><label for="id_header_image">Header image:</label></th><td><input id="id_header_image" name="header_image" type="file" /></td></tr>
+<tr><th><label for="id_description">Description:</label></th><td><input id="id_description" maxlength="1000" name="description" type="text" value="some description" required /></td></tr>
+<tr><th><label for="id_price">Price:</label></th><td><input id="id_price" name="price" step="any" type="number" value="50" required /></td></tr>
+<tr><th><label for="id_time_first_from">Time first from:</label></th><td><input id="id_time_first_from" name="time_first_from" type="text" value="2016-01-12 14:59:49" required /><input id="initial-id_time_first_from" name="initial-time_first_from" type="hidden" value="2016-01-12 14:59:49" /></td></tr>
+<tr><th><label for="id_time_first_to">Time first to:</label></th><td><input id="id_time_first_to" name="time_first_to" type="text" value="2016-01-12 14:59:49" required /><input id="initial-id_time_first_to" name="initial-time_first_to" type="hidden" value="2016-01-12 14:59:49" /></td></tr>
+<tr><th><label for="id_time_second_from">Time second from:</label></th><td><input id="id_time_second_from" name="time_second_from" type="text" value="2016-01-12 14:59:49" required /><input id="initial-id_time_second_from" name="initial-time_second_from" type="hidden" value="2016-01-12 14:59:49" /></td></tr>
+<tr><th><label for="id_time_second_to">Time second to:</label></th><td><input id="id_time_second_to" name="time_second_to" type="text" value="2016-01-12 14:59:49" required /><input id="initial-id_time_second_to" name="initial-time_second_to" type="hidden" value="2016-01-12 14:59:49" /></td></tr>
+<tr><th><label for="id_pickuppoint">Pickuppoint:</label></th><td><input id="id_pickuppoint" maxlength="15" name="pickuppoint" type="text" value="0000.0000" required /></td></tr>
+<tr><th><label for="id_dropoffpoint">Dropoffpoint:</label></th><td><input id="id_dropoffpoint" maxlength="15" name="dropoffpoint" type="text" value="0000.0000" required /></td></tr>
+2016-11-14 01:16:42,319 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 01:16:42,319 [ERROR] default: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 01:16:42,319 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyy@gmail.com"}
+2016-11-14 01:16:42,875 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 01:16:42,875 [ERROR] default: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 01:16:42,875 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Henrik", "phone": "95936294", "dob": "2016-01-17", "lastname": "Borthen", "nationality": "Norwegian", "email": "henrik.borthen@gmail.com"}
+2016-11-14 01:16:43,072 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 01:16:43,072 [ERROR] default: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 01:16:43,072 [ERROR] default: {"phone": "98237897", "password2": "267ec600500", "facebookurl": "www.facebook.com", "firstname": "Henrik", "password1": "267ec600500", "dob": "2016-01-17", "lastname": "Browne", "email": "henrik.browne@gmail.com"}
+2016-11-14 01:16:43,273 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 01:16:43,273 [ERROR] default: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 01:16:43,274 [ERROR] default: {"phone": "98237897", "password2": "267ec600500", "facebookurl": "www.facebook.com", "firstname": "Sveinung", "password1": "267ec600500", "dob": "2016-01-17", "lastname": "Sjoetveit", "email": "sveinung.Sjoetveit@gmail.com"}
+2016-11-14 01:16:44,294 [DEBUG] default: Torgeir Fladbyy
+2016-11-14 01:16:44,296 [DEBUG] default: True
+2016-11-14 01:16:44,318 [DEBUG] default: Torgeir Fladbyy
+2016-11-14 01:16:44,321 [DEBUG] default: True
+2016-11-14 01:16:44,329 [WARNING] django.request: Not Found: /finish_trip/
+2016-11-14 01:16:44,331 [DEBUG] default: <tr><th><label for="id_name">Name:</label></th><td><input id="id_name" maxlength="100" name="name" type="text" value="packagedeal1" required /></td></tr>
+<tr><th><label for="id_header_image">Header image:</label></th><td><input id="id_header_image" name="header_image" type="file" /></td></tr>
+<tr><th><label for="id_description">Description:</label></th><td><input id="id_description" maxlength="1000" name="description" type="text" value="some description" required /></td></tr>
+<tr><th><label for="id_price">Price:</label></th><td><input id="id_price" name="price" step="any" type="number" value="50" required /></td></tr>
+<tr><th><label for="id_time_first_from">Time first from:</label></th><td><input id="id_time_first_from" name="time_first_from" type="text" value="2016-01-12 14:59:49" required /><input id="initial-id_time_first_from" name="initial-time_first_from" type="hidden" value="2016-01-12 14:59:49" /></td></tr>
+<tr><th><label for="id_time_first_to">Time first to:</label></th><td><input id="id_time_first_to" name="time_first_to" type="text" value="2016-01-12 14:59:49" required /><input id="initial-id_time_first_to" name="initial-time_first_to" type="hidden" value="2016-01-12 14:59:49" /></td></tr>
+<tr><th><label for="id_time_second_from">Time second from:</label></th><td><input id="id_time_second_from" name="time_second_from" type="text" value="2016-01-12 14:59:49" required /><input id="initial-id_time_second_from" name="initial-time_second_from" type="hidden" value="2016-01-12 14:59:49" /></td></tr>
+<tr><th><label for="id_time_second_to">Time second to:</label></th><td><input id="id_time_second_to" name="time_second_to" type="text" value="2016-01-12 14:59:49" required /><input id="initial-id_time_second_to" name="initial-time_second_to" type="hidden" value="2016-01-12 14:59:49" /></td></tr>
+<tr><th><label for="id_pickuppoint">Pickuppoint:</label></th><td><input id="id_pickuppoint" maxlength="15" name="pickuppoint" type="text" value="0000.0000" required /></td></tr>
+<tr><th><label for="id_dropoffpoint">Dropoffpoint:</label></th><td><input id="id_dropoffpoint" maxlength="15" name="dropoffpoint" type="text" value="0000.0000" required /></td></tr>
+2016-11-14 01:16:56,276 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 01:16:56,276 [ERROR] default: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 01:16:56,276 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyy@gmail.com"}
+2016-11-14 01:16:56,783 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 01:16:56,783 [ERROR] default: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 01:16:56,784 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Henrik", "phone": "95936294", "dob": "2016-01-17", "lastname": "Borthen", "nationality": "Norwegian", "email": "henrik.borthen@gmail.com"}
+2016-11-14 01:16:56,988 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 01:16:56,988 [ERROR] default: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 01:16:56,988 [ERROR] default: {"phone": "98237897", "password2": "267ec600500", "facebookurl": "www.facebook.com", "firstname": "Henrik", "password1": "267ec600500", "dob": "2016-01-17", "lastname": "Browne", "email": "henrik.browne@gmail.com"}
+2016-11-14 01:16:57,189 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 01:16:57,189 [ERROR] default: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 01:16:57,189 [ERROR] default: {"phone": "98237897", "password2": "267ec600500", "facebookurl": "www.facebook.com", "firstname": "Sveinung", "password1": "267ec600500", "dob": "2016-01-17", "lastname": "Sjoetveit", "email": "sveinung.Sjoetveit@gmail.com"}
+2016-11-14 01:16:58,215 [DEBUG] default: Torgeir Fladbyy
+2016-11-14 01:16:58,217 [DEBUG] default: True
+2016-11-14 01:16:58,239 [DEBUG] default: Torgeir Fladbyy
+2016-11-14 01:16:58,241 [DEBUG] default: True
+2016-11-14 01:16:58,248 [WARNING] django.request: Not Found: /finish_trip/
+2016-11-14 01:16:58,249 [DEBUG] default: <tr><th><label for="id_name">Name:</label></th><td><input id="id_name" maxlength="100" name="name" type="text" value="packagedeal1" required /></td></tr>
+<tr><th><label for="id_header_image">Header image:</label></th><td><input id="id_header_image" name="header_image" type="file" /></td></tr>
+<tr><th><label for="id_description">Description:</label></th><td><input id="id_description" maxlength="1000" name="description" type="text" value="some description" required /></td></tr>
+<tr><th><label for="id_price">Price:</label></th><td><input id="id_price" name="price" step="any" type="number" value="50" required /></td></tr>
+<tr><th><label for="id_time_first_from">Time first from:</label></th><td><input id="id_time_first_from" name="time_first_from" type="text" value="2016-01-12 14:59:49" required /><input id="initial-id_time_first_from" name="initial-time_first_from" type="hidden" value="2016-01-12 14:59:49" /></td></tr>
+<tr><th><label for="id_time_first_to">Time first to:</label></th><td><input id="id_time_first_to" name="time_first_to" type="text" value="2016-01-12 14:59:49" required /><input id="initial-id_time_first_to" name="initial-time_first_to" type="hidden" value="2016-01-12 14:59:49" /></td></tr>
+<tr><th><label for="id_time_second_from">Time second from:</label></th><td><input id="id_time_second_from" name="time_second_from" type="text" value="2016-01-12 14:59:49" required /><input id="initial-id_time_second_from" name="initial-time_second_from" type="hidden" value="2016-01-12 14:59:49" /></td></tr>
+<tr><th><label for="id_time_second_to">Time second to:</label></th><td><input id="id_time_second_to" name="time_second_to" type="text" value="2016-01-12 14:59:49" required /><input id="initial-id_time_second_to" name="initial-time_second_to" type="hidden" value="2016-01-12 14:59:49" /></td></tr>
+<tr><th><label for="id_pickuppoint">Pickuppoint:</label></th><td><input id="id_pickuppoint" maxlength="15" name="pickuppoint" type="text" value="0000.0000" required /></td></tr>
+<tr><th><label for="id_dropoffpoint">Dropoffpoint:</label></th><td><input id="id_dropoffpoint" maxlength="15" name="dropoffpoint" type="text" value="0000.0000" required /></td></tr>
+2016-11-14 01:17:09,467 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 01:17:09,467 [ERROR] default: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 01:17:09,467 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyy@gmail.com"}
+2016-11-14 01:17:09,989 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 01:17:09,989 [ERROR] default: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 01:17:09,989 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Henrik", "phone": "95936294", "dob": "2016-01-17", "lastname": "Borthen", "nationality": "Norwegian", "email": "henrik.borthen@gmail.com"}
+2016-11-14 01:17:10,188 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 01:17:10,188 [ERROR] default: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 01:17:10,188 [ERROR] default: {"phone": "98237897", "password2": "267ec600500", "facebookurl": "www.facebook.com", "firstname": "Henrik", "password1": "267ec600500", "dob": "2016-01-17", "lastname": "Browne", "email": "henrik.browne@gmail.com"}
+2016-11-14 01:17:10,386 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 01:17:10,387 [ERROR] default: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 01:17:10,387 [ERROR] default: {"phone": "98237897", "password2": "267ec600500", "facebookurl": "www.facebook.com", "firstname": "Sveinung", "password1": "267ec600500", "dob": "2016-01-17", "lastname": "Sjoetveit", "email": "sveinung.Sjoetveit@gmail.com"}
+2016-11-14 01:17:11,457 [DEBUG] default: Torgeir Fladbyy
+2016-11-14 01:17:11,459 [DEBUG] default: True
+2016-11-14 01:17:11,480 [DEBUG] default: Torgeir Fladbyy
+2016-11-14 01:17:11,483 [DEBUG] default: True
+2016-11-14 01:17:11,490 [WARNING] django.request: Not Found: /finish_trip/
+2016-11-14 01:17:11,491 [DEBUG] default: <tr><th><label for="id_name">Name:</label></th><td><input id="id_name" maxlength="100" name="name" type="text" value="packagedeal1" required /></td></tr>
+<tr><th><label for="id_header_image">Header image:</label></th><td><input id="id_header_image" name="header_image" type="file" /></td></tr>
+<tr><th><label for="id_description">Description:</label></th><td><input id="id_description" maxlength="1000" name="description" type="text" value="some description" required /></td></tr>
+<tr><th><label for="id_price">Price:</label></th><td><input id="id_price" name="price" step="any" type="number" value="50" required /></td></tr>
+<tr><th><label for="id_time_first_from">Time first from:</label></th><td><input id="id_time_first_from" name="time_first_from" type="text" value="2016-01-12 14:59:49" required /><input id="initial-id_time_first_from" name="initial-time_first_from" type="hidden" value="2016-01-12 14:59:49" /></td></tr>
+<tr><th><label for="id_time_first_to">Time first to:</label></th><td><input id="id_time_first_to" name="time_first_to" type="text" value="2016-01-12 14:59:49" required /><input id="initial-id_time_first_to" name="initial-time_first_to" type="hidden" value="2016-01-12 14:59:49" /></td></tr>
+<tr><th><label for="id_time_second_from">Time second from:</label></th><td><input id="id_time_second_from" name="time_second_from" type="text" value="2016-01-12 14:59:49" required /><input id="initial-id_time_second_from" name="initial-time_second_from" type="hidden" value="2016-01-12 14:59:49" /></td></tr>
+<tr><th><label for="id_time_second_to">Time second to:</label></th><td><input id="id_time_second_to" name="time_second_to" type="text" value="2016-01-12 14:59:49" required /><input id="initial-id_time_second_to" name="initial-time_second_to" type="hidden" value="2016-01-12 14:59:49" /></td></tr>
+<tr><th><label for="id_pickuppoint">Pickuppoint:</label></th><td><input id="id_pickuppoint" maxlength="15" name="pickuppoint" type="text" value="0000.0000" required /></td></tr>
+<tr><th><label for="id_dropoffpoint">Dropoffpoint:</label></th><td><input id="id_dropoffpoint" maxlength="15" name="dropoffpoint" type="text" value="0000.0000" required /></td></tr>
+2016-11-14 01:21:18,740 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 01:21:18,741 [ERROR] default: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 01:21:18,741 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyy@gmail.com"}
+2016-11-14 01:21:19,292 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 01:21:19,292 [ERROR] default: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 01:21:19,292 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Henrik", "phone": "95936294", "dob": "2016-01-17", "lastname": "Borthen", "nationality": "Norwegian", "email": "henrik.borthen@gmail.com"}
+2016-11-14 01:21:19,491 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 01:21:19,491 [ERROR] default: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 01:21:19,491 [ERROR] default: {"phone": "98237897", "password2": "267ec600500", "facebookurl": "www.facebook.com", "firstname": "Henrik", "password1": "267ec600500", "dob": "2016-01-17", "lastname": "Browne", "email": "henrik.browne@gmail.com"}
+2016-11-14 01:21:19,702 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 01:21:19,703 [ERROR] default: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 01:21:19,703 [ERROR] default: {"phone": "98237897", "password2": "267ec600500", "facebookurl": "www.facebook.com", "firstname": "Sveinung", "password1": "267ec600500", "dob": "2016-01-17", "lastname": "Sjoetveit", "email": "sveinung.Sjoetveit@gmail.com"}
+2016-11-14 01:21:20,802 [DEBUG] default: Torgeir Fladbyy
+2016-11-14 01:21:20,804 [DEBUG] default: True
+2016-11-14 01:21:20,836 [DEBUG] default: Torgeir Fladbyy
+2016-11-14 01:21:20,838 [DEBUG] default: True
+2016-11-14 01:21:20,845 [WARNING] django.request: Not Found: /finish_trip/
+2016-11-14 01:21:20,847 [DEBUG] default: <tr><th><label for="id_name">Name:</label></th><td><input id="id_name" maxlength="100" name="name" type="text" value="packagedeal1" required /></td></tr>
+<tr><th><label for="id_header_image">Header image:</label></th><td><input id="id_header_image" name="header_image" type="file" /></td></tr>
+<tr><th><label for="id_description">Description:</label></th><td><input id="id_description" maxlength="1000" name="description" type="text" value="some description" required /></td></tr>
+<tr><th><label for="id_price">Price:</label></th><td><input id="id_price" name="price" step="any" type="number" value="50" required /></td></tr>
+<tr><th><label for="id_time_first_from">Time first from:</label></th><td><input id="id_time_first_from" name="time_first_from" type="text" value="2016-01-12 14:59:49" required /><input id="initial-id_time_first_from" name="initial-time_first_from" type="hidden" value="2016-01-12 14:59:49" /></td></tr>
+<tr><th><label for="id_time_first_to">Time first to:</label></th><td><input id="id_time_first_to" name="time_first_to" type="text" value="2016-01-12 14:59:49" required /><input id="initial-id_time_first_to" name="initial-time_first_to" type="hidden" value="2016-01-12 14:59:49" /></td></tr>
+<tr><th><label for="id_time_second_from">Time second from:</label></th><td><input id="id_time_second_from" name="time_second_from" type="text" value="2016-01-12 14:59:49" required /><input id="initial-id_time_second_from" name="initial-time_second_from" type="hidden" value="2016-01-12 14:59:49" /></td></tr>
+<tr><th><label for="id_time_second_to">Time second to:</label></th><td><input id="id_time_second_to" name="time_second_to" type="text" value="2016-01-12 14:59:49" required /><input id="initial-id_time_second_to" name="initial-time_second_to" type="hidden" value="2016-01-12 14:59:49" /></td></tr>
+<tr><th><label for="id_pickuppoint">Pickuppoint:</label></th><td><input id="id_pickuppoint" maxlength="15" name="pickuppoint" type="text" value="0000.0000" required /></td></tr>
+<tr><th><label for="id_dropoffpoint">Dropoffpoint:</label></th><td><input id="id_dropoffpoint" maxlength="15" name="dropoffpoint" type="text" value="0000.0000" required /></td></tr>
+2016-11-14 01:23:13,252 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 01:23:13,252 [ERROR] default: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 01:23:13,252 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyy@gmail.com"}
+2016-11-14 01:23:13,778 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 01:23:13,778 [ERROR] default: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 01:23:13,778 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Henrik", "phone": "95936294", "dob": "2016-01-17", "lastname": "Borthen", "nationality": "Norwegian", "email": "henrik.borthen@gmail.com"}
+2016-11-14 01:23:14,000 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 01:23:14,000 [ERROR] default: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 01:23:14,000 [ERROR] default: {"phone": "98237897", "password2": "267ec600500", "facebookurl": "www.facebook.com", "firstname": "Henrik", "password1": "267ec600500", "dob": "2016-01-17", "lastname": "Browne", "email": "henrik.browne@gmail.com"}
+2016-11-14 01:23:14,226 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 01:23:14,227 [ERROR] default: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 01:23:14,227 [ERROR] default: {"phone": "98237897", "password2": "267ec600500", "facebookurl": "www.facebook.com", "firstname": "Sveinung", "password1": "267ec600500", "dob": "2016-01-17", "lastname": "Sjoetveit", "email": "sveinung.Sjoetveit@gmail.com"}
+2016-11-14 01:23:15,352 [DEBUG] default: Torgeir Fladbyy
+2016-11-14 01:23:15,354 [DEBUG] default: True
+2016-11-14 01:23:15,377 [DEBUG] default: Torgeir Fladbyy
+2016-11-14 01:23:15,379 [DEBUG] default: True
+2016-11-14 01:23:15,387 [WARNING] django.request: Not Found: /finish_trip/
+2016-11-14 01:23:15,388 [DEBUG] default: <tr><th><label for="id_name">Name:</label></th><td><input id="id_name" maxlength="100" name="name" type="text" value="packagedeal1" required /></td></tr>
+<tr><th><label for="id_header_image">Header image:</label></th><td><input id="id_header_image" name="header_image" type="file" /></td></tr>
+<tr><th><label for="id_description">Description:</label></th><td><input id="id_description" maxlength="1000" name="description" type="text" value="some description" required /></td></tr>
+<tr><th><label for="id_price">Price:</label></th><td><input id="id_price" name="price" step="any" type="number" value="50" required /></td></tr>
+<tr><th><label for="id_time_first_from">Time first from:</label></th><td><input id="id_time_first_from" name="time_first_from" type="text" value="2016-01-12 14:59:49" required /><input id="initial-id_time_first_from" name="initial-time_first_from" type="hidden" value="2016-01-12 14:59:49" /></td></tr>
+<tr><th><label for="id_time_first_to">Time first to:</label></th><td><input id="id_time_first_to" name="time_first_to" type="text" value="2016-01-12 14:59:49" required /><input id="initial-id_time_first_to" name="initial-time_first_to" type="hidden" value="2016-01-12 14:59:49" /></td></tr>
+<tr><th><label for="id_time_second_from">Time second from:</label></th><td><input id="id_time_second_from" name="time_second_from" type="text" value="2016-01-12 14:59:49" required /><input id="initial-id_time_second_from" name="initial-time_second_from" type="hidden" value="2016-01-12 14:59:49" /></td></tr>
+<tr><th><label for="id_time_second_to">Time second to:</label></th><td><input id="id_time_second_to" name="time_second_to" type="text" value="2016-01-12 14:59:49" required /><input id="initial-id_time_second_to" name="initial-time_second_to" type="hidden" value="2016-01-12 14:59:49" /></td></tr>
+<tr><th><label for="id_pickuppoint">Pickuppoint:</label></th><td><input id="id_pickuppoint" maxlength="15" name="pickuppoint" type="text" value="0000.0000" required /></td></tr>
+<tr><th><label for="id_dropoffpoint">Dropoffpoint:</label></th><td><input id="id_dropoffpoint" maxlength="15" name="dropoffpoint" type="text" value="0000.0000" required /></td></tr>
+2016-11-14 01:23:34,033 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 01:23:34,034 [ERROR] default: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 01:23:34,034 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyy@gmail.com"}
+2016-11-14 01:23:34,549 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 01:23:34,550 [ERROR] default: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 01:23:34,550 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Henrik", "phone": "95936294", "dob": "2016-01-17", "lastname": "Borthen", "nationality": "Norwegian", "email": "henrik.borthen@gmail.com"}
+2016-11-14 01:23:34,749 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 01:23:34,750 [ERROR] default: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 01:23:34,750 [ERROR] default: {"phone": "98237897", "password2": "267ec600500", "facebookurl": "www.facebook.com", "firstname": "Henrik", "password1": "267ec600500", "dob": "2016-01-17", "lastname": "Browne", "email": "henrik.browne@gmail.com"}
+2016-11-14 01:23:34,959 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 01:23:34,959 [ERROR] default: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 01:23:34,959 [ERROR] default: {"phone": "98237897", "password2": "267ec600500", "facebookurl": "www.facebook.com", "firstname": "Sveinung", "password1": "267ec600500", "dob": "2016-01-17", "lastname": "Sjoetveit", "email": "sveinung.Sjoetveit@gmail.com"}
+2016-11-14 01:23:35,986 [DEBUG] default: Torgeir Fladbyy
+2016-11-14 01:23:35,988 [DEBUG] default: True
+2016-11-14 01:23:36,011 [DEBUG] default: Torgeir Fladbyy
+2016-11-14 01:23:36,013 [DEBUG] default: True
+2016-11-14 01:23:36,020 [WARNING] django.request: Not Found: /finish_trip/
+2016-11-14 01:23:36,021 [DEBUG] default: <tr><th><label for="id_name">Name:</label></th><td><input id="id_name" maxlength="100" name="name" type="text" value="packagedeal1" required /></td></tr>
+<tr><th><label for="id_header_image">Header image:</label></th><td><input id="id_header_image" name="header_image" type="file" /></td></tr>
+<tr><th><label for="id_description">Description:</label></th><td><input id="id_description" maxlength="1000" name="description" type="text" value="some description" required /></td></tr>
+<tr><th><label for="id_price">Price:</label></th><td><input id="id_price" name="price" step="any" type="number" value="50" required /></td></tr>
+<tr><th><label for="id_time_first_from">Time first from:</label></th><td><input id="id_time_first_from" name="time_first_from" type="text" value="2016-01-12 14:59:49" required /><input id="initial-id_time_first_from" name="initial-time_first_from" type="hidden" value="2016-01-12 14:59:49" /></td></tr>
+<tr><th><label for="id_time_first_to">Time first to:</label></th><td><input id="id_time_first_to" name="time_first_to" type="text" value="2016-01-12 14:59:49" required /><input id="initial-id_time_first_to" name="initial-time_first_to" type="hidden" value="2016-01-12 14:59:49" /></td></tr>
+<tr><th><label for="id_time_second_from">Time second from:</label></th><td><input id="id_time_second_from" name="time_second_from" type="text" value="2016-01-12 14:59:49" required /><input id="initial-id_time_second_from" name="initial-time_second_from" type="hidden" value="2016-01-12 14:59:49" /></td></tr>
+<tr><th><label for="id_time_second_to">Time second to:</label></th><td><input id="id_time_second_to" name="time_second_to" type="text" value="2016-01-12 14:59:49" required /><input id="initial-id_time_second_to" name="initial-time_second_to" type="hidden" value="2016-01-12 14:59:49" /></td></tr>
+<tr><th><label for="id_pickuppoint">Pickuppoint:</label></th><td><input id="id_pickuppoint" maxlength="15" name="pickuppoint" type="text" value="0000.0000" required /></td></tr>
+<tr><th><label for="id_dropoffpoint">Dropoffpoint:</label></th><td><input id="id_dropoffpoint" maxlength="15" name="dropoffpoint" type="text" value="0000.0000" required /></td></tr>
+2016-11-14 01:25:04,609 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 01:25:04,610 [ERROR] default: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 01:25:04,610 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyy@gmail.com"}
+2016-11-14 01:25:05,130 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 01:25:05,130 [ERROR] default: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 01:25:05,130 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Henrik", "phone": "95936294", "dob": "2016-01-17", "lastname": "Borthen", "nationality": "Norwegian", "email": "henrik.borthen@gmail.com"}
+2016-11-14 01:25:05,321 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 01:25:05,321 [ERROR] default: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 01:25:05,321 [ERROR] default: {"phone": "98237897", "password2": "267ec600500", "facebookurl": "www.facebook.com", "firstname": "Henrik", "password1": "267ec600500", "dob": "2016-01-17", "lastname": "Browne", "email": "henrik.browne@gmail.com"}
+2016-11-14 01:25:05,512 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 01:25:05,512 [ERROR] default: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 01:25:05,512 [ERROR] default: {"phone": "98237897", "password2": "267ec600500", "facebookurl": "www.facebook.com", "firstname": "Sveinung", "password1": "267ec600500", "dob": "2016-01-17", "lastname": "Sjoetveit", "email": "sveinung.Sjoetveit@gmail.com"}
+2016-11-14 01:25:06,557 [DEBUG] default: Torgeir Fladbyy
+2016-11-14 01:25:06,559 [DEBUG] default: True
+2016-11-14 01:25:06,585 [DEBUG] default: Torgeir Fladbyy
+2016-11-14 01:25:06,588 [DEBUG] default: True
+2016-11-14 01:25:06,594 [WARNING] django.request: Not Found: /finish_trip/
+2016-11-14 01:25:06,596 [DEBUG] default: <tr><th><label for="id_name">Name:</label></th><td><input id="id_name" maxlength="100" name="name" type="text" value="packagedeal1" required /></td></tr>
+<tr><th><label for="id_header_image">Header image:</label></th><td><input id="id_header_image" name="header_image" type="file" /></td></tr>
+<tr><th><label for="id_description">Description:</label></th><td><input id="id_description" maxlength="1000" name="description" type="text" value="some description" required /></td></tr>
+<tr><th><label for="id_price">Price:</label></th><td><input id="id_price" name="price" step="any" type="number" value="50" required /></td></tr>
+<tr><th><label for="id_time_first_from">Time first from:</label></th><td><input id="id_time_first_from" name="time_first_from" type="text" value="2016-01-12 14:59:49" required /><input id="initial-id_time_first_from" name="initial-time_first_from" type="hidden" value="2016-01-12 14:59:49" /></td></tr>
+<tr><th><label for="id_time_first_to">Time first to:</label></th><td><input id="id_time_first_to" name="time_first_to" type="text" value="2016-01-12 14:59:49" required /><input id="initial-id_time_first_to" name="initial-time_first_to" type="hidden" value="2016-01-12 14:59:49" /></td></tr>
+<tr><th><label for="id_time_second_from">Time second from:</label></th><td><input id="id_time_second_from" name="time_second_from" type="text" value="2016-01-12 14:59:49" required /><input id="initial-id_time_second_from" name="initial-time_second_from" type="hidden" value="2016-01-12 14:59:49" /></td></tr>
+<tr><th><label for="id_time_second_to">Time second to:</label></th><td><input id="id_time_second_to" name="time_second_to" type="text" value="2016-01-12 14:59:49" required /><input id="initial-id_time_second_to" name="initial-time_second_to" type="hidden" value="2016-01-12 14:59:49" /></td></tr>
+<tr><th><label for="id_pickuppoint">Pickuppoint:</label></th><td><input id="id_pickuppoint" maxlength="15" name="pickuppoint" type="text" value="0000.0000" required /></td></tr>
+<tr><th><label for="id_dropoffpoint">Dropoffpoint:</label></th><td><input id="id_dropoffpoint" maxlength="15" name="dropoffpoint" type="text" value="0000.0000" required /></td></tr>
+2016-11-14 01:26:42,094 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 01:26:42,094 [ERROR] default: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 01:26:42,094 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyy@gmail.com"}
+2016-11-14 01:26:42,605 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 01:26:42,605 [ERROR] default: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 01:26:42,605 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Henrik", "phone": "95936294", "dob": "2016-01-17", "lastname": "Borthen", "nationality": "Norwegian", "email": "henrik.borthen@gmail.com"}
+2016-11-14 01:26:42,802 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 01:26:42,803 [ERROR] default: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 01:26:42,803 [ERROR] default: {"phone": "98237897", "password2": "267ec600500", "facebookurl": "www.facebook.com", "firstname": "Henrik", "password1": "267ec600500", "dob": "2016-01-17", "lastname": "Browne", "email": "henrik.browne@gmail.com"}
+2016-11-14 01:26:43,023 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 01:26:43,023 [ERROR] default: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 01:26:43,023 [ERROR] default: {"phone": "98237897", "password2": "267ec600500", "facebookurl": "www.facebook.com", "firstname": "Sveinung", "password1": "267ec600500", "dob": "2016-01-17", "lastname": "Sjoetveit", "email": "sveinung.Sjoetveit@gmail.com"}
+2016-11-14 01:26:44,113 [DEBUG] default: Torgeir Fladbyy
+2016-11-14 01:26:44,115 [DEBUG] default: True
+2016-11-14 01:26:44,136 [DEBUG] default: Torgeir Fladbyy
+2016-11-14 01:26:44,138 [DEBUG] default: True
+2016-11-14 01:26:44,145 [WARNING] django.request: Not Found: /finish_trip/
+2016-11-14 01:26:44,147 [DEBUG] default: <tr><th><label for="id_name">Name:</label></th><td><input id="id_name" maxlength="100" name="name" type="text" value="packagedeal1" required /></td></tr>
+<tr><th><label for="id_header_image">Header image:</label></th><td><input id="id_header_image" name="header_image" type="file" /></td></tr>
+<tr><th><label for="id_description">Description:</label></th><td><input id="id_description" maxlength="1000" name="description" type="text" value="some description" required /></td></tr>
+<tr><th><label for="id_price">Price:</label></th><td><input id="id_price" name="price" step="any" type="number" value="50" required /></td></tr>
+<tr><th><label for="id_time_first_from">Time first from:</label></th><td><input id="id_time_first_from" name="time_first_from" type="text" value="2016-01-12 14:59:49" required /><input id="initial-id_time_first_from" name="initial-time_first_from" type="hidden" value="2016-01-12 14:59:49" /></td></tr>
+<tr><th><label for="id_time_first_to">Time first to:</label></th><td><input id="id_time_first_to" name="time_first_to" type="text" value="2016-01-12 14:59:49" required /><input id="initial-id_time_first_to" name="initial-time_first_to" type="hidden" value="2016-01-12 14:59:49" /></td></tr>
+<tr><th><label for="id_time_second_from">Time second from:</label></th><td><input id="id_time_second_from" name="time_second_from" type="text" value="2016-01-12 14:59:49" required /><input id="initial-id_time_second_from" name="initial-time_second_from" type="hidden" value="2016-01-12 14:59:49" /></td></tr>
+<tr><th><label for="id_time_second_to">Time second to:</label></th><td><input id="id_time_second_to" name="time_second_to" type="text" value="2016-01-12 14:59:49" required /><input id="initial-id_time_second_to" name="initial-time_second_to" type="hidden" value="2016-01-12 14:59:49" /></td></tr>
+<tr><th><label for="id_pickuppoint">Pickuppoint:</label></th><td><input id="id_pickuppoint" maxlength="15" name="pickuppoint" type="text" value="0000.0000" required /></td></tr>
+<tr><th><label for="id_dropoffpoint">Dropoffpoint:</label></th><td><input id="id_dropoffpoint" maxlength="15" name="dropoffpoint" type="text" value="0000.0000" required /></td></tr>

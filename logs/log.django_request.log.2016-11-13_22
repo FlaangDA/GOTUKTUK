@@ -1,0 +1,811 @@
+2016-11-13 20:03:18,720 [ERROR] django.request: Internal Server Error: /admin/pricing/afternoon/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1657, in changelist_view
+    selection_note=_('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 238, in __len__
+    self._fetch_all()
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1087, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+ProgrammingError: column pricing_afternoon.usd1km does not exist
+LINE 1: SELECT "pricing_afternoon"."id", "pricing_afternoon"."usd1km...
+                                         ^
+
+2016-11-13 20:05:19,440 [ERROR] django.request: Internal Server Error: /admin/pricing/afternoon/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1657, in changelist_view
+    selection_note=_('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 238, in __len__
+    self._fetch_all()
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1087, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+ProgrammingError: relation "pricing_afternoonprofit" does not exist
+LINE 1: ...."nameProfit" FROM "pricing_afternoon" INNER JOIN "pricing_a...
+                                                             ^
+
+2016-11-13 20:05:53,345 [ERROR] django.request: Internal Server Error: /admin/pricing/afternoon/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1657, in changelist_view
+    selection_note=_('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 238, in __len__
+    self._fetch_all()
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1087, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+ProgrammingError: relation "pricing_afternoonprofit" does not exist
+LINE 1: ...."nameProfit" FROM "pricing_afternoon" INNER JOIN "pricing_a...
+                                                             ^
+
+2016-11-13 20:09:32,609 [ERROR] django.request: Internal Server Error: /admin/pricing/afternoon/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1657, in changelist_view
+    selection_note=_('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 238, in __len__
+    self._fetch_all()
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1087, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+ProgrammingError: relation "pricing_afternoonprofit" does not exist
+LINE 1: ...."nameProfit" FROM "pricing_afternoon" INNER JOIN "pricing_a...
+                                                             ^
+
+2016-11-13 20:09:59,082 [ERROR] django.request: Internal Server Error: /admin/pricing/afternoon/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1657, in changelist_view
+    selection_note=_('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 238, in __len__
+    self._fetch_all()
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1087, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+ProgrammingError: relation "pricing_afternoonprofit" does not exist
+LINE 1: ...."nameProfit" FROM "pricing_afternoon" INNER JOIN "pricing_a...
+                                                             ^
+
+2016-11-13 20:11:50,158 [ERROR] django.request: Internal Server Error: /admin/pricing/afternoon/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1657, in changelist_view
+    selection_note=_('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 238, in __len__
+    self._fetch_all()
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1087, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+ProgrammingError: column pricing_afternoon.usd1km does not exist
+LINE 1: SELECT "pricing_afternoon"."id", "pricing_afternoon"."usd1km...
+                                         ^
+
+2016-11-13 20:17:02,498 [ERROR] django.request: Internal Server Error: /admin/pricing/afternoon/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1657, in changelist_view
+    selection_note=_('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 238, in __len__
+    self._fetch_all()
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1087, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+ProgrammingError: column pricing_afternoon.usd1km does not exist
+LINE 1: SELECT "pricing_afternoon"."id", "pricing_afternoon"."usd1km...
+                                         ^
+
+2016-11-13 20:20:05,340 [ERROR] django.request: Internal Server Error: /admin/pricing/earlymorning/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1657, in changelist_view
+    selection_note=_('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 238, in __len__
+    self._fetch_all()
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1087, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+ProgrammingError: column pricing_earlymorning.usd1km does not exist
+LINE 1: SELECT "pricing_earlymorning"."id", "pricing_earlymorning"."...
+                                            ^
+
+2016-11-13 20:27:16,199 [ERROR] django.request: Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 229, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 468, in index
+    app_list = self.get_app_list(request)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 451, in get_app_list
+    app_dict = self._build_app_dict(request)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 403, in _build_app_dict
+    perms = model_admin.get_model_perms(request)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 589, in get_model_perms
+    'add': self.has_add_permission(request),
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/pricing/admin.py", line 115, in has_add_permission
+    num_objects = self.model.objects.count()
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 369, in count
+    return self.query.get_count(using=self.db)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/query.py", line 476, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/query.py", line 457, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+ProgrammingError: relation "pricing_lateafternoon" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "pricing_lateafternoon"
+                                          ^
+
+2016-11-13 20:27:17,740 [ERROR] django.request: Internal Server Error: /admin/pricing/afternoon/1/change/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1512, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 185, in inner
+    return func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1429, in changeform_view
+    obj = self.get_object(request, unquote(object_id), to_field)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 667, in get_object
+    return queryset.get(**{field.name: object_id})
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 379, in get
+    num = len(clone)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 238, in __len__
+    self._fetch_all()
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1087, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+ProgrammingError: relation "pricing_afternoon" does not exist
+LINE 1: ...rnoon"."usd10km", "pricing_afternoon"."name" FROM "pricing_a...
+                                                             ^
+
+2016-11-13 20:27:33,938 [ERROR] django.request: Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 229, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 468, in index
+    app_list = self.get_app_list(request)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 451, in get_app_list
+    app_dict = self._build_app_dict(request)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 403, in _build_app_dict
+    perms = model_admin.get_model_perms(request)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 589, in get_model_perms
+    'add': self.has_add_permission(request),
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/pricing/admin.py", line 93, in has_add_permission
+    num_objects = self.model.objects.count()
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 369, in count
+    return self.query.get_count(using=self.db)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/query.py", line 476, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/query.py", line 457, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+ProgrammingError: relation "pricing_earlyafternoon" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "pricing_earlyafternoon"
+                                          ^
+
+2016-11-13 20:29:06,678 [ERROR] django.request: Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 229, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 468, in index
+    app_list = self.get_app_list(request)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 451, in get_app_list
+    app_dict = self._build_app_dict(request)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 403, in _build_app_dict
+    perms = model_admin.get_model_perms(request)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 589, in get_model_perms
+    'add': self.has_add_permission(request),
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/pricing/admin.py", line 49, in has_add_permission
+    num_objects = self.model.objects.count()
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 369, in count
+    return self.query.get_count(using=self.db)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/query.py", line 476, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/query.py", line 457, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+ProgrammingError: relation "pricing_morning" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "pricing_morning"
+                                          ^
+
+2016-11-13 20:29:07,929 [ERROR] django.request: Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 229, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 468, in index
+    app_list = self.get_app_list(request)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 451, in get_app_list
+    app_dict = self._build_app_dict(request)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 403, in _build_app_dict
+    perms = model_admin.get_model_perms(request)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 589, in get_model_perms
+    'add': self.has_add_permission(request),
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/pricing/admin.py", line 49, in has_add_permission
+    num_objects = self.model.objects.count()
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 369, in count
+    return self.query.get_count(using=self.db)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/query.py", line 476, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/query.py", line 457, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+ProgrammingError: relation "pricing_morning" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "pricing_morning"
+                                          ^
+
+2016-11-13 20:58:05,044 [ERROR] django.request: Internal Server Error: /admin/pricing/earlyafternoon/add/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1509, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 185, in inner
+    return func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1449, in changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1007, in save_model
+    obj.save()
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 796, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 824, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 908, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 947, in _do_insert
+    using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1045, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 1054, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+DataError: value too long for type character varying(20)
+
+2016-11-13 21:01:00,417 [ERROR] django.request: Internal Server Error: /admin/pricing/earlymorning/1/change/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1512, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 185, in inner
+    return func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1506, in changeform_view
+    return self.render_change_form(request, context, add=add, change=not add, obj=obj, form_url=form_url)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1044, in render_change_form
+    'has_delete_permission': self.has_delete_permission(request, obj),
+TypeError: has_delete_permission() takes exactly 2 arguments (3 given)
+2016-11-13 21:01:24,820 [ERROR] django.request: Internal Server Error: /admin/pricing/earlymorning/1/change/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1512, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 185, in inner
+    return func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1482, in changeform_view
+    self.admin_site.each_context(request),
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 284, in each_context
+    'available_apps': self.get_app_list(request),
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 451, in get_app_list
+    app_dict = self._build_app_dict(request)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 403, in _build_app_dict
+    perms = model_admin.get_model_perms(request)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 591, in get_model_perms
+    'delete': self.has_delete_permission(request),
+TypeError: has_delete_permission() takes exactly 1 argument (2 given)
+2016-11-13 21:26:49,838 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-13 21:26:50,374 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-13 21:26:50,570 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-13 21:26:50,769 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-13 21:26:51,864 [WARNING] django.request: Not Found: /finish_trip/
+2016-11-13 21:47:12,669 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-13 21:47:13,179 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-13 21:47:13,388 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-13 21:47:13,594 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-13 21:47:14,666 [WARNING] django.request: Not Found: /check_price
+2016-11-13 21:47:14,746 [WARNING] django.request: Not Found: /finish_trip/
+2016-11-13 21:47:55,065 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-13 21:47:55,636 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-13 21:47:55,833 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-13 21:47:56,033 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-13 21:47:57,070 [WARNING] django.request: Not Found: /check_price
+2016-11-13 21:47:57,118 [WARNING] django.request: Not Found: /finish_trip/
+2016-11-13 21:48:27,505 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-13 21:48:28,080 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-13 21:48:28,282 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-13 21:48:28,497 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-13 21:50:21,003 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-13 21:50:21,537 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-13 21:50:21,744 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-13 21:50:21,954 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-13 21:50:33,622 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-13 21:50:34,145 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-13 21:50:34,358 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-13 21:50:34,563 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-13 21:53:11,426 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-13 21:53:11,950 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-13 21:53:12,164 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-13 21:53:12,366 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-13 21:53:49,308 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-13 21:53:49,852 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-13 21:53:50,042 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-13 21:53:50,234 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-13 21:53:51,344 [WARNING] django.request: Not Found: /finish_trip/
+2016-11-13 21:54:28,797 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-13 21:54:29,330 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-13 21:54:29,541 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-13 21:54:29,749 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-13 21:55:12,032 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-13 21:55:12,576 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-13 21:55:12,773 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-13 21:55:12,979 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-13 21:55:14,049 [WARNING] django.request: Not Found: /finish_trip/
+2016-11-13 22:03:15,786 [WARNING] django.request: Not Found: /admin/packagedeals/packagedeal/add/packagedeals/headers/pin_location.png/change/
+2016-11-13 22:03:36,589 [WARNING] django.request: Not Found: /admin/packagedeals/packagedeal/packagedeals/headers/15055642_10153813774332101_159260350940143519_n.jpg/change/
+2016-11-13 22:33:23,870 [WARNING] django.request: Not Found: /admin/packagedeals/packagedeal/packagedeals/headers/15055642_10153813774332101_159260350940143519_n.jpg/change/
+2016-11-13 22:34:19,412 [WARNING] django.request: Not Found: /admin/packagedeals/packagedeal/packagedeals/headers/15055642_10153813774332101_159260350940143519_n.jpg/change/
+2016-11-13 22:34:20,756 [WARNING] django.request: Not Found: /admin/packagedeals/packagedeal/add/packagedeals/headers/pin_location.png/change/
+2016-11-13 22:34:35,343 [WARNING] django.request: Not Found: /admin/packagedeals/packagedeal/packagedeals/headers/15055642_10153813774332101_159260350940143519_n.jpg/change/

@@ -1,0 +1,2 @@
+2016-11-11 10:43:08,360 [WARNING] django.request: Not Found: /
+2016-11-11 10:43:08,440 [WARNING] django.request: Not Found: /favicon.ico

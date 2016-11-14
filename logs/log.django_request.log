@@ -1,0 +1,551 @@
+2016-11-14 08:41:07,905 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 08:41:08,430 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 08:41:08,625 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 08:41:08,829 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 08:41:09,967 [WARNING] django.request: Not Found: /get_trip_graphics
+2016-11-14 08:41:09,971 [ERROR] django.request: Internal Server Error: /finish_trip/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 235, in post
+    return self.finish_trip(request)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 58, in finish_trip
+    income_dict = calculate_price(datetime.strptime(tripsession.triporderdatetime, '%Y-%m-%d %H:%M:%S').time(), int(tripsession.etakm))
+TypeError: must be string, not datetime.datetime
+2016-11-14 08:43:31,463 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 08:43:31,980 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 08:43:32,180 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 08:43:32,378 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 08:43:33,491 [WARNING] django.request: Not Found: /get_trip_graphics
+2016-11-14 08:43:33,496 [ERROR] django.request: Internal Server Error: /finish_trip/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 235, in post
+    return self.finish_trip(request)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 58, in finish_trip
+    income_dict = calculate_price(datetime.strptime(str(tripsession.triporderdatetime), '%Y-%m-%d %H:%M:%S').time(), int(tripsession.etakm))
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/_strptime.py", line 328, in _strptime
+    data_string[found.end():])
+ValueError: unconverted data remains: +00:00
+2016-11-14 08:48:23,478 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 08:48:23,998 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 08:48:24,197 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 08:48:24,399 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 08:48:25,552 [WARNING] django.request: Not Found: /get_trip_graphics
+2016-11-14 08:48:25,557 [ERROR] django.request: Internal Server Error: /finish_trip/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 237, in post
+    return self.finish_trip(request)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 57, in finish_trip
+    str_datetime = datetime.strptime(str(tripsession.triporderdatetime), '%Y-%m-%d %H:%M:%S').time()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/_strptime.py", line 328, in _strptime
+    data_string[found.end():])
+ValueError: unconverted data remains: +00:00
+2016-11-14 08:50:26,669 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 08:50:27,201 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 08:50:27,397 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 08:50:27,606 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 08:50:28,700 [WARNING] django.request: Not Found: /get_trip_graphics
+2016-11-14 08:50:28,704 [ERROR] django.request: Internal Server Error: /finish_trip/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 237, in post
+    return self.finish_trip(request)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 57, in finish_trip
+    str_datetime = datetime.strptime(str(tripsession.triporderdatetime), '%Y-%m-%d %H:%M:%S')
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/_strptime.py", line 328, in _strptime
+    data_string[found.end():])
+ValueError: unconverted data remains: +00:00
+2016-11-14 08:51:01,152 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 08:51:01,670 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 08:51:01,863 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 08:51:02,067 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 08:51:03,188 [WARNING] django.request: Not Found: /get_trip_graphics
+2016-11-14 08:51:03,193 [ERROR] django.request: Internal Server Error: /finish_trip/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 238, in post
+    return self.finish_trip(request)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 58, in finish_trip
+    str_datetime = datetime.strptime(str(tripsession.triporderdatetime), '%Y-%m-%d %H:%M:%S').time()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/_strptime.py", line 328, in _strptime
+    data_string[found.end():])
+ValueError: unconverted data remains: +00:00
+2016-11-14 08:51:22,201 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 08:51:22,723 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 08:51:22,933 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 08:51:23,147 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 08:51:24,296 [WARNING] django.request: Not Found: /get_trip_graphics
+2016-11-14 08:51:24,300 [ERROR] django.request: Internal Server Error: /finish_trip/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 238, in post
+    return self.finish_trip(request)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 57, in finish_trip
+    print tripsession.triporderdatetime[8:]
+TypeError: 'datetime.datetime' object has no attribute '__getitem__'
+2016-11-14 08:51:53,082 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 08:51:53,607 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 08:51:53,803 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 08:51:54,002 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 08:51:55,080 [WARNING] django.request: Not Found: /get_trip_graphics
+2016-11-14 08:51:55,084 [ERROR] django.request: Internal Server Error: /finish_trip/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 238, in post
+    return self.finish_trip(request)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 58, in finish_trip
+    str_datetime = datetime.strptime(str(tripsession.triporderdatetime), '%Y-%m-%d %H:%M:%S').time()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/_strptime.py", line 328, in _strptime
+    data_string[found.end():])
+ValueError: unconverted data remains: +00:00
+2016-11-14 08:54:07,824 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 08:54:08,343 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 08:54:08,543 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 08:54:08,752 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 08:54:09,844 [WARNING] django.request: Not Found: /get_trip_graphics
+2016-11-14 08:54:09,848 [ERROR] django.request: Internal Server Error: /finish_trip/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 238, in post
+    return self.finish_trip(request)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 58, in finish_trip
+    str_datetime = datetime.strptime(conv_time, '%Y-%m-%d %H:%M:%S').time()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/_strptime.py", line 325, in _strptime
+    (data_string, format))
+ValueError: time data '+00:00' does not match format '%Y-%m-%d %H:%M:%S'
+2016-11-14 08:54:36,469 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 08:54:37,002 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 08:54:37,214 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 08:54:37,420 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 08:54:38,525 [WARNING] django.request: Not Found: /get_trip_graphics
+2016-11-14 08:54:38,530 [ERROR] django.request: Internal Server Error: /finish_trip/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 239, in post
+    return self.finish_trip(request)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 59, in finish_trip
+    str_datetime = datetime.strptime(conv_time, '%Y-%m-%d %H:%M:%S').time()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/_strptime.py", line 325, in _strptime
+    (data_string, format))
+ValueError: time data '+00:00' does not match format '%Y-%m-%d %H:%M:%S'
+2016-11-14 08:55:13,375 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 08:55:13,886 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 08:55:14,091 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 08:55:14,291 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 08:55:15,408 [WARNING] django.request: Not Found: /get_trip_graphics
+2016-11-14 08:55:15,413 [ERROR] django.request: Internal Server Error: /finish_trip/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 239, in post
+    return self.finish_trip(request)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 66, in finish_trip
+    triprequest.driver.debtUSD += income_dict.get("driver_owes")
+AttributeError: 'CustomUser' object has no attribute 'debtUSD'
+2016-11-14 08:57:50,844 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 08:57:51,361 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 08:57:51,559 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 08:57:51,775 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 08:57:52,908 [WARNING] django.request: Not Found: /get_trip_graphics
+2016-11-14 08:57:52,914 [ERROR] django.request: Internal Server Error: /finish_trip/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 237, in post
+    return self.finish_trip(request)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 64, in finish_trip
+    DriverDetails.objects.get(user_instance=triprequest.driver).debtUSD += income_dict.get("driver_owes")
+TypeError: unsupported operand type(s) for +=: 'Decimal' and 'float'
+2016-11-14 08:58:41,410 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 08:58:41,979 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 08:58:42,172 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 08:58:42,378 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 08:58:43,434 [WARNING] django.request: Not Found: /get_trip_graphics
+2016-11-14 08:58:43,441 [ERROR] django.request: Internal Server Error: /finish_trip/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 237, in post
+    return self.finish_trip(request)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 64, in finish_trip
+    DriverDetails.objects.get(user_instance=triprequest.driver).debtUSD += income_dict.get("driver_owes")
+TypeError: unsupported operand type(s) for +=: 'Decimal' and 'float'
+2016-11-14 08:59:05,000 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 08:59:05,520 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 08:59:05,726 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 08:59:05,926 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 08:59:07,046 [WARNING] django.request: Not Found: /get_trip_graphics
+2016-11-14 09:08:11,902 [ERROR] django.request: Internal Server Error: /create_customer/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/django/urls/resolvers.py", line 270, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Library/Python/2.7/site-packages/django/urls/resolvers.py", line 313, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Library/Python/2.7/site-packages/django/urls/resolvers.py", line 306, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/src/urls.py", line 20, in <module>
+    from control import urls as control_urls
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/control/urls.py", line 16, in <module>
+    from trip import urls as trip_urls
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/urls.py", line 4, in <module>
+    from views import TripView
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 214
+    if request.user.user_type = 'C':
+                              ^
+SyntaxError: invalid syntax
+2016-11-14 09:08:26,764 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 09:08:27,314 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 09:08:27,511 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 09:08:27,709 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 09:08:28,804 [ERROR] django.request: Internal Server Error: /get_trip_graphics
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 254, in get
+    return self.get_trip_graphics(request)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 215, in get_trip_graphics
+    triprequests = TripReqest.objects.filter(customer=request.user)
+NameError: global name 'TripReqest' is not defined
+2016-11-14 09:08:54,621 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 09:08:55,148 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 09:08:55,349 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 09:08:55,556 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 09:08:56,675 [ERROR] django.request: Internal Server Error: /get_trip_graphics
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 254, in get
+    return self.get_trip_graphics(request)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 225, in get_trip_graphics
+    tripgraphic = TripGraphics.objects.get(tripsession=tripsession)
+NameError: global name 'TripGraphics' is not defined
+2016-11-14 09:09:48,597 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 09:09:49,113 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 09:09:49,313 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 09:09:49,523 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 09:09:50,604 [ERROR] django.request: Internal Server Error: /get_trip_graphics
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 254, in get
+    return self.get_trip_graphics(request)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 226, in get_trip_graphics
+    image_data = ContentFile(b64encode(tripgraphic.file.read()))
+NameError: global name 'ContentFile' is not defined
+2016-11-14 09:10:12,353 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 09:10:12,905 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 09:10:13,105 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 09:10:13,322 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 09:10:14,449 [ERROR] django.request: Internal Server Error: /get_trip_graphics
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 255, in get
+    return self.get_trip_graphics(request)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 227, in get_trip_graphics
+    image_data = ContentFile(b64encode(tripgraphic.file.read()))
+NameError: global name 'b64encode' is not defined
+2016-11-14 09:10:35,822 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 09:10:36,340 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 09:10:36,539 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 09:10:36,752 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 09:10:37,842 [ERROR] django.request: Internal Server Error: /get_trip_graphics
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 256, in get
+    return self.get_trip_graphics(request)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 228, in get_trip_graphics
+    image_data = ContentFile(b64encode(tripgraphic.file.read()))
+NameError: global name 'b64encode' is not defined
+2016-11-14 09:10:51,557 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 09:10:52,132 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 09:10:52,337 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 09:10:52,532 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 09:10:53,659 [ERROR] django.request: Internal Server Error: /get_trip_graphics
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 256, in get
+    return self.get_trip_graphics(request)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 228, in get_trip_graphics
+    image_data = ContentFile(b64encode(tripgraphic.file.read()))
+  File "/Library/Python/2.7/site-packages/django/db/models/fields/files.py", line 51, in _get_file
+    self._file = self.storage.open(self.name, 'rb')
+  File "/Library/Python/2.7/site-packages/django/core/files/storage.py", line 38, in open
+    return self._open(name, mode)
+  File "/Library/Python/2.7/site-packages/django/core/files/storage.py", line 300, in _open
+    return File(open(self.path(name), mode))
+IOError: [Errno 2] No such file or directory: u'/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/media/tripsession/default.png'
+2016-11-14 09:11:37,913 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 09:11:38,464 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 09:11:38,670 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 09:11:38,864 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 09:11:39,962 [ERROR] django.request: Internal Server Error: /get_trip_graphics
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 256, in get
+    return self.get_trip_graphics(request)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 228, in get_trip_graphics
+    image_data = ContentFile(b64encode(tripgraphic.file.read()))
+  File "/Library/Python/2.7/site-packages/django/db/models/fields/files.py", line 51, in _get_file
+    self._file = self.storage.open(self.name, 'rb')
+  File "/Library/Python/2.7/site-packages/django/core/files/storage.py", line 38, in open
+    return self._open(name, mode)
+  File "/Library/Python/2.7/site-packages/django/core/files/storage.py", line 300, in _open
+    return File(open(self.path(name), mode))
+IOError: [Errno 2] No such file or directory: u'/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/media/tripsession/default.jpg'
+2016-11-14 09:12:12,513 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 09:12:13,024 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 09:12:13,229 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 09:12:13,419 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 09:12:14,520 [ERROR] django.request: Internal Server Error: /get_trip_graphics
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 256, in get
+    return self.get_trip_graphics(request)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 231, in get_trip_graphics
+    return JsonResponse(json.dumps(history_dict))
+  File "/Library/Python/2.7/site-packages/django/http/response.py", line 514, in __init__
+    'In order to allow non-dict objects to be serialized set the '
+TypeError: In order to allow non-dict objects to be serialized set the safe parameter to False.
+2016-11-14 09:12:51,200 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 09:12:51,721 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 09:12:51,928 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 09:12:52,130 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 09:13:21,257 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 09:13:21,763 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 09:13:21,956 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 09:13:22,145 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 09:31:17,491 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 09:31:18,014 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 09:31:18,213 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 09:31:18,420 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 10:25:03,559 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 10:25:04,063 [DEBUG] django.request: <WSGIRequest: POST '/create_customer/'>
+2016-11-14 10:25:04,260 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
+2016-11-14 10:25:04,449 [DEBUG] django.request: <WSGIRequest: POST '/create_driver/'>
