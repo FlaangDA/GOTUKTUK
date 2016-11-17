@@ -1,0 +1,105 @@
+2016-11-14 19:15:53,157 [WARNING] django.request: Not Found: /favicon.ico
+2016-11-14 19:20:08,509 [WARNING] django.request: Not Found: /create_customer/
+2016-11-14 19:20:08,511 [WARNING] django.request: Not Found: /create_customer/
+2016-11-14 19:20:08,513 [WARNING] django.request: Not Found: /create_driver/
+2016-11-14 19:20:08,514 [WARNING] django.request: Not Found: /create_driver/
+2016-11-14 19:20:08,516 [WARNING] django.request: Not Found: /login/
+2016-11-14 19:20:08,517 [WARNING] django.request: Not Found: /add_profile_pic/
+2016-11-14 19:20:08,518 [WARNING] django.request: Not Found: /login/
+2016-11-14 19:20:08,520 [WARNING] django.request: Not Found: /login/
+2016-11-14 19:20:08,521 [WARNING] django.request: Not Found: /login/
+2016-11-14 19:20:08,522 [ERROR] django.request: Internal Server Error: /disable_driver/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/control/views.py", line 67, in post
+    user = CustomUser.objects.get(email=request.session['user_email'])
+  File "/Library/Python/2.7/site-packages/django/contrib/sessions/backends/base.py", line 57, in __getitem__
+    return self._session[key]
+KeyError: 'user_email'
+2016-11-14 19:23:51,918 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-14 19:23:51,919 [ERROR] default: <WSGIRequest: POST '/create_customer'>
+2016-11-14 19:23:51,919 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyy@gmail.com"}
+2016-11-14 19:23:52,443 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-14 19:23:52,443 [ERROR] default: <WSGIRequest: POST '/create_customer'>
+2016-11-14 19:23:52,443 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Henrik", "phone": "95936294", "dob": "2016-01-17", "lastname": "Borthen", "nationality": "Norwegian", "email": "henrik.borthen@gmail.com"}
+2016-11-14 19:23:52,645 [DEBUG] django.request: <WSGIRequest: POST '/create_driver'>
+2016-11-14 19:23:52,646 [ERROR] default: <WSGIRequest: POST '/create_driver'>
+2016-11-14 19:23:52,646 [ERROR] default: {"phone": "98237897", "password2": "267ec600500", "facebookurl": "www.facebook.com", "firstname": "Henrik", "password1": "267ec600500", "dob": "2016-01-17", "lastname": "Browne", "email": "henrik.browne@gmail.com"}
+2016-11-14 19:23:52,851 [DEBUG] django.request: <WSGIRequest: POST '/create_driver'>
+2016-11-14 19:23:52,851 [ERROR] default: <WSGIRequest: POST '/create_driver'>
+2016-11-14 19:23:52,851 [ERROR] default: {"phone": "98237897", "password2": "267ec600500", "facebookurl": "www.facebook.com", "firstname": "Sveinung", "password1": "267ec600500", "dob": "2016-01-17", "lastname": "Sjoetveit", "email": "sveinung.Sjoetveit@gmail.com"}
+2016-11-14 19:23:53,902 [ERROR] django.request: Internal Server Error: /available_drivers
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view control.views.AvailabilityView didn't return an HttpResponse object. It returned None instead.
+2016-11-14 19:25:06,779 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-14 19:25:06,779 [ERROR] default: <WSGIRequest: POST '/create_customer'>
+2016-11-14 19:25:06,779 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyy@gmail.com"}
+2016-11-14 19:25:07,338 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-14 19:25:07,338 [ERROR] default: <WSGIRequest: POST '/create_customer'>
+2016-11-14 19:25:07,338 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Henrik", "phone": "95936294", "dob": "2016-01-17", "lastname": "Borthen", "nationality": "Norwegian", "email": "henrik.borthen@gmail.com"}
+2016-11-14 19:25:07,539 [DEBUG] django.request: <WSGIRequest: POST '/create_driver'>
+2016-11-14 19:25:07,540 [ERROR] default: <WSGIRequest: POST '/create_driver'>
+2016-11-14 19:25:07,540 [ERROR] default: {"phone": "98237897", "password2": "267ec600500", "facebookurl": "www.facebook.com", "firstname": "Henrik", "password1": "267ec600500", "dob": "2016-01-17", "lastname": "Browne", "email": "henrik.browne@gmail.com"}
+2016-11-14 19:25:07,758 [DEBUG] django.request: <WSGIRequest: POST '/create_driver'>
+2016-11-14 19:25:07,758 [ERROR] default: <WSGIRequest: POST '/create_driver'>
+2016-11-14 19:25:07,758 [ERROR] default: {"phone": "98237897", "password2": "267ec600500", "facebookurl": "www.facebook.com", "firstname": "Sveinung", "password1": "267ec600500", "dob": "2016-01-17", "lastname": "Sjoetveit", "email": "sveinung.Sjoetveit@gmail.com"}
+2016-11-14 19:25:08,813 [DEBUG] default: {u'customer': u'torgeir.fladbyy@gmail.com', u'pickuplat': u'111.12345', u'dropofflat': u'111.12312', u'dropofflng': u'111.13123', u'pickuplng': u'111.31232', u'acceptedprice': u'True', u'requestedprice': u'4.00'}
+2016-11-14 19:25:08,820 [DEBUG] default: 61
+2016-11-14 19:25:08,823 [DEBUG] default: Torgeir Fladbyy
+2016-11-14 19:25:08,826 [DEBUG] default: True
+2016-11-14 19:25:08,827 [DEBUG] default: TripRequest object
+2016-11-14 19:25:08,827 [DEBUG] default: False
+2016-11-14 19:25:08,840 [DEBUG] default: {u'customer': u'torgeir.fladbyy@gmail.com', u'rating': u'5', u'timeconsumed': u'00:00:00', u'tripreqID': 61, u'customer_pays': u'20.00', u'driver': u'sveinung.Sjoetveit@gmail.com', u'tripstartdatetime': u'2016-01-12 15:00:00', u'pickuplat': u'11.12345', u'dropofflat': u'11.12312', u'dropofflng': u'11.13123', u'datetimetrip': u'2016-01-12 14:59:49', u'pickuplng': u'11.31232', u'etatrip': u'00:15:00', u'triporderdatetime': u'2016-01-12 15:00:00', u'etakm': u'5.0', u'tripcomplete': u'False', u'etaarrival': u'15:15:00', u'feedback': u'very good'}
+2016-11-14 19:25:08,851 [DEBUG] default: 61
+2016-11-14 19:25:08,860 [DEBUG] default: Torgeir Fladbyy
+2016-11-14 19:25:08,863 [DEBUG] default: True
+2016-11-14 19:25:08,864 [DEBUG] default: TripRequest object
+2016-11-14 19:25:08,864 [DEBUG] default: True
+2016-11-14 19:25:08,892 [DEBUG] default: Sveinung Sjoetveit
+2016-11-14 19:25:08,918 [DEBUG] default: <tr><th><label for="id_name">Name:</label></th><td><input id="id_name" maxlength="100" name="name" type="text" value="packagedeal1" required /></td></tr>
+<tr><th><label for="id_header_image">Header image:</label></th><td><input id="id_header_image" name="header_image" type="file" /></td></tr>
+<tr><th><label for="id_description">Description:</label></th><td><input id="id_description" maxlength="1000" name="description" type="text" value="some description" required /></td></tr>
+<tr><th><label for="id_price">Price:</label></th><td><input id="id_price" name="price" step="any" type="number" value="50" required /></td></tr>
+<tr><th><label for="id_time_first_from">Time first from:</label></th><td><input id="id_time_first_from" name="time_first_from" type="text" value="2016-01-12 14:59:49" required /><input id="initial-id_time_first_from" name="initial-time_first_from" type="hidden" value="2016-01-12 14:59:49" /></td></tr>
+<tr><th><label for="id_time_first_to">Time first to:</label></th><td><input id="id_time_first_to" name="time_first_to" type="text" value="2016-01-12 14:59:49" required /><input id="initial-id_time_first_to" name="initial-time_first_to" type="hidden" value="2016-01-12 14:59:49" /></td></tr>
+<tr><th><label for="id_time_second_from">Time second from:</label></th><td><input id="id_time_second_from" name="time_second_from" type="text" value="2016-01-12 14:59:49" required /><input id="initial-id_time_second_from" name="initial-time_second_from" type="hidden" value="2016-01-12 14:59:49" /></td></tr>
+<tr><th><label for="id_time_second_to">Time second to:</label></th><td><input id="id_time_second_to" name="time_second_to" type="text" value="2016-01-12 14:59:49" required /><input id="initial-id_time_second_to" name="initial-time_second_to" type="hidden" value="2016-01-12 14:59:49" /></td></tr>
+<tr><th><label for="id_pickuppoint">Pickuppoint:</label></th><td><input id="id_pickuppoint" maxlength="15" name="pickuppoint" type="text" value="0000.0000" required /></td></tr>
+<tr><th><label for="id_dropoffpoint">Dropoffpoint:</label></th><td><input id="id_dropoffpoint" maxlength="15" name="dropoffpoint" type="text" value="0000.0000" required /></td></tr>
+2016-11-14 19:25:28,011 [WARNING] django.request: Not Found: /media/profilepics/default.png
+2016-11-14 19:25:59,391 [INFO] root: <ul class="errorlist"><li>password1<ul class="errorlist"><li>This field is required.</li></ul></li><li>password2<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+2016-11-14 19:25:59,478 [WARNING] django.request: Not Found: /media/profilepics/default.png
+2016-11-14 19:25:59,510 [WARNING] django.request: Not Found: /media/profilepics/default.png
+2016-11-14 19:26:49,337 [INFO] root: <ul class="errorlist"><li>password1<ul class="errorlist"><li>This field is required.</li></ul></li><li>password2<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+2016-11-14 19:26:49,533 [WARNING] django.request: Not Found: /media/profilepics/default.png
+2016-11-14 19:26:49,565 [WARNING] django.request: Not Found: /media/profilepics/default.png
+2016-11-14 19:27:50,623 [INFO] root: <ul class="errorlist"><li>password1<ul class="errorlist"><li>This field is required.</li></ul></li><li>password2<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+2016-11-14 19:27:50,842 [WARNING] django.request: Not Found: /media/profilepics/default.png
+2016-11-14 19:27:50,876 [WARNING] django.request: Not Found: /media/profilepics/default.png
+2016-11-14 19:28:13,909 [INFO] root: <ul class="errorlist"><li>password1<ul class="errorlist"><li>This field is required.</li></ul></li><li>password2<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+2016-11-14 19:28:14,334 [WARNING] django.request: Not Found: /media/profilepics/default.png
+2016-11-14 19:28:14,366 [WARNING] django.request: Not Found: /media/profilepics/default.png
+2016-11-14 19:28:47,444 [INFO] root: <ul class="errorlist"><li>password1<ul class="errorlist"><li>This field is required.</li></ul></li><li>password2<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+2016-11-14 19:28:47,601 [WARNING] django.request: Not Found: /media/15055642_10153813774332101_159260350940143519_n.jpg
+2016-11-14 19:28:47,610 [WARNING] django.request: Not Found: /media/profilepics/default.png
+2016-11-14 19:28:47,640 [WARNING] django.request: Not Found: /media/15055642_10153813774332101_159260350940143519_n.jpg
+2016-11-14 19:28:52,388 [INFO] root: <ul class="errorlist"><li>password1<ul class="errorlist"><li>This field is required.</li></ul></li><li>password2<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+2016-11-14 19:28:52,501 [WARNING] django.request: Not Found: /media/profilepics/default.png
+2016-11-14 19:28:52,535 [WARNING] django.request: Not Found: /media/profilepics/default.png

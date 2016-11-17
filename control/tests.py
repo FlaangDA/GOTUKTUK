@@ -37,7 +37,7 @@ class TestCalls(LiveServerTestCase):
 			"facebookurl" : "facebook.com"
 		}
 		
-		create_customer = c.post("/create_customer/", json.dumps(json_data), content_type="application/json") 
+		create_customer = c.post("/create_customer", json.dumps(json_data), content_type="application/json") 
 
 
 		print create_customer.status_code
@@ -58,7 +58,7 @@ class TestCalls(LiveServerTestCase):
 			"facebookurl" : "facebook.com"
 		}
 		
-		create_customer = c4.post("/create_customer/", json.dumps(json_data), content_type="application/json")
+		create_customer = c4.post("/create_customer", json.dumps(json_data), content_type="application/json")
 
 		print create_customer.status_code
 		print create_customer.content
@@ -75,7 +75,7 @@ class TestCalls(LiveServerTestCase):
 			"password2" : "267ec600500"
 		}
 
-		create_driver = c2.post("/create_driver/", json.dumps(json_data), content_type="application/json")
+		create_driver = c2.post("/create_driver", json.dumps(json_data), content_type="application/json")
 
 		print create_driver.status_code
 		print create_driver
@@ -91,7 +91,7 @@ class TestCalls(LiveServerTestCase):
 			"password2" : "267ec600500"
 		}
 
-		create_driver = c3.post("/create_driver/", json.dumps(json_data), content_type="application/json")
+		create_driver = c3.post("/create_driver", json.dumps(json_data), content_type="application/json")
 
 		print create_driver.status_code
 		print create_driver
@@ -100,12 +100,12 @@ class TestCalls(LiveServerTestCase):
 
 		json_data = {"email" : "torgeir.fladbyy@gmail.com", "password" : "267ec600500"}
 
-		login_user = c.post("/login/", json.dumps(json_data), content_type="application/json")
+		login_user = c.post("/login", json.dumps(json_data), content_type="application/json")
 		print login_user.status_code
 		print login_user
 
 		json_data = {"profile_pic" : default_pic}
-		add_profilepic = c.post("/add_profile_pic/", json.dumps(json_data), content_type="application/json")
+		add_profilepic = c.post("/add_profile_pic", json.dumps(json_data), content_type="application/json")
 
 		print add_profilepic.status_code
 		print add_profilepic
@@ -113,7 +113,7 @@ class TestCalls(LiveServerTestCase):
 
 		json_data = {"email" : "henrik.borthen@gmail.com", "password" : "267ec600500"}
 
-		login_user = c4.post("/login/", json.dumps(json_data), content_type="application/json")
+		login_user = c4.post("/login", json.dumps(json_data), content_type="application/json")
 		print login_user.status_code
 		print login_user
 
@@ -128,13 +128,13 @@ class TestCalls(LiveServerTestCase):
 		"""
 		json_data = {"email" : "henrik.browne@gmail.com", "password" : "267ec600500" }
 
-		login_user = c2.post("/login/", json.dumps(json_data), content_type="application/json")
+		login_user = c2.post("/login", json.dumps(json_data), content_type="application/json")
 		print login_user.status_code
 		print login_user
 
 		json_data = {"email" : "sveinung.Sjoetveit@gmail.com", "password" : "267ec600500"}
 
-		login_user = c3.post("/login/", json.dumps(json_data), content_type="application/json")
+		login_user = c3.post("/login", json.dumps(json_data), content_type="application/json")
 
 		print login_user.status_code
 		print login_user
@@ -142,14 +142,14 @@ class TestCalls(LiveServerTestCase):
 
 		json_data = {"email" : "henrik.browne@gmail.com"}
 
-		disable = c2.post("/disable_driver/", json.dumps(json_data), content_type="application/json")
+		disable = c2.post("/disable_driver", json.dumps(json_data), content_type="application/json")
 		print disable.status_code
 		print disable
 
 
 		json_data = {"email" : "henrik.browne@gmail.com"}
 
-		enable = c2.post("/enable_driver/", json.dumps(json_data), content_type="application/json")
+		enable = c2.post("/enable_driver", json.dumps(json_data), content_type="application/json")
 		print enable.status_code
 		print enable
 
@@ -158,7 +158,7 @@ class TestCalls(LiveServerTestCase):
 		print check_price.status_code
 		print "Price for a trip: ", check_price.content
 
-		available_drivers = c.get("/available_drivers/")
+		available_drivers = c.get("/available_drivers")
 		print available_drivers.status_code
 		print "available drivers: ", available_drivers.json()
 
@@ -171,7 +171,7 @@ class TestCalls(LiveServerTestCase):
 			"requestedprice" : "4.00", 
 			"acceptedprice" : "True"
 		}
-		request_trip = c.post("/request_trip/", json.dumps(json_data), content_type="application/json")
+		request_trip = c.post("/request_trip", json.dumps(json_data), content_type="application/json")
 		json_data = {
 			"customer" : "henrik.borthen@gmail.com",  
 			"pickuplat" : "111.12345", 
@@ -197,13 +197,13 @@ class TestCalls(LiveServerTestCase):
 
 		}"""
 
-		check_triprequest = c.get("/check_triprequest/")
+		check_triprequest = c.get("/check_triprequest")
 
 		print check_triprequest.content
 
 		json_data = {"lon" : "123.12321", "lat" : "321.12314"}
 
-		ping_triprequest = c3.post("/ping_triprequest/", json.dumps(json_data), content_type="application/json")
+		ping_triprequest = c3.post("/ping_triprequest", json.dumps(json_data), content_type="application/json")
 		print ping_triprequest
 		print "ping ping_triprequest: ", ping_triprequest.content
 
@@ -219,7 +219,7 @@ class TestCalls(LiveServerTestCase):
 			"customer" : "torgeir.fladbyy@gmail.com", 
 			"driver" : "sveinung.Sjoetveit@gmail.com", 
 			"tripreqID" : pkeytriprequest,
-			"pickuplat" : "11.12345", 
+			"pickuplat" : "11.12345",
 			"pickuplng" : "11.31232",
 			"dropofflat" : "11.12312",
 			"dropofflng" : "11.13123",
@@ -239,7 +239,7 @@ class TestCalls(LiveServerTestCase):
 		print json_data
 
 		print json.dumps(json_data)
-		accept_trip = c3.post("/accept_triprequest/", json.dumps(json_data), content_type="application/json")
+		accept_trip = c3.post("/accept_triprequest", json.dumps(json_data), content_type="application/json")
 
 		print accept_trip
 
@@ -250,18 +250,18 @@ class TestCalls(LiveServerTestCase):
 
 		}
 
-		check_triprequest = c.get("/check_triprequest/")
+		check_triprequest = c.get("/check_triprequest")
 
 		print check_triprequest.content
 
-		get_driver_details = c.post("/get_driver_details/", json.dumps({"driver" : "sveinung.Sjoetveit@gmail.com"}), content_type="application/json")
+		get_driver_details = c.post("/get_driver_details", json.dumps({"driver" : "sveinung.Sjoetveit@gmail.com"}), content_type="application/json")
 
 		print get_driver_details
 
 		get_trip_graphics = c.get("/get_trip_graphics")
 		print get_trip_graphics, get_trip_graphics.content
 
-		finish_trip = c3.post("/finish_trip/")
+		finish_trip = c3.post("/finish_trip")
 		print finish_trip.status_code
 		print finish_trip, finish_trip.content
 		module_dir = os.path.dirname(__file__)
@@ -280,8 +280,8 @@ class TestCalls(LiveServerTestCase):
 				"pickuppoint" : "0000.0000",
 				"dropoffpoint" : "0000.0000",
 			}
-			postres = c.post("/create_packagedeal/", json.dumps(json_data), content_type="application/json")
-			getres = c.get("/get_packagedeals/")
+			postres = c.post("/create_packagedeal", json.dumps(json_data), content_type="application/json")
+			getres = c.get("/get_packagedeals")
 			print postres.content, getres.content
 
 #class TestStatic(StaticLiveServerTestCase)

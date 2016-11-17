@@ -19,13 +19,13 @@ import django
 from src import settings
 
 urlpatterns = [
-    url(r'^fb_login_or_create/?$', CreationView.as_view()),
-    url(r'^create_customer/?$', CreationView.as_view()),
-    url(r'^create_driver/?$', CreationView.as_view()),
-    url(r'^get_driver_details/?$', DetailsView.as_view()),
-    url(r'^login/?$', AuthView.as_view()),
-    url(r'^logout/?$', AuthView.as_view()),
-    url(r'^add_profile_pic/$', DetailsView.as_view()),
+    url(r'^fb_login_or_create?$', CreationView.as_view()),
+    url(r'^create_customer?$', CreationView.as_view()),
+    url(r'^create_driver?$', CreationView.as_view()),
+    url(r'^get_driver_details?$', DetailsView.as_view()),
+    url(r'^login?$', AuthView.as_view()),
+    url(r'^logout?$', AuthView.as_view()),
+    url(r'^add_profile_pic$', DetailsView.as_view()),
     url(r'^media/(profilepics/.*)$', django.views.static.serve,{'document_root': settings.MEDIA_ROOT, 'show_indexes': False}),
 
 ]

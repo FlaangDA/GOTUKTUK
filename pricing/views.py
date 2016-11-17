@@ -11,36 +11,48 @@ def calculate_price(tripordertime, distanceKm):
 			"driver_owes" : 1.5,
 		}
 
-	nighttimeEarly = now.replace(hour = 6, minute = 0, second = 0, microsecond = 0)
-	earlyMorning = now.replace(hour = 8, minute = 0, second = 0, microsecond = 0)
-	morning = now.replace(hour = 12, minute = 0, second = 0, microsecond = 0)
-	earlyafternoon = now.replace(hour = 14, minute = 0, second = 0, microsecond = 0)
-	lateafternoon = now.replace(hour = 17, minute = 0, second = 0, microsecond = 0)
-	evening = now.replace(hour = 18, minute = 0, second = 0, microsecond = 0)
-	nighttimeLate = now.replace(hour = 23, minute = 59, second = 59, microsecond = 0)
+	nighttimeEarly = now.replace(hour = 6, minute = 0, second = 0, microsecond = 0).time()
+	earlyMorning = now.replace(hour = 8, minute = 0, second = 0, microsecond = 0).time()
+	morning = now.replace(hour = 12, minute = 0, second = 0, microsecond = 0).time()
+	afternoon = now.replace(hour = 14, minute = 0, second = 0, microsecond = 0).time()
+	earlyafternoon = now.replace(hour = 17, minute = 0, second = 0, microsecond = 0).time()
+	lateafternoon = now.replace(hour = 18, minute = 0, second = 0, microsecond = 0).time()
+	evening = now.replace(hour = 20, minute = 0, second = 0, microsecond = 0).time()
+	nighttimeLate = now.replace(hour = 23, minute = 59, second = 59, microsecond = 0).time()
+	print tripordertime, morning <= tripordertime < earlyafternoon
 	try:
 		if tripordertime < nighttimeEarly:
-			return get_price_by_km(Nighttime.objects.get(id=1), NighttimeProfit.objects.get(id=1), distanceKm)
+			base = Nighttime.objects.get(name="Nighttime")
+			return get_price_by_km(base, NighttimeProfit.objects.get(nameProfit="Nighttime"), distanceKm)
 		elif nighttimeEarly <= tripordertime < earlyMorning:
-			return get_price_by_km(EarlyMorning.objects.get(id=1), EarlyMorningProfit.objects.get(id=1), distanceKm)
+			base = EarlyMorning.objects.get(name="EarlyMorning")
+			return get_price_by_km(base, EarlyMorningProfit.objects.get(nameProfit="EarlyMorning"), distanceKm)
 		elif earlyMorning <= tripordertime < morning:
-			return get_price_by_km(Morning.objects.get(id=1), MorningProfit.objects.get(id=1), distanceKm)
-		elif morning <= tripordertime < earlyafternoon:
-			return get_price_by_km(EarlyAfternoon.objects.get(id=1), EarlyAfternoonProfit.objects.get(id=1), distanceKm)
+			base = Morning.objects.get(name="Morning")
+			return get_price_by_km(base, MorningProfit.objects.get(nameProfit="Morning"), distanceKm)
+		elif afternoon <= tripordertime < earlyafternoon:
+			base = EarlyAfternoon.objects.get(name="EarlyAfternoon")
+			return get_price_by_km(base, EarlyAfternoonProfit.objects.get(nameProfit="EarlyAfternoon"), distanceKm)
 		elif earlyafternoon <= tripordertime < lateafternoon:
-			return get_price_by_km(LateAfternoon.objects.get(id=1), LateAfternoonProfit.objects.get(id=1), distanceKm)
+			base = LateAfternoon.objects.get(name="LateAfternoon")
+			return get_price_by_km(base, LateAfternoonProfit.objects.get(nameProfit="LateAfternoon"), distanceKm)
 		elif lateafternoon <= tripordertime < evening:
-			return get_price_by_km(Evening.objects.get(id=1), EveningProfit.objects.get(id=1), distanceKm)
+			base = Evening.objects.get(name="Evening")
+			return get_price_by_km(base, Evening.objects.get(nameProfit="Evening"), distanceKm)
 		elif evening <= tripordertime < nighttimeLate:
-			return get_price_by_km(Nighttime.objects.get(id=1), NighttimeProfit.objects.get(id=1), distanceKm)
+			base = Nighttime.objects.get(name="Nighttime")
+			return get_price_by_km(base, NighttimeProfit.objects.get(nameProfit="Nighttime"), distanceKm)
 	
 	except Exception as e:
-		return debtDict
+		print e
+	print "no if test hit"
 	return debtDict
 
 def get_price_by_km(baseprice_obj, feeprice_obj, distanceKm):
 
-	str_km = str(distanceKm) + " km"
+	if distanceKm > 10:
+		distanceKm = 10
+	str_km = str(distanceKm) + "km"
 
 	basefields = baseprice_obj.__dict__
 	feefields = feeprice_obj.__dict__
@@ -49,12 +61,14 @@ def get_price_by_km(baseprice_obj, feeprice_obj, distanceKm):
 	fee = 0.0
 
 	for field, value in basefields.items():
-		if field.verbose_name == str_km:
+		print field, value
+		if field[3:] == str_km:
 			fee = value
 			break
 
 	for field, value in feefields.items():
-		if field.verbose_name == str_km:
+		print field, value
+		if field[3:] == str_km:
 			base = value
 			break
 

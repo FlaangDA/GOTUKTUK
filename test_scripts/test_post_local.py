@@ -1,13 +1,23 @@
 import httplib, json, requests
 
+import requests, json
 
-def post():
-	headers = {'Content-type' : 'application/json'}
-	url = 'http://127.0.0.1:8000/create_customer/'
-	json_data = { "lastname" : "Chang", "firstname" : "Hannns", "email" : "hans_ccc40@gmail.com",  "password1" : "267ec600500",  "password2" : "267ec600500",  "phone" : "95936294", "dob" : "2016-01-17", "nationality" : "Norwegian", "facebookurl" : "facebook.com"}
-	r = requests.post(url, json.dumps(json_data), headers=headers)
+#driver: henrik.brownee@gmail.com
+#customer: henrik.borthen@gmail.com
 
-	print r.content
+driverSession = requests.Session()
+customerSession = requests.Session()
 
-if __name__ == '__main__':
-	post()
+json_data = {
+	"lastname" : "Sjoetveit", 
+	"firstname" : "Sveinung", 
+	"email" : "sveinung.Sjoetveitttttt@gmail.com", 
+	"dob" : "2016-01-17", 
+	"phone" : "98237897", 
+	"facebookurl" : "www.facebook.com", 
+	"password1" : "267ec600500", 
+	"password2" : "267ec600500"
+}
+create_driver = driverSession.post("http://103.227.177.206:8000/create_driver/", json.dumps(json_data))
+
+print create_driver.status_code, create_driver.text

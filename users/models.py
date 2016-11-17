@@ -141,6 +141,12 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
 	customer_objects = CustomersManager()
 	driver_objects = DriversManager()
 
+	def __init__(self, *args, **kwargs):
+	        super(CustomUser, self).__init__(*args, **kwargs)
+	        passwd = [field for field in self._meta.fields if field.attname is 'password']
+	        if passwd:
+	            passwd[0].blank = True
+
 	class Meta:
 		db_table = 'users_customuser'
 		managed = True

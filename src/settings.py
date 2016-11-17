@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'packagedeals',
     'destinations',
     'pricing',
+    'debtcollector',
 ]
 
 SITE_ID = 1

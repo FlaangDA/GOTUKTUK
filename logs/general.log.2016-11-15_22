@@ -1,0 +1,1036 @@
+2016-11-15 19:42:38,572 [WARNING] django.request: Not Found: /favicon.ico
+2016-11-15 19:43:50,669 [DEBUG] django.request: <WSGIRequest: POST '/create_driver'>
+2016-11-15 19:43:50,670 [ERROR] default: <WSGIRequest: POST '/create_driver'>
+2016-11-15 19:43:50,670 [ERROR] default: {"phone": "98237897", "password2": "267ec600500", "facebookurl": "www.facebook.com", "firstname": "Sveinung", "password1": "267ec600500", "dob": "2016-01-17", "lastname": "Sjoetveit", "email": "sveinung.Sjoetveit@gmail.com"}
+2016-11-15 19:50:03,907 [ERROR] django.request: Internal Server Error: /admin/debtcollector/debttable/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1657, in changelist_view
+    selection_note=_('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 238, in __len__
+    self._fetch_all()
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1087, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+ProgrammingError: column debtcollector_debttable.driver_name does not exist
+LINE 1: ...e"."driver_id", "debtcollector_debttable"."debt", "debtcolle...
+                                                             ^
+
+2016-11-15 19:50:34,079 [DEBUG] django.request: <WSGIRequest: POST '/create_driver'>
+2016-11-15 19:50:34,079 [ERROR] default: <WSGIRequest: POST '/create_driver'>
+2016-11-15 19:50:34,079 [ERROR] default: {"phone": "98237897", "password2": "267ec600500", "facebookurl": "www.facebook.com", "firstname": "Sveinung", "password1": "267ec600500", "dob": "2016-01-17", "lastname": "Sjoetveit", "email": "sveinung.Sjoetveit@gmail.com"}
+2016-11-15 19:50:34,090 [ERROR] default: <tr><th><label for="id_email">Email:</label></th><td><ul class="errorlist"><li>Custom user with this Email address already exists.</li></ul><input id="id_email" name="email" type="text" value="sveinung.Sjoetveit@gmail.com" required /></td></tr>
+<tr><th><label for="id_dob">Dob:</label></th><td><input id="id_dob" name="dob" type="text" value="2016-01-17" required /></td></tr>
+<tr><th><label for="id_firstname">Firstname:</label></th><td><input id="id_firstname" maxlength="40" name="firstname" type="text" value="Sveinung" required /></td></tr>
+<tr><th><label for="id_lastname">Lastname:</label></th><td><input id="id_lastname" maxlength="40" name="lastname" type="text" value="Sjoetveit" required /></td></tr>
+<tr><th><label for="id_password1">Password:</label></th><td><input id="id_password1" name="password1" type="password" required /></td></tr>
+<tr><th><label for="id_password2">Password (again):</label></th><td><input id="id_password2" name="password2" type="password" required /></td></tr>
+2016-11-15 19:51:50,969 [DEBUG] django.request: <WSGIRequest: POST '/create_driver'>
+2016-11-15 19:51:50,969 [ERROR] default: <WSGIRequest: POST '/create_driver'>
+2016-11-15 19:51:50,969 [ERROR] default: {"phone": "98237897", "password2": "267ec600500", "facebookurl": "www.facebook.com", "firstname": "Sveinung", "password1": "267ec600500", "dob": "2016-01-17", "lastname": "Sjoetveit", "email": "sveinung.Sjoetveit@gmail.com"}
+2016-11-15 19:51:50,981 [ERROR] default: <tr><th><label for="id_email">Email:</label></th><td><ul class="errorlist"><li>Custom user with this Email address already exists.</li></ul><input id="id_email" name="email" type="text" value="sveinung.Sjoetveit@gmail.com" required /></td></tr>
+<tr><th><label for="id_dob">Dob:</label></th><td><input id="id_dob" name="dob" type="text" value="2016-01-17" required /></td></tr>
+<tr><th><label for="id_firstname">Firstname:</label></th><td><input id="id_firstname" maxlength="40" name="firstname" type="text" value="Sveinung" required /></td></tr>
+<tr><th><label for="id_lastname">Lastname:</label></th><td><input id="id_lastname" maxlength="40" name="lastname" type="text" value="Sjoetveit" required /></td></tr>
+<tr><th><label for="id_password1">Password:</label></th><td><input id="id_password1" name="password1" type="password" required /></td></tr>
+<tr><th><label for="id_password2">Password (again):</label></th><td><input id="id_password2" name="password2" type="password" required /></td></tr>
+2016-11-15 19:53:28,259 [DEBUG] django.request: <WSGIRequest: POST '/create_driver'>
+2016-11-15 19:53:28,259 [ERROR] default: <WSGIRequest: POST '/create_driver'>
+2016-11-15 19:53:28,259 [ERROR] default: {"phone": "98237897", "password2": "267ec600500", "facebookurl": "www.facebook.com", "firstname": "Sveinung", "password1": "267ec600500", "dob": "2016-01-17", "lastname": "Sjoetveit", "email": "sveinung.Sjoetveit@gmail.com"}
+2016-11-15 19:54:41,608 [WARNING] django.request: Not Found: /login/
+2016-11-15 19:54:41,619 [WARNING] django.request: Not Found: /login/
+2016-11-15 19:54:41,630 [WARNING] django.request: Not Found: /request_trip/
+2016-11-15 19:54:41,640 [WARNING] django.request: Not Found: /check_triprequest/
+2016-11-15 19:54:41,651 [WARNING] django.request: Not Found: /ping_triprequest/
+2016-11-15 19:55:28,893 [ERROR] django.request: Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 131, in get_response
+    response = middleware_method(request, response)
+  File "/Library/Python/2.7/site-packages/django/middleware/clickjacking.py", line 32, in process_response
+    if response.get('X-Frame-Options') is not None:
+TypeError: unbound method get() must be called with HttpResponseBadRequest instance as first argument (got str instance instead)
+2016-11-15 19:55:29,166 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'pickuplat': u'111.12345', u'dropofflat': u'111.12312', u'dropofflng': u'111.13123', u'pickuplng': u'111.31232', u'acceptedprice': u'True', u'requestedprice': u'4.00'}
+2016-11-15 19:55:29,173 [ERROR] django.request: Internal Server Error: /request_trip
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 257, in post
+    return self.request_trip(request)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 187, in request_trip
+    requestingCustomer = CustomUser.objects.get(email=json_data.get('customer'))
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+DoesNotExist: CustomUser matching query does not exist.
+2016-11-15 19:55:29,261 [DEBUG] default: AnonymousUser
+2016-11-15 19:55:29,261 [DEBUG] default: False
+2016-11-15 19:57:03,785 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 19:57:03,785 [ERROR] default: <WSGIRequest: POST '/create_customer'>
+2016-11-15 19:57:03,786 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyyy@gmail.com"}
+2016-11-15 19:57:04,409 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'pickuplat': u'111.12345', u'dropofflat': u'111.12312', u'dropofflng': u'111.13123', u'pickuplng': u'111.31232', u'acceptedprice': u'True', u'requestedprice': u'4.00'}
+2016-11-15 19:57:04,422 [DEBUG] default: 2
+2016-11-15 19:57:04,429 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 19:57:04,438 [DEBUG] default: True
+2016-11-15 19:57:04,439 [DEBUG] default: TripRequest object
+2016-11-15 19:57:04,439 [DEBUG] default: False
+2016-11-15 19:57:04,481 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'rating': u'5', u'timeconsumed': u'00:00:00', u'tripreqID': 2, u'customer_pays': u'20.00', u'driver': u'sveinung.Sjoetveit@gmail.com', u'tripstartdatetime': u'2016-01-12 15:00:00', u'pickuplat': u'11.12345', u'dropofflat': u'11.12312', u'dropofflng': u'11.13123', u'datetimetrip': u'2016-01-12 14:59:49', u'pickuplng': u'11.31232', u'etatrip': u'00:15:00', u'triporderdatetime': u'2016-01-12 15:00:00', u'etakm': u'5.0', u'tripcomplete': u'False', u'etaarrival': u'15:15:00', u'feedback': u'very good'}
+2016-11-15 19:57:04,512 [DEBUG] default: 2
+2016-11-15 19:57:04,518 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 19:57:04,526 [DEBUG] default: True
+2016-11-15 19:57:04,528 [DEBUG] default: TripRequest object
+2016-11-15 19:57:04,528 [DEBUG] default: True
+2016-11-15 19:57:04,571 [DEBUG] default: Sveinung Sjoetveit
+2016-11-15 19:57:58,770 [WARNING] django.request: Not Found: /media/profilepics/default.png
+2016-11-15 19:57:58,803 [WARNING] django.request: Not Found: /media/profilepics/default.png
+2016-11-15 19:59:05,369 [WARNING] django.request: Not Found: /media/profilepics/default.png
+2016-11-15 19:59:05,397 [WARNING] django.request: Not Found: /media/profilepics/default.png
+2016-11-15 20:01:27,129 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 20:01:27,129 [ERROR] default: <WSGIRequest: POST '/create_customer'>
+2016-11-15 20:01:27,129 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyyy@gmail.com"}
+2016-11-15 20:01:27,140 [ERROR] default: <tr><th><label for="id_email">Email:</label></th><td><ul class="errorlist"><li>Custom user with this Email address already exists.</li></ul><input id="id_email" name="email" type="text" value="torgeir.fladbyyy@gmail.com" required /></td></tr>
+<tr><th><label for="id_dob">Dob:</label></th><td><input id="id_dob" name="dob" type="text" value="2016-01-17" required /></td></tr>
+<tr><th><label for="id_firstname">Firstname:</label></th><td><input id="id_firstname" maxlength="40" name="firstname" type="text" value="Torgeir" required /></td></tr>
+<tr><th><label for="id_lastname">Lastname:</label></th><td><input id="id_lastname" maxlength="40" name="lastname" type="text" value="Fladbyy" required /></td></tr>
+<tr><th><label for="id_password1">Password:</label></th><td><input id="id_password1" name="password1" type="password" required /></td></tr>
+<tr><th><label for="id_password2">Password (again):</label></th><td><input id="id_password2" name="password2" type="password" required /></td></tr>
+2016-11-15 20:01:27,623 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'pickuplat': u'111.12345', u'dropofflat': u'111.12312', u'dropofflng': u'111.13123', u'pickuplng': u'111.31232', u'acceptedprice': u'True', u'requestedprice': u'4.00'}
+2016-11-15 20:01:27,636 [DEBUG] default: 3
+2016-11-15 20:01:27,643 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 20:01:27,652 [DEBUG] default: True
+2016-11-15 20:01:27,653 [DEBUG] default: TripRequest object
+2016-11-15 20:01:27,653 [DEBUG] default: False
+2016-11-15 20:01:27,699 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'rating': u'5', u'timeconsumed': u'00:00:00', u'tripreqID': 3, u'customer_pays': u'20.00', u'driver': u'sveinung.Sjoetveit@gmail.com', u'tripstartdatetime': u'2016-01-12 15:00:00', u'pickuplat': u'11.12345', u'dropofflat': u'11.12312', u'dropofflng': u'11.13123', u'datetimetrip': u'2016-01-12 14:59:49', u'pickuplng': u'11.31232', u'etatrip': u'00:15:00', u'triporderdatetime': u'2016-01-12 15:00:00', u'etakm': u'5.0', u'tripcomplete': u'False', u'etaarrival': u'15:15:00', u'feedback': u'very good'}
+2016-11-15 20:01:27,704 [DEBUG] default: 3
+2016-11-15 20:01:27,711 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 20:01:27,719 [DEBUG] default: True
+2016-11-15 20:01:27,720 [DEBUG] default: TripRequest object
+2016-11-15 20:01:27,720 [DEBUG] default: True
+2016-11-15 20:01:27,762 [DEBUG] default: Sveinung Sjoetveit
+2016-11-15 20:01:27,766 [ERROR] django.request: Internal Server Error: /finish_trip
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 263, in post
+    return self.finish_trip(request)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 68, in finish_trip
+    debt_instance = DebtTable.objects.get(driver=dd)
+NameError: global name 'DebtTable' is not defined
+2016-11-15 20:02:35,998 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 20:02:35,998 [ERROR] default: <WSGIRequest: POST '/create_customer'>
+2016-11-15 20:02:35,998 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyyy@gmail.com"}
+2016-11-15 20:02:36,009 [ERROR] default: <tr><th><label for="id_email">Email:</label></th><td><ul class="errorlist"><li>Custom user with this Email address already exists.</li></ul><input id="id_email" name="email" type="text" value="torgeir.fladbyyy@gmail.com" required /></td></tr>
+<tr><th><label for="id_dob">Dob:</label></th><td><input id="id_dob" name="dob" type="text" value="2016-01-17" required /></td></tr>
+<tr><th><label for="id_firstname">Firstname:</label></th><td><input id="id_firstname" maxlength="40" name="firstname" type="text" value="Torgeir" required /></td></tr>
+<tr><th><label for="id_lastname">Lastname:</label></th><td><input id="id_lastname" maxlength="40" name="lastname" type="text" value="Fladbyy" required /></td></tr>
+<tr><th><label for="id_password1">Password:</label></th><td><input id="id_password1" name="password1" type="password" required /></td></tr>
+<tr><th><label for="id_password2">Password (again):</label></th><td><input id="id_password2" name="password2" type="password" required /></td></tr>
+2016-11-15 20:02:36,443 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'pickuplat': u'111.12345', u'dropofflat': u'111.12312', u'dropofflng': u'111.13123', u'pickuplng': u'111.31232', u'acceptedprice': u'True', u'requestedprice': u'4.00'}
+2016-11-15 20:02:36,457 [DEBUG] default: 4
+2016-11-15 20:02:36,465 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 20:02:36,473 [DEBUG] default: True
+2016-11-15 20:02:36,475 [DEBUG] default: TripRequest object
+2016-11-15 20:02:36,475 [DEBUG] default: False
+2016-11-15 20:02:36,520 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'rating': u'5', u'timeconsumed': u'00:00:00', u'tripreqID': 4, u'customer_pays': u'20.00', u'driver': u'sveinung.Sjoetveit@gmail.com', u'tripstartdatetime': u'2016-01-12 15:00:00', u'pickuplat': u'11.12345', u'dropofflat': u'11.12312', u'dropofflng': u'11.13123', u'datetimetrip': u'2016-01-12 14:59:49', u'pickuplng': u'11.31232', u'etatrip': u'00:15:00', u'triporderdatetime': u'2016-01-12 15:00:00', u'etakm': u'5.0', u'tripcomplete': u'False', u'etaarrival': u'15:15:00', u'feedback': u'very good'}
+2016-11-15 20:02:36,525 [DEBUG] default: 4
+2016-11-15 20:02:36,531 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 20:02:36,539 [DEBUG] default: True
+2016-11-15 20:02:36,542 [DEBUG] default: TripRequest object
+2016-11-15 20:02:36,542 [DEBUG] default: True
+2016-11-15 20:02:36,579 [DEBUG] default: Sveinung Sjoetveit
+2016-11-15 20:02:55,246 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 20:02:55,246 [ERROR] default: <WSGIRequest: POST '/create_customer'>
+2016-11-15 20:02:55,246 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyyy@gmail.com"}
+2016-11-15 20:02:55,253 [ERROR] default: <tr><th><label for="id_email">Email:</label></th><td><ul class="errorlist"><li>Custom user with this Email address already exists.</li></ul><input id="id_email" name="email" type="text" value="torgeir.fladbyyy@gmail.com" required /></td></tr>
+<tr><th><label for="id_dob">Dob:</label></th><td><input id="id_dob" name="dob" type="text" value="2016-01-17" required /></td></tr>
+<tr><th><label for="id_firstname">Firstname:</label></th><td><input id="id_firstname" maxlength="40" name="firstname" type="text" value="Torgeir" required /></td></tr>
+<tr><th><label for="id_lastname">Lastname:</label></th><td><input id="id_lastname" maxlength="40" name="lastname" type="text" value="Fladbyy" required /></td></tr>
+<tr><th><label for="id_password1">Password:</label></th><td><input id="id_password1" name="password1" type="password" required /></td></tr>
+<tr><th><label for="id_password2">Password (again):</label></th><td><input id="id_password2" name="password2" type="password" required /></td></tr>
+2016-11-15 20:02:55,683 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'pickuplat': u'111.12345', u'dropofflat': u'111.12312', u'dropofflng': u'111.13123', u'pickuplng': u'111.31232', u'acceptedprice': u'True', u'requestedprice': u'4.00'}
+2016-11-15 20:02:55,697 [DEBUG] default: 5
+2016-11-15 20:02:55,704 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 20:02:55,712 [DEBUG] default: True
+2016-11-15 20:02:55,713 [DEBUG] default: TripRequest object
+2016-11-15 20:02:55,713 [DEBUG] default: False
+2016-11-15 20:02:55,756 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'rating': u'5', u'timeconsumed': u'00:00:00', u'tripreqID': 5, u'customer_pays': u'20.00', u'driver': u'sveinung.Sjoetveit@gmail.com', u'tripstartdatetime': u'2016-01-12 15:00:00', u'pickuplat': u'11.12345', u'dropofflat': u'11.12312', u'dropofflng': u'11.13123', u'datetimetrip': u'2016-01-12 14:59:49', u'pickuplng': u'11.31232', u'etatrip': u'00:15:00', u'triporderdatetime': u'2016-01-12 15:00:00', u'etakm': u'5.0', u'tripcomplete': u'False', u'etaarrival': u'15:15:00', u'feedback': u'very good'}
+2016-11-15 20:02:55,759 [DEBUG] default: 5
+2016-11-15 20:02:55,765 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 20:02:55,774 [DEBUG] default: True
+2016-11-15 20:02:55,776 [DEBUG] default: TripRequest object
+2016-11-15 20:02:55,776 [DEBUG] default: True
+2016-11-15 20:02:55,813 [DEBUG] default: Sveinung Sjoetveit
+2016-11-15 20:04:14,511 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 20:04:14,511 [ERROR] default: <WSGIRequest: POST '/create_customer'>
+2016-11-15 20:04:14,512 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyyy@gmail.com"}
+2016-11-15 20:04:14,523 [ERROR] default: <tr><th><label for="id_email">Email:</label></th><td><ul class="errorlist"><li>Custom user with this Email address already exists.</li></ul><input id="id_email" name="email" type="text" value="torgeir.fladbyyy@gmail.com" required /></td></tr>
+<tr><th><label for="id_dob">Dob:</label></th><td><input id="id_dob" name="dob" type="text" value="2016-01-17" required /></td></tr>
+<tr><th><label for="id_firstname">Firstname:</label></th><td><input id="id_firstname" maxlength="40" name="firstname" type="text" value="Torgeir" required /></td></tr>
+<tr><th><label for="id_lastname">Lastname:</label></th><td><input id="id_lastname" maxlength="40" name="lastname" type="text" value="Fladbyy" required /></td></tr>
+<tr><th><label for="id_password1">Password:</label></th><td><input id="id_password1" name="password1" type="password" required /></td></tr>
+<tr><th><label for="id_password2">Password (again):</label></th><td><input id="id_password2" name="password2" type="password" required /></td></tr>
+2016-11-15 20:04:14,973 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'pickuplat': u'111.12345', u'dropofflat': u'111.12312', u'dropofflng': u'111.13123', u'pickuplng': u'111.31232', u'acceptedprice': u'True', u'requestedprice': u'4.00'}
+2016-11-15 20:04:14,986 [DEBUG] default: 6
+2016-11-15 20:04:14,993 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 20:04:15,001 [DEBUG] default: True
+2016-11-15 20:04:15,003 [DEBUG] default: TripRequest object
+2016-11-15 20:04:15,003 [DEBUG] default: False
+2016-11-15 20:04:15,048 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'rating': u'5', u'timeconsumed': u'00:00:00', u'tripreqID': 6, u'customer_pays': u'20.00', u'driver': u'sveinung.Sjoetveit@gmail.com', u'tripstartdatetime': u'2016-01-12 15:00:00', u'pickuplat': u'11.12345', u'dropofflat': u'11.12312', u'dropofflng': u'11.13123', u'datetimetrip': u'2016-01-12 14:59:49', u'pickuplng': u'11.31232', u'etatrip': u'00:15:00', u'triporderdatetime': u'2016-01-12 15:00:00', u'etakm': u'10.0', u'tripcomplete': u'False', u'etaarrival': u'15:15:00', u'feedback': u'very good'}
+2016-11-15 20:04:15,053 [DEBUG] default: 6
+2016-11-15 20:04:15,059 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 20:04:15,067 [DEBUG] default: True
+2016-11-15 20:04:15,068 [DEBUG] default: TripRequest object
+2016-11-15 20:04:15,068 [DEBUG] default: True
+2016-11-15 20:04:15,107 [DEBUG] default: Sveinung Sjoetveit
+2016-11-15 20:04:38,296 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 20:04:38,296 [ERROR] default: <WSGIRequest: POST '/create_customer'>
+2016-11-15 20:04:38,296 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyyy@gmail.com"}
+2016-11-15 20:04:38,303 [ERROR] default: <tr><th><label for="id_email">Email:</label></th><td><ul class="errorlist"><li>Custom user with this Email address already exists.</li></ul><input id="id_email" name="email" type="text" value="torgeir.fladbyyy@gmail.com" required /></td></tr>
+<tr><th><label for="id_dob">Dob:</label></th><td><input id="id_dob" name="dob" type="text" value="2016-01-17" required /></td></tr>
+<tr><th><label for="id_firstname">Firstname:</label></th><td><input id="id_firstname" maxlength="40" name="firstname" type="text" value="Torgeir" required /></td></tr>
+<tr><th><label for="id_lastname">Lastname:</label></th><td><input id="id_lastname" maxlength="40" name="lastname" type="text" value="Fladbyy" required /></td></tr>
+<tr><th><label for="id_password1">Password:</label></th><td><input id="id_password1" name="password1" type="password" required /></td></tr>
+<tr><th><label for="id_password2">Password (again):</label></th><td><input id="id_password2" name="password2" type="password" required /></td></tr>
+2016-11-15 20:04:38,737 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'pickuplat': u'111.12345', u'dropofflat': u'111.12312', u'dropofflng': u'111.13123', u'pickuplng': u'111.31232', u'acceptedprice': u'True', u'requestedprice': u'10.00'}
+2016-11-15 20:04:38,749 [DEBUG] default: 7
+2016-11-15 20:04:38,756 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 20:04:38,765 [DEBUG] default: True
+2016-11-15 20:04:38,766 [DEBUG] default: TripRequest object
+2016-11-15 20:04:38,766 [DEBUG] default: False
+2016-11-15 20:04:38,810 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'rating': u'5', u'timeconsumed': u'00:00:00', u'tripreqID': 7, u'customer_pays': u'20.00', u'driver': u'sveinung.Sjoetveit@gmail.com', u'tripstartdatetime': u'2016-01-12 15:00:00', u'pickuplat': u'11.12345', u'dropofflat': u'11.12312', u'dropofflng': u'11.13123', u'datetimetrip': u'2016-01-12 14:59:49', u'pickuplng': u'11.31232', u'etatrip': u'00:15:00', u'triporderdatetime': u'2016-01-12 15:00:00', u'etakm': u'10.0', u'tripcomplete': u'False', u'etaarrival': u'15:15:00', u'feedback': u'very good'}
+2016-11-15 20:04:38,812 [DEBUG] default: 7
+2016-11-15 20:04:38,819 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 20:04:38,828 [DEBUG] default: True
+2016-11-15 20:04:38,829 [DEBUG] default: TripRequest object
+2016-11-15 20:04:38,829 [DEBUG] default: True
+2016-11-15 20:04:38,866 [DEBUG] default: Sveinung Sjoetveit
+2016-11-15 20:07:48,439 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 20:07:48,440 [ERROR] default: <WSGIRequest: POST '/create_customer'>
+2016-11-15 20:07:48,440 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyyy@gmail.com"}
+2016-11-15 20:07:48,452 [ERROR] default: <tr><th><label for="id_email">Email:</label></th><td><ul class="errorlist"><li>Custom user with this Email address already exists.</li></ul><input id="id_email" name="email" type="text" value="torgeir.fladbyyy@gmail.com" required /></td></tr>
+<tr><th><label for="id_dob">Dob:</label></th><td><input id="id_dob" name="dob" type="text" value="2016-01-17" required /></td></tr>
+<tr><th><label for="id_firstname">Firstname:</label></th><td><input id="id_firstname" maxlength="40" name="firstname" type="text" value="Torgeir" required /></td></tr>
+<tr><th><label for="id_lastname">Lastname:</label></th><td><input id="id_lastname" maxlength="40" name="lastname" type="text" value="Fladbyy" required /></td></tr>
+<tr><th><label for="id_password1">Password:</label></th><td><input id="id_password1" name="password1" type="password" required /></td></tr>
+<tr><th><label for="id_password2">Password (again):</label></th><td><input id="id_password2" name="password2" type="password" required /></td></tr>
+2016-11-15 20:07:48,930 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'pickuplat': u'111.12345', u'dropofflat': u'111.12312', u'dropofflng': u'111.13123', u'pickuplng': u'111.31232', u'acceptedprice': u'True', u'requestedprice': u'10.00'}
+2016-11-15 20:07:48,946 [DEBUG] default: 8
+2016-11-15 20:07:48,954 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 20:07:48,963 [DEBUG] default: True
+2016-11-15 20:07:48,964 [DEBUG] default: TripRequest object
+2016-11-15 20:07:48,965 [DEBUG] default: False
+2016-11-15 20:07:49,016 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'rating': u'5', u'timeconsumed': u'00:00:00', u'tripreqID': 8, u'customer_pays': u'20.00', u'driver': u'sveinung.Sjoetveit@gmail.com', u'tripstartdatetime': u'2016-01-12 15:00:00', u'pickuplat': u'11.12345', u'dropofflat': u'11.12312', u'dropofflng': u'11.13123', u'datetimetrip': u'2016-01-12 14:59:49', u'pickuplng': u'11.31232', u'etatrip': u'00:15:00', u'triporderdatetime': u'2016-01-12 15:00:00', u'etakm': u'10.0', u'tripcomplete': u'False', u'etaarrival': u'15:15:00', u'feedback': u'very good'}
+2016-11-15 20:07:49,021 [DEBUG] default: 8
+2016-11-15 20:07:49,028 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 20:07:49,038 [DEBUG] default: True
+2016-11-15 20:07:49,039 [DEBUG] default: TripRequest object
+2016-11-15 20:07:49,040 [DEBUG] default: True
+2016-11-15 20:07:49,083 [DEBUG] default: Sveinung Sjoetveit
+2016-11-15 20:08:38,824 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 20:08:38,824 [ERROR] default: <WSGIRequest: POST '/create_customer'>
+2016-11-15 20:08:38,824 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyyy@gmail.com"}
+2016-11-15 20:08:38,835 [ERROR] default: <tr><th><label for="id_email">Email:</label></th><td><ul class="errorlist"><li>Custom user with this Email address already exists.</li></ul><input id="id_email" name="email" type="text" value="torgeir.fladbyyy@gmail.com" required /></td></tr>
+<tr><th><label for="id_dob">Dob:</label></th><td><input id="id_dob" name="dob" type="text" value="2016-01-17" required /></td></tr>
+<tr><th><label for="id_firstname">Firstname:</label></th><td><input id="id_firstname" maxlength="40" name="firstname" type="text" value="Torgeir" required /></td></tr>
+<tr><th><label for="id_lastname">Lastname:</label></th><td><input id="id_lastname" maxlength="40" name="lastname" type="text" value="Fladbyy" required /></td></tr>
+<tr><th><label for="id_password1">Password:</label></th><td><input id="id_password1" name="password1" type="password" required /></td></tr>
+<tr><th><label for="id_password2">Password (again):</label></th><td><input id="id_password2" name="password2" type="password" required /></td></tr>
+2016-11-15 20:08:39,269 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'pickuplat': u'111.12345', u'dropofflat': u'111.12312', u'dropofflng': u'111.13123', u'pickuplng': u'111.31232', u'acceptedprice': u'True', u'requestedprice': u'10.00'}
+2016-11-15 20:08:39,295 [DEBUG] default: 9
+2016-11-15 20:08:39,302 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 20:08:39,312 [DEBUG] default: True
+2016-11-15 20:08:39,314 [DEBUG] default: TripRequest object
+2016-11-15 20:08:39,314 [DEBUG] default: False
+2016-11-15 20:08:39,366 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'rating': u'5', u'timeconsumed': u'00:00:00', u'tripreqID': 9, u'customer_pays': u'20.00', u'driver': u'sveinung.Sjoetveit@gmail.com', u'tripstartdatetime': u'2016-01-12 15:00:00', u'pickuplat': u'11.12345', u'dropofflat': u'11.12312', u'dropofflng': u'11.13123', u'datetimetrip': u'2016-01-12 14:59:49', u'pickuplng': u'11.31232', u'etatrip': u'00:15:00', u'triporderdatetime': u'2016-01-12 15:00:00', u'etakm': u'10.0', u'tripcomplete': u'False', u'etaarrival': u'15:15:00', u'feedback': u'very good'}
+2016-11-15 20:08:39,371 [DEBUG] default: 9
+2016-11-15 20:08:39,378 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 20:08:39,386 [DEBUG] default: True
+2016-11-15 20:08:39,388 [DEBUG] default: TripRequest object
+2016-11-15 20:08:39,388 [DEBUG] default: True
+2016-11-15 20:08:39,430 [DEBUG] default: Sveinung Sjoetveit
+2016-11-15 20:10:06,925 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 20:10:06,925 [ERROR] default: <WSGIRequest: POST '/create_customer'>
+2016-11-15 20:10:06,926 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyyy@gmail.com"}
+2016-11-15 20:10:06,938 [ERROR] default: <tr><th><label for="id_email">Email:</label></th><td><ul class="errorlist"><li>Custom user with this Email address already exists.</li></ul><input id="id_email" name="email" type="text" value="torgeir.fladbyyy@gmail.com" required /></td></tr>
+<tr><th><label for="id_dob">Dob:</label></th><td><input id="id_dob" name="dob" type="text" value="2016-01-17" required /></td></tr>
+<tr><th><label for="id_firstname">Firstname:</label></th><td><input id="id_firstname" maxlength="40" name="firstname" type="text" value="Torgeir" required /></td></tr>
+<tr><th><label for="id_lastname">Lastname:</label></th><td><input id="id_lastname" maxlength="40" name="lastname" type="text" value="Fladbyy" required /></td></tr>
+<tr><th><label for="id_password1">Password:</label></th><td><input id="id_password1" name="password1" type="password" required /></td></tr>
+<tr><th><label for="id_password2">Password (again):</label></th><td><input id="id_password2" name="password2" type="password" required /></td></tr>
+2016-11-15 20:10:07,412 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'pickuplat': u'111.12345', u'dropofflat': u'111.12312', u'dropofflng': u'111.13123', u'pickuplng': u'111.31232', u'acceptedprice': u'True', u'requestedprice': u'10.00'}
+2016-11-15 20:10:07,426 [DEBUG] default: 10
+2016-11-15 20:10:07,433 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 20:10:07,444 [DEBUG] default: True
+2016-11-15 20:10:07,445 [DEBUG] default: TripRequest object
+2016-11-15 20:10:07,445 [DEBUG] default: False
+2016-11-15 20:10:07,493 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'rating': u'5', u'timeconsumed': u'00:00:00', u'tripreqID': 10, u'customer_pays': u'20.00', u'driver': u'sveinung.Sjoetveit@gmail.com', u'tripstartdatetime': u'2016-01-12 15:00:00', u'pickuplat': u'11.12345', u'dropofflat': u'11.12312', u'dropofflng': u'11.13123', u'datetimetrip': u'2016-01-12 14:59:49', u'pickuplng': u'11.31232', u'etatrip': u'00:15:00', u'triporderdatetime': u'2016-01-12 15:00:00', u'etakm': u'10.0', u'tripcomplete': u'False', u'etaarrival': u'15:15:00', u'feedback': u'very good'}
+2016-11-15 20:10:07,498 [DEBUG] default: 10
+2016-11-15 20:10:07,504 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 20:10:07,513 [DEBUG] default: True
+2016-11-15 20:10:07,514 [DEBUG] default: TripRequest object
+2016-11-15 20:10:07,514 [DEBUG] default: True
+2016-11-15 20:10:07,556 [ERROR] django.request: Internal Server Error: /finish_trip
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 264, in post
+    return self.finish_trip(request)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 63, in finish_trip
+    income_dict = calculate_price(str_datetime, int(tripsession.etakm))
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/pricing/views.py", line 21, in calculate_price
+    print tripordertime, morning <= tripordertime < earlyafternoon
+TypeError: can't compare datetime.datetime to datetime.time
+2016-11-15 20:11:30,772 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 20:11:30,772 [ERROR] default: <WSGIRequest: POST '/create_customer'>
+2016-11-15 20:11:30,773 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyyy@gmail.com"}
+2016-11-15 20:11:30,784 [ERROR] default: <tr><th><label for="id_email">Email:</label></th><td><ul class="errorlist"><li>Custom user with this Email address already exists.</li></ul><input id="id_email" name="email" type="text" value="torgeir.fladbyyy@gmail.com" required /></td></tr>
+<tr><th><label for="id_dob">Dob:</label></th><td><input id="id_dob" name="dob" type="text" value="2016-01-17" required /></td></tr>
+<tr><th><label for="id_firstname">Firstname:</label></th><td><input id="id_firstname" maxlength="40" name="firstname" type="text" value="Torgeir" required /></td></tr>
+<tr><th><label for="id_lastname">Lastname:</label></th><td><input id="id_lastname" maxlength="40" name="lastname" type="text" value="Fladbyy" required /></td></tr>
+<tr><th><label for="id_password1">Password:</label></th><td><input id="id_password1" name="password1" type="password" required /></td></tr>
+<tr><th><label for="id_password2">Password (again):</label></th><td><input id="id_password2" name="password2" type="password" required /></td></tr>
+2016-11-15 20:11:31,267 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'pickuplat': u'111.12345', u'dropofflat': u'111.12312', u'dropofflng': u'111.13123', u'pickuplng': u'111.31232', u'acceptedprice': u'True', u'requestedprice': u'10.00'}
+2016-11-15 20:11:31,281 [DEBUG] default: 11
+2016-11-15 20:11:31,289 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 20:11:31,297 [DEBUG] default: True
+2016-11-15 20:11:31,299 [DEBUG] default: TripRequest object
+2016-11-15 20:11:31,299 [DEBUG] default: False
+2016-11-15 20:11:31,348 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'rating': u'5', u'timeconsumed': u'00:00:00', u'tripreqID': 11, u'customer_pays': u'20.00', u'driver': u'sveinung.Sjoetveit@gmail.com', u'tripstartdatetime': u'2016-01-12 15:00:00', u'pickuplat': u'11.12345', u'dropofflat': u'11.12312', u'dropofflng': u'11.13123', u'datetimetrip': u'2016-01-12 14:59:49', u'pickuplng': u'11.31232', u'etatrip': u'00:15:00', u'triporderdatetime': u'2016-01-12 15:00:00', u'etakm': u'10.0', u'tripcomplete': u'False', u'etaarrival': u'15:15:00', u'feedback': u'very good'}
+2016-11-15 20:11:31,355 [DEBUG] default: 11
+2016-11-15 20:11:31,361 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 20:11:31,370 [DEBUG] default: True
+2016-11-15 20:11:31,371 [DEBUG] default: TripRequest object
+2016-11-15 20:11:31,371 [DEBUG] default: True
+2016-11-15 20:11:31,411 [DEBUG] default: Sveinung Sjoetveit
+2016-11-15 20:13:33,138 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 20:13:33,138 [ERROR] default: <WSGIRequest: POST '/create_customer'>
+2016-11-15 20:13:33,138 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyyy@gmail.com"}
+2016-11-15 20:13:33,150 [ERROR] default: <tr><th><label for="id_email">Email:</label></th><td><ul class="errorlist"><li>Custom user with this Email address already exists.</li></ul><input id="id_email" name="email" type="text" value="torgeir.fladbyyy@gmail.com" required /></td></tr>
+<tr><th><label for="id_dob">Dob:</label></th><td><input id="id_dob" name="dob" type="text" value="2016-01-17" required /></td></tr>
+<tr><th><label for="id_firstname">Firstname:</label></th><td><input id="id_firstname" maxlength="40" name="firstname" type="text" value="Torgeir" required /></td></tr>
+<tr><th><label for="id_lastname">Lastname:</label></th><td><input id="id_lastname" maxlength="40" name="lastname" type="text" value="Fladbyy" required /></td></tr>
+<tr><th><label for="id_password1">Password:</label></th><td><input id="id_password1" name="password1" type="password" required /></td></tr>
+<tr><th><label for="id_password2">Password (again):</label></th><td><input id="id_password2" name="password2" type="password" required /></td></tr>
+2016-11-15 20:13:33,605 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'pickuplat': u'111.12345', u'dropofflat': u'111.12312', u'dropofflng': u'111.13123', u'pickuplng': u'111.31232', u'acceptedprice': u'True', u'requestedprice': u'10.00'}
+2016-11-15 20:13:33,618 [DEBUG] default: 12
+2016-11-15 20:13:33,625 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 20:13:33,634 [DEBUG] default: True
+2016-11-15 20:13:33,636 [DEBUG] default: TripRequest object
+2016-11-15 20:13:33,636 [DEBUG] default: False
+2016-11-15 20:13:33,683 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'rating': u'5', u'timeconsumed': u'00:00:00', u'tripreqID': 12, u'customer_pays': u'20.00', u'driver': u'sveinung.Sjoetveit@gmail.com', u'tripstartdatetime': u'2016-01-12 15:00:00', u'pickuplat': u'11.12345', u'dropofflat': u'11.12312', u'dropofflng': u'11.13123', u'datetimetrip': u'2016-01-12 14:59:49', u'pickuplng': u'11.31232', u'etatrip': u'00:15:00', u'triporderdatetime': u'2016-01-12 15:00:00', u'etakm': u'10.0', u'tripcomplete': u'False', u'etaarrival': u'15:15:00', u'feedback': u'very good'}
+2016-11-15 20:13:33,688 [DEBUG] default: 12
+2016-11-15 20:13:33,695 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 20:13:33,704 [DEBUG] default: True
+2016-11-15 20:13:33,705 [DEBUG] default: TripRequest object
+2016-11-15 20:13:33,705 [DEBUG] default: True
+2016-11-15 20:13:33,756 [DEBUG] default: Sveinung Sjoetveit
+2016-11-15 20:15:24,002 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 20:15:24,002 [ERROR] default: <WSGIRequest: POST '/create_customer'>
+2016-11-15 20:15:24,002 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyyy@gmail.com"}
+2016-11-15 20:15:24,015 [ERROR] default: <tr><th><label for="id_email">Email:</label></th><td><ul class="errorlist"><li>Custom user with this Email address already exists.</li></ul><input id="id_email" name="email" type="text" value="torgeir.fladbyyy@gmail.com" required /></td></tr>
+<tr><th><label for="id_dob">Dob:</label></th><td><input id="id_dob" name="dob" type="text" value="2016-01-17" required /></td></tr>
+<tr><th><label for="id_firstname">Firstname:</label></th><td><input id="id_firstname" maxlength="40" name="firstname" type="text" value="Torgeir" required /></td></tr>
+<tr><th><label for="id_lastname">Lastname:</label></th><td><input id="id_lastname" maxlength="40" name="lastname" type="text" value="Fladbyy" required /></td></tr>
+<tr><th><label for="id_password1">Password:</label></th><td><input id="id_password1" name="password1" type="password" required /></td></tr>
+<tr><th><label for="id_password2">Password (again):</label></th><td><input id="id_password2" name="password2" type="password" required /></td></tr>
+2016-11-15 20:15:24,509 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'pickuplat': u'111.12345', u'dropofflat': u'111.12312', u'dropofflng': u'111.13123', u'pickuplng': u'111.31232', u'acceptedprice': u'True', u'requestedprice': u'10.00'}
+2016-11-15 20:15:24,524 [DEBUG] default: 13
+2016-11-15 20:15:24,532 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 20:15:24,541 [DEBUG] default: True
+2016-11-15 20:15:24,544 [DEBUG] default: TripRequest object
+2016-11-15 20:15:24,544 [DEBUG] default: False
+2016-11-15 20:15:24,596 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'rating': u'5', u'timeconsumed': u'00:00:00', u'tripreqID': 13, u'customer_pays': u'20.00', u'driver': u'sveinung.Sjoetveit@gmail.com', u'tripstartdatetime': u'2016-01-12 15:00:00', u'pickuplat': u'11.12345', u'dropofflat': u'11.12312', u'dropofflng': u'11.13123', u'datetimetrip': u'2016-01-12 14:59:49', u'pickuplng': u'11.31232', u'etatrip': u'00:15:00', u'triporderdatetime': u'2016-01-12 15:00:00', u'etakm': u'10.0', u'tripcomplete': u'False', u'etaarrival': u'15:15:00', u'feedback': u'very good'}
+2016-11-15 20:15:24,602 [DEBUG] default: 13
+2016-11-15 20:15:24,609 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 20:15:24,618 [DEBUG] default: True
+2016-11-15 20:15:24,619 [DEBUG] default: TripRequest object
+2016-11-15 20:15:24,619 [DEBUG] default: True
+2016-11-15 20:15:24,664 [DEBUG] default: Sveinung Sjoetveit
+2016-11-15 20:20:03,927 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 20:20:03,928 [ERROR] default: <WSGIRequest: POST '/create_customer'>
+2016-11-15 20:20:03,928 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyyy@gmail.com"}
+2016-11-15 20:20:03,943 [ERROR] default: <tr><th><label for="id_email">Email:</label></th><td><ul class="errorlist"><li>Custom user with this Email address already exists.</li></ul><input id="id_email" name="email" type="text" value="torgeir.fladbyyy@gmail.com" required /></td></tr>
+<tr><th><label for="id_dob">Dob:</label></th><td><input id="id_dob" name="dob" type="text" value="2016-01-17" required /></td></tr>
+<tr><th><label for="id_firstname">Firstname:</label></th><td><input id="id_firstname" maxlength="40" name="firstname" type="text" value="Torgeir" required /></td></tr>
+<tr><th><label for="id_lastname">Lastname:</label></th><td><input id="id_lastname" maxlength="40" name="lastname" type="text" value="Fladbyy" required /></td></tr>
+<tr><th><label for="id_password1">Password:</label></th><td><input id="id_password1" name="password1" type="password" required /></td></tr>
+<tr><th><label for="id_password2">Password (again):</label></th><td><input id="id_password2" name="password2" type="password" required /></td></tr>
+2016-11-15 20:20:04,490 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'pickuplat': u'111.12345', u'dropofflat': u'111.12312', u'dropofflng': u'111.13123', u'pickuplng': u'111.31232', u'acceptedprice': u'True', u'requestedprice': u'10.00'}
+2016-11-15 20:20:04,510 [DEBUG] default: 14
+2016-11-15 20:20:04,521 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 20:20:04,533 [DEBUG] default: True
+2016-11-15 20:20:04,535 [DEBUG] default: TripRequest object
+2016-11-15 20:20:04,535 [DEBUG] default: False
+2016-11-15 20:20:04,622 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'rating': u'5', u'timeconsumed': u'00:00:00', u'tripreqID': 14, u'customer_pays': u'20.00', u'driver': u'sveinung.Sjoetveit@gmail.com', u'tripstartdatetime': u'2016-01-12 15:00:00', u'pickuplat': u'11.12345', u'dropofflat': u'11.12312', u'dropofflng': u'11.13123', u'datetimetrip': u'2016-01-12 14:59:49', u'pickuplng': u'11.31232', u'etatrip': u'00:15:00', u'triporderdatetime': u'2016-01-12 15:00:00', u'etakm': u'10.0', u'tripcomplete': u'False', u'etaarrival': u'15:15:00', u'feedback': u'very good'}
+2016-11-15 20:20:04,637 [DEBUG] default: 14
+2016-11-15 20:20:04,652 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 20:20:04,667 [DEBUG] default: True
+2016-11-15 20:20:04,670 [DEBUG] default: TripRequest object
+2016-11-15 20:20:04,670 [DEBUG] default: True
+2016-11-15 20:20:04,733 [DEBUG] default: Sveinung Sjoetveit
+2016-11-15 21:08:16,099 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 21:08:16,100 [ERROR] default: <WSGIRequest: POST '/create_customer'>
+2016-11-15 21:08:16,100 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyyy@gmail.com"}
+2016-11-15 21:08:16,108 [ERROR] default: <tr><th><label for="id_email">Email:</label></th><td><ul class="errorlist"><li>Custom user with this Email address already exists.</li></ul><input id="id_email" name="email" type="text" value="torgeir.fladbyyy@gmail.com" required /></td></tr>
+<tr><th><label for="id_dob">Dob:</label></th><td><input id="id_dob" name="dob" type="text" value="2016-01-17" required /></td></tr>
+<tr><th><label for="id_firstname">Firstname:</label></th><td><input id="id_firstname" maxlength="40" name="firstname" type="text" value="Torgeir" required /></td></tr>
+<tr><th><label for="id_lastname">Lastname:</label></th><td><input id="id_lastname" maxlength="40" name="lastname" type="text" value="Fladbyy" required /></td></tr>
+<tr><th><label for="id_password1">Password:</label></th><td><input id="id_password1" name="password1" type="password" required /></td></tr>
+<tr><th><label for="id_password2">Password (again):</label></th><td><input id="id_password2" name="password2" type="password" required /></td></tr>
+2016-11-15 21:08:16,579 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'pickuplat': u'111.12345', u'dropofflat': u'111.12312', u'dropofflng': u'111.13123', u'pickuplng': u'111.31232', u'acceptedprice': u'True', u'requestedprice': u'10.00'}
+2016-11-15 21:08:16,593 [DEBUG] default: 15
+2016-11-15 21:08:16,602 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 21:08:16,612 [DEBUG] default: True
+2016-11-15 21:08:16,614 [DEBUG] default: TripRequest object
+2016-11-15 21:08:16,614 [DEBUG] default: False
+2016-11-15 21:08:16,679 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'rating': u'5', u'timeconsumed': u'00:00:00', u'tripreqID': 15, u'customer_pays': u'20.00', u'driver': u'sveinung.Sjoetveit@gmail.com', u'tripstartdatetime': u'2016-01-12 15:00:00', u'pickuplat': u'11.12345', u'dropofflat': u'11.12312', u'dropofflng': u'11.13123', u'datetimetrip': u'2016-01-12 14:59:49', u'pickuplng': u'11.31232', u'etatrip': u'00:15:00', u'triporderdatetime': u'2016-01-12 15:00:00', u'etakm': u'10.0', u'tripcomplete': u'False', u'etaarrival': u'15:15:00', u'feedback': u'very good'}
+2016-11-15 21:08:16,682 [DEBUG] default: 15
+2016-11-15 21:08:16,689 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 21:08:16,698 [DEBUG] default: True
+2016-11-15 21:08:16,700 [DEBUG] default: TripRequest object
+2016-11-15 21:08:16,700 [DEBUG] default: True
+2016-11-15 21:08:16,743 [DEBUG] default: Sveinung Sjoetveit
+2016-11-15 21:18:56,204 [ERROR] django.request: Internal Server Error: /admin/pricing/afternoon/1/change/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1512, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 185, in inner
+    return func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1479, in changeform_view
+    media = media + inline_formset.media
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/helpers.py", line 307, in _media
+    media = self.opts.media + self.formset.media
+  File "/Library/Python/2.7/site-packages/django/forms/formsets.py", line 408, in media
+    if self.forms:
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Library/Python/2.7/site-packages/django/forms/formsets.py", line 144, in forms
+    for i in range(self.total_form_count())]
+  File "/Library/Python/2.7/site-packages/django/forms/formsets.py", line 118, in total_form_count
+    initial_forms = self.initial_form_count()
+  File "/Library/Python/2.7/site-packages/django/forms/models.py", line 893, in initial_form_count
+    return super(BaseInlineFormSet, self).initial_form_count()
+  File "/Library/Python/2.7/site-packages/django/forms/models.py", line 573, in initial_form_count
+    return len(self.get_queryset())
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 238, in __len__
+    self._fetch_all()
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1087, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+ProgrammingError: column pricing_afternoonprofit.id does not exist
+LINE 1: SELECT "pricing_afternoonprofit"."id", "pricing_afternoonpro...
+               ^
+
+2016-11-15 21:59:52,359 [ERROR] django.request: Internal Server Error: /admin/pricing/afternoon/1/change/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1512, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 185, in inner
+    return func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1479, in changeform_view
+    media = media + inline_formset.media
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/helpers.py", line 307, in _media
+    media = self.opts.media + self.formset.media
+  File "/Library/Python/2.7/site-packages/django/forms/formsets.py", line 408, in media
+    if self.forms:
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Library/Python/2.7/site-packages/django/forms/formsets.py", line 144, in forms
+    for i in range(self.total_form_count())]
+  File "/Library/Python/2.7/site-packages/django/forms/formsets.py", line 118, in total_form_count
+    initial_forms = self.initial_form_count()
+  File "/Library/Python/2.7/site-packages/django/forms/models.py", line 893, in initial_form_count
+    return super(BaseInlineFormSet, self).initial_form_count()
+  File "/Library/Python/2.7/site-packages/django/forms/models.py", line 573, in initial_form_count
+    return len(self.get_queryset())
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 238, in __len__
+    self._fetch_all()
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1087, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+ProgrammingError: column pricing_afternoonprofit.usd1km does not exist
+LINE 1: SELECT "pricing_afternoonprofit"."usd1km", "pricing_afternoo...
+               ^
+
+2016-11-15 22:24:08,185 [WARNING] django.request: Not Found: /admin/pricing/afternoon/1/change/
+2016-11-15 22:25:34,474 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:25:34,474 [ERROR] default: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:25:34,475 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyyy@gmail.com"}
+2016-11-15 22:25:34,502 [ERROR] default: <tr><th><label for="id_email">Email:</label></th><td><ul class="errorlist"><li>Custom user with this Email address already exists.</li></ul><input id="id_email" name="email" type="text" value="torgeir.fladbyyy@gmail.com" required /></td></tr>
+<tr><th><label for="id_dob">Dob:</label></th><td><input id="id_dob" name="dob" type="text" value="2016-01-17" required /></td></tr>
+<tr><th><label for="id_firstname">Firstname:</label></th><td><input id="id_firstname" maxlength="40" name="firstname" type="text" value="Torgeir" required /></td></tr>
+<tr><th><label for="id_lastname">Lastname:</label></th><td><input id="id_lastname" maxlength="40" name="lastname" type="text" value="Fladbyy" required /></td></tr>
+<tr><th><label for="id_password1">Password:</label></th><td><input id="id_password1" name="password1" type="password" required /></td></tr>
+<tr><th><label for="id_password2">Password (again):</label></th><td><input id="id_password2" name="password2" type="password" required /></td></tr>
+2016-11-15 22:25:34,942 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'pickuplat': u'111.12345', u'dropofflat': u'111.12312', u'dropofflng': u'111.13123', u'pickuplng': u'111.31232', u'acceptedprice': u'True', u'requestedprice': u'10.00'}
+2016-11-15 22:25:34,958 [DEBUG] default: 1
+2016-11-15 22:25:34,965 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 22:25:34,974 [DEBUG] default: True
+2016-11-15 22:25:34,975 [DEBUG] default: TripRequest object
+2016-11-15 22:25:34,975 [DEBUG] default: False
+2016-11-15 22:25:35,061 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'rating': u'5', u'timeconsumed': u'00:00:00', u'tripreqID': 1, u'customer_pays': u'20.00', u'driver': u'sveinung.Sjoetveit@gmail.com', u'tripstartdatetime': u'2016-01-12 15:00:00', u'pickuplat': u'11.12345', u'dropofflat': u'11.12312', u'dropofflng': u'11.13123', u'datetimetrip': u'2016-01-12 14:59:49', u'pickuplng': u'11.31232', u'etatrip': u'00:15:00', u'triporderdatetime': u'2016-01-12 15:00:00', u'etakm': u'10.0', u'tripcomplete': u'False', u'etaarrival': u'15:15:00', u'feedback': u'very good'}
+2016-11-15 22:25:35,068 [DEBUG] default: 1
+2016-11-15 22:25:35,077 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 22:25:35,086 [DEBUG] default: True
+2016-11-15 22:25:35,088 [DEBUG] default: TripRequest object
+2016-11-15 22:25:35,088 [DEBUG] default: True
+2016-11-15 22:25:35,135 [DEBUG] default: Sveinung Sjoetveit
+2016-11-15 22:25:35,140 [ERROR] django.request: Internal Server Error: /finish_trip
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 264, in post
+    return self.finish_trip(request)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 69, in finish_trip
+    debt_instance = DebtTable.objects.get(driver=dd)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+DoesNotExist: DebtTable matching query does not exist.
+2016-11-15 22:26:27,222 [DEBUG] django.request: <WSGIRequest: POST '/create_driver'>
+2016-11-15 22:26:27,222 [ERROR] default: <WSGIRequest: POST '/create_driver'>
+2016-11-15 22:26:27,222 [ERROR] default: {"phone": "98237897", "password2": "267ec600500", "facebookurl": "www.facebook.com", "firstname": "Sveinung", "password1": "267ec600500", "dob": "2016-01-17", "lastname": "Sjoetveit", "email": "sveinung.Sjoetveit@gmail.com"}
+2016-11-15 22:26:27,230 [ERROR] default: <tr><th><label for="id_email">Email:</label></th><td><ul class="errorlist"><li>Custom user with this Email address already exists.</li></ul><input id="id_email" name="email" type="text" value="sveinung.Sjoetveit@gmail.com" required /></td></tr>
+<tr><th><label for="id_dob">Dob:</label></th><td><input id="id_dob" name="dob" type="text" value="2016-01-17" required /></td></tr>
+<tr><th><label for="id_firstname">Firstname:</label></th><td><input id="id_firstname" maxlength="40" name="firstname" type="text" value="Sveinung" required /></td></tr>
+<tr><th><label for="id_lastname">Lastname:</label></th><td><input id="id_lastname" maxlength="40" name="lastname" type="text" value="Sjoetveit" required /></td></tr>
+<tr><th><label for="id_password1">Password:</label></th><td><input id="id_password1" name="password1" type="password" required /></td></tr>
+<tr><th><label for="id_password2">Password (again):</label></th><td><input id="id_password2" name="password2" type="password" required /></td></tr>
+2016-11-15 22:27:26,658 [DEBUG] django.request: <WSGIRequest: POST '/create_driver'>
+2016-11-15 22:27:26,658 [ERROR] default: <WSGIRequest: POST '/create_driver'>
+2016-11-15 22:27:26,659 [ERROR] default: {"phone": "98237897", "password2": "267ec600500", "facebookurl": "www.facebook.com", "firstname": "Sveinung", "password1": "267ec600500", "dob": "2016-01-17", "lastname": "Sjoetveit", "email": "sveinung.Sjoetveitt@gmail.com"}
+2016-11-15 22:27:29,959 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:27:29,959 [ERROR] default: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:27:29,959 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyyy@gmail.com"}
+2016-11-15 22:27:29,967 [ERROR] default: <tr><th><label for="id_email">Email:</label></th><td><ul class="errorlist"><li>Custom user with this Email address already exists.</li></ul><input id="id_email" name="email" type="text" value="torgeir.fladbyyy@gmail.com" required /></td></tr>
+<tr><th><label for="id_dob">Dob:</label></th><td><input id="id_dob" name="dob" type="text" value="2016-01-17" required /></td></tr>
+<tr><th><label for="id_firstname">Firstname:</label></th><td><input id="id_firstname" maxlength="40" name="firstname" type="text" value="Torgeir" required /></td></tr>
+<tr><th><label for="id_lastname">Lastname:</label></th><td><input id="id_lastname" maxlength="40" name="lastname" type="text" value="Fladbyy" required /></td></tr>
+<tr><th><label for="id_password1">Password:</label></th><td><input id="id_password1" name="password1" type="password" required /></td></tr>
+<tr><th><label for="id_password2">Password (again):</label></th><td><input id="id_password2" name="password2" type="password" required /></td></tr>
+2016-11-15 22:27:30,411 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'pickuplat': u'111.12345', u'dropofflat': u'111.12312', u'dropofflng': u'111.13123', u'pickuplng': u'111.31232', u'acceptedprice': u'True', u'requestedprice': u'10.00'}
+2016-11-15 22:27:30,425 [DEBUG] default: 2
+2016-11-15 22:27:30,433 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 22:27:30,442 [DEBUG] default: True
+2016-11-15 22:27:30,444 [DEBUG] default: TripRequest object
+2016-11-15 22:27:30,445 [DEBUG] default: False
+2016-11-15 22:27:30,488 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'rating': u'5', u'timeconsumed': u'00:00:00', u'tripreqID': 2, u'customer_pays': u'20.00', u'driver': u'sveinung.Sjoetveitt@gmail.com', u'tripstartdatetime': u'2016-01-12 15:00:00', u'pickuplat': u'11.12345', u'dropofflat': u'11.12312', u'dropofflng': u'11.13123', u'datetimetrip': u'2016-01-12 14:59:49', u'pickuplng': u'11.31232', u'etatrip': u'00:15:00', u'triporderdatetime': u'2016-01-12 15:00:00', u'etakm': u'10.0', u'tripcomplete': u'False', u'etaarrival': u'15:15:00', u'feedback': u'very good'}
+2016-11-15 22:27:30,494 [DEBUG] default: 2
+2016-11-15 22:27:30,501 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 22:27:30,509 [DEBUG] default: True
+2016-11-15 22:27:30,511 [DEBUG] default: TripRequest object
+2016-11-15 22:27:30,511 [DEBUG] default: True
+2016-11-15 22:27:30,554 [DEBUG] default: Sveinung Sjoetveit
+2016-11-15 22:33:35,768 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:33:35,769 [ERROR] default: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:33:35,769 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyyy@gmail.com"}
+2016-11-15 22:33:35,780 [ERROR] default: <tr><th><label for="id_email">Email:</label></th><td><ul class="errorlist"><li>Custom user with this Email address already exists.</li></ul><input id="id_email" name="email" type="text" value="torgeir.fladbyyy@gmail.com" required /></td></tr>
+<tr><th><label for="id_dob">Dob:</label></th><td><input id="id_dob" name="dob" type="text" value="2016-01-17" required /></td></tr>
+<tr><th><label for="id_firstname">Firstname:</label></th><td><input id="id_firstname" maxlength="40" name="firstname" type="text" value="Torgeir" required /></td></tr>
+<tr><th><label for="id_lastname">Lastname:</label></th><td><input id="id_lastname" maxlength="40" name="lastname" type="text" value="Fladbyy" required /></td></tr>
+<tr><th><label for="id_password1">Password:</label></th><td><input id="id_password1" name="password1" type="password" required /></td></tr>
+<tr><th><label for="id_password2">Password (again):</label></th><td><input id="id_password2" name="password2" type="password" required /></td></tr>
+2016-11-15 22:33:36,221 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'pickuplat': u'111.12345', u'dropofflat': u'111.12312', u'dropofflng': u'111.13123', u'pickuplng': u'111.31232', u'acceptedprice': u'True', u'requestedprice': u'10.00'}
+2016-11-15 22:33:36,236 [DEBUG] default: 3
+2016-11-15 22:33:36,243 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 22:33:36,253 [DEBUG] default: True
+2016-11-15 22:33:36,254 [DEBUG] default: TripRequest object
+2016-11-15 22:33:36,255 [DEBUG] default: False
+2016-11-15 22:33:36,306 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'rating': u'5', u'timeconsumed': u'00:00:00', u'tripreqID': 3, u'customer_pays': u'20.00', u'driver': u'sveinung.Sjoetveitt@gmail.com', u'tripstartdatetime': u'2016-01-12 15:00:00', u'pickuplat': u'11.12345', u'dropofflat': u'11.12312', u'dropofflng': u'11.13123', u'datetimetrip': u'2016-01-12 14:59:49', u'pickuplng': u'11.31232', u'etatrip': u'00:15:00', u'triporderdatetime': u'2016-01-12 15:00:00', u'etakm': u'10.0', u'tripcomplete': u'False', u'etaarrival': u'15:15:00', u'feedback': u'very good'}
+2016-11-15 22:33:36,312 [DEBUG] default: 3
+2016-11-15 22:33:36,319 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 22:33:36,328 [DEBUG] default: True
+2016-11-15 22:33:36,329 [DEBUG] default: TripRequest object
+2016-11-15 22:33:36,329 [DEBUG] default: True
+2016-11-15 22:33:36,373 [DEBUG] default: Sveinung Sjoetveit
+2016-11-15 22:33:45,663 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:33:45,663 [ERROR] default: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:33:45,663 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyyy@gmail.com"}
+2016-11-15 22:33:45,670 [ERROR] default: <tr><th><label for="id_email">Email:</label></th><td><ul class="errorlist"><li>Custom user with this Email address already exists.</li></ul><input id="id_email" name="email" type="text" value="torgeir.fladbyyy@gmail.com" required /></td></tr>
+<tr><th><label for="id_dob">Dob:</label></th><td><input id="id_dob" name="dob" type="text" value="2016-01-17" required /></td></tr>
+<tr><th><label for="id_firstname">Firstname:</label></th><td><input id="id_firstname" maxlength="40" name="firstname" type="text" value="Torgeir" required /></td></tr>
+<tr><th><label for="id_lastname">Lastname:</label></th><td><input id="id_lastname" maxlength="40" name="lastname" type="text" value="Fladbyy" required /></td></tr>
+<tr><th><label for="id_password1">Password:</label></th><td><input id="id_password1" name="password1" type="password" required /></td></tr>
+<tr><th><label for="id_password2">Password (again):</label></th><td><input id="id_password2" name="password2" type="password" required /></td></tr>
+2016-11-15 22:33:46,120 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'pickuplat': u'111.12345', u'dropofflat': u'111.12312', u'dropofflng': u'111.13123', u'pickuplng': u'111.31232', u'acceptedprice': u'True', u'requestedprice': u'10.00'}
+2016-11-15 22:33:46,132 [DEBUG] default: 4
+2016-11-15 22:33:46,141 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 22:33:46,152 [DEBUG] default: True
+2016-11-15 22:33:46,154 [DEBUG] default: TripRequest object
+2016-11-15 22:33:46,154 [DEBUG] default: False
+2016-11-15 22:33:46,199 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'rating': u'5', u'timeconsumed': u'00:00:00', u'tripreqID': 4, u'customer_pays': u'20.00', u'driver': u'sveinung.Sjoetveitt@gmail.com', u'tripstartdatetime': u'2016-01-12 15:00:00', u'pickuplat': u'11.12345', u'dropofflat': u'11.12312', u'dropofflng': u'11.13123', u'datetimetrip': u'2016-01-12 14:59:49', u'pickuplng': u'11.31232', u'etatrip': u'00:15:00', u'triporderdatetime': u'2016-01-12 15:00:00', u'etakm': u'10.0', u'tripcomplete': u'False', u'etaarrival': u'15:15:00', u'feedback': u'very good'}
+2016-11-15 22:33:46,202 [DEBUG] default: 4
+2016-11-15 22:33:46,209 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 22:33:46,219 [DEBUG] default: True
+2016-11-15 22:33:46,221 [DEBUG] default: TripRequest object
+2016-11-15 22:33:46,221 [DEBUG] default: True
+2016-11-15 22:33:46,264 [DEBUG] default: Sveinung Sjoetveit
+2016-11-15 22:35:26,630 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:35:26,631 [ERROR] default: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:35:26,631 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyyy@gmail.com"}
+2016-11-15 22:35:26,644 [ERROR] default: <tr><th><label for="id_email">Email:</label></th><td><ul class="errorlist"><li>Custom user with this Email address already exists.</li></ul><input id="id_email" name="email" type="text" value="torgeir.fladbyyy@gmail.com" required /></td></tr>
+<tr><th><label for="id_dob">Dob:</label></th><td><input id="id_dob" name="dob" type="text" value="2016-01-17" required /></td></tr>
+<tr><th><label for="id_firstname">Firstname:</label></th><td><input id="id_firstname" maxlength="40" name="firstname" type="text" value="Torgeir" required /></td></tr>
+<tr><th><label for="id_lastname">Lastname:</label></th><td><input id="id_lastname" maxlength="40" name="lastname" type="text" value="Fladbyy" required /></td></tr>
+<tr><th><label for="id_password1">Password:</label></th><td><input id="id_password1" name="password1" type="password" required /></td></tr>
+<tr><th><label for="id_password2">Password (again):</label></th><td><input id="id_password2" name="password2" type="password" required /></td></tr>
+2016-11-15 22:35:27,073 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'pickuplat': u'111.12345', u'dropofflat': u'111.12312', u'dropofflng': u'111.13123', u'pickuplng': u'111.31232', u'acceptedprice': u'True', u'requestedprice': u'10.00'}
+2016-11-15 22:35:27,087 [DEBUG] default: 5
+2016-11-15 22:35:27,095 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 22:35:27,105 [DEBUG] default: True
+2016-11-15 22:35:27,106 [DEBUG] default: TripRequest object
+2016-11-15 22:35:27,106 [DEBUG] default: False
+2016-11-15 22:35:27,155 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'rating': u'5', u'timeconsumed': u'00:00:00', u'tripreqID': 5, u'customer_pays': u'20.00', u'driver': u'sveinung.Sjoetveitt@gmail.com', u'tripstartdatetime': u'2016-01-12 15:00:00', u'pickuplat': u'11.12345', u'dropofflat': u'11.12312', u'dropofflng': u'11.13123', u'datetimetrip': u'2016-01-12 14:59:49', u'pickuplng': u'11.31232', u'etatrip': u'00:15:00', u'triporderdatetime': u'2016-01-12 15:00:00', u'etakm': u'10.0', u'tripcomplete': u'False', u'etaarrival': u'15:15:00', u'feedback': u'very good'}
+2016-11-15 22:35:27,160 [DEBUG] default: 5
+2016-11-15 22:35:27,166 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 22:35:27,175 [DEBUG] default: True
+2016-11-15 22:35:27,176 [DEBUG] default: TripRequest object
+2016-11-15 22:35:27,176 [DEBUG] default: True
+2016-11-15 22:35:27,222 [DEBUG] default: Sveinung Sjoetveit
+2016-11-15 22:36:25,331 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:36:25,331 [ERROR] default: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:36:25,331 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyyy@gmail.com"}
+2016-11-15 22:36:25,339 [ERROR] default: <tr><th><label for="id_email">Email:</label></th><td><ul class="errorlist"><li>Custom user with this Email address already exists.</li></ul><input id="id_email" name="email" type="text" value="torgeir.fladbyyy@gmail.com" required /></td></tr>
+<tr><th><label for="id_dob">Dob:</label></th><td><input id="id_dob" name="dob" type="text" value="2016-01-17" required /></td></tr>
+<tr><th><label for="id_firstname">Firstname:</label></th><td><input id="id_firstname" maxlength="40" name="firstname" type="text" value="Torgeir" required /></td></tr>
+<tr><th><label for="id_lastname">Lastname:</label></th><td><input id="id_lastname" maxlength="40" name="lastname" type="text" value="Fladbyy" required /></td></tr>
+<tr><th><label for="id_password1">Password:</label></th><td><input id="id_password1" name="password1" type="password" required /></td></tr>
+<tr><th><label for="id_password2">Password (again):</label></th><td><input id="id_password2" name="password2" type="password" required /></td></tr>
+2016-11-15 22:36:25,780 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'pickuplat': u'111.12345', u'dropofflat': u'111.12312', u'dropofflng': u'111.13123', u'pickuplng': u'111.31232', u'acceptedprice': u'True', u'requestedprice': u'10.00'}
+2016-11-15 22:36:25,793 [DEBUG] default: 6
+2016-11-15 22:36:25,801 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 22:36:25,811 [DEBUG] default: True
+2016-11-15 22:36:25,813 [DEBUG] default: TripRequest object
+2016-11-15 22:36:25,813 [DEBUG] default: False
+2016-11-15 22:36:25,857 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'rating': u'5', u'timeconsumed': u'00:00:00', u'tripreqID': 6, u'customer_pays': u'20.00', u'driver': u'sveinung.Sjoetveitt@gmail.com', u'tripstartdatetime': u'2016-01-12 15:00:00', u'pickuplat': u'11.12345', u'dropofflat': u'11.12312', u'dropofflng': u'11.13123', u'datetimetrip': u'2016-01-12 14:59:49', u'pickuplng': u'11.31232', u'etatrip': u'00:15:00', u'triporderdatetime': u'2016-01-12 15:00:00', u'etakm': u'10.0', u'tripcomplete': u'False', u'etaarrival': u'15:15:00', u'feedback': u'very good'}
+2016-11-15 22:36:25,860 [DEBUG] default: 6
+2016-11-15 22:36:25,867 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 22:36:25,875 [DEBUG] default: True
+2016-11-15 22:36:25,877 [DEBUG] default: TripRequest object
+2016-11-15 22:36:25,877 [DEBUG] default: True
+2016-11-15 22:36:25,920 [DEBUG] default: Sveinung Sjoetveit
+2016-11-15 22:44:54,180 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:44:54,181 [ERROR] default: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:44:54,181 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyyy@gmail.com"}
+2016-11-15 22:44:54,189 [ERROR] default: <tr><th><label for="id_email">Email:</label></th><td><ul class="errorlist"><li>Custom user with this Email address already exists.</li></ul><input id="id_email" name="email" type="text" value="torgeir.fladbyyy@gmail.com" required /></td></tr>
+<tr><th><label for="id_dob">Dob:</label></th><td><input id="id_dob" name="dob" type="text" value="2016-01-17" required /></td></tr>
+<tr><th><label for="id_firstname">Firstname:</label></th><td><input id="id_firstname" maxlength="40" name="firstname" type="text" value="Torgeir" required /></td></tr>
+<tr><th><label for="id_lastname">Lastname:</label></th><td><input id="id_lastname" maxlength="40" name="lastname" type="text" value="Fladbyy" required /></td></tr>
+<tr><th><label for="id_password1">Password:</label></th><td><input id="id_password1" name="password1" type="password" required /></td></tr>
+<tr><th><label for="id_password2">Password (again):</label></th><td><input id="id_password2" name="password2" type="password" required /></td></tr>
+2016-11-15 22:44:54,664 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'pickuplat': u'111.12345', u'dropofflat': u'111.12312', u'dropofflng': u'111.13123', u'pickuplng': u'111.31232', u'acceptedprice': u'True', u'requestedprice': u'10.00'}
+2016-11-15 22:44:54,679 [DEBUG] default: 7
+2016-11-15 22:44:54,686 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 22:44:54,694 [DEBUG] default: True
+2016-11-15 22:44:54,696 [DEBUG] default: TripRequest object
+2016-11-15 22:44:54,696 [DEBUG] default: False
+2016-11-15 22:44:54,742 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'rating': u'5', u'timeconsumed': u'00:00:00', u'tripreqID': 7, u'customer_pays': u'20.00', u'driver': u'sveinung.Sjoetveitt@gmail.com', u'tripstartdatetime': u'2016-01-12 15:00:00', u'pickuplat': u'11.12345', u'dropofflat': u'11.12312', u'dropofflng': u'11.13123', u'datetimetrip': u'2016-01-12 14:59:49', u'pickuplng': u'11.31232', u'etatrip': u'00:15:00', u'triporderdatetime': u'2016-01-12 15:00:00', u'etakm': u'10.0', u'tripcomplete': u'False', u'etaarrival': u'15:15:00', u'feedback': u'very good'}
+2016-11-15 22:44:54,745 [DEBUG] default: 7
+2016-11-15 22:44:54,752 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 22:44:54,762 [DEBUG] default: True
+2016-11-15 22:44:54,763 [DEBUG] default: TripRequest object
+2016-11-15 22:44:54,763 [DEBUG] default: True
+2016-11-15 22:44:54,806 [DEBUG] default: Sveinung Sjoetveit
+2016-11-15 22:47:00,173 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:47:00,173 [ERROR] default: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:47:00,173 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyyy@gmail.com"}
+2016-11-15 22:47:00,188 [ERROR] default: <tr><th><label for="id_email">Email:</label></th><td><ul class="errorlist"><li>Custom user with this Email address already exists.</li></ul><input id="id_email" name="email" type="text" value="torgeir.fladbyyy@gmail.com" required /></td></tr>
+<tr><th><label for="id_dob">Dob:</label></th><td><input id="id_dob" name="dob" type="text" value="2016-01-17" required /></td></tr>
+<tr><th><label for="id_firstname">Firstname:</label></th><td><input id="id_firstname" maxlength="40" name="firstname" type="text" value="Torgeir" required /></td></tr>
+<tr><th><label for="id_lastname">Lastname:</label></th><td><input id="id_lastname" maxlength="40" name="lastname" type="text" value="Fladbyy" required /></td></tr>
+<tr><th><label for="id_password1">Password:</label></th><td><input id="id_password1" name="password1" type="password" required /></td></tr>
+<tr><th><label for="id_password2">Password (again):</label></th><td><input id="id_password2" name="password2" type="password" required /></td></tr>
+2016-11-15 22:47:00,674 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'pickuplat': u'111.12345', u'dropofflat': u'111.12312', u'dropofflng': u'111.13123', u'pickuplng': u'111.31232', u'acceptedprice': u'True', u'requestedprice': u'10.00'}
+2016-11-15 22:47:00,688 [DEBUG] default: 8
+2016-11-15 22:47:00,695 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 22:47:00,706 [DEBUG] default: True
+2016-11-15 22:47:00,709 [DEBUG] default: TripRequest object
+2016-11-15 22:47:00,709 [DEBUG] default: False
+2016-11-15 22:47:00,759 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'rating': u'5', u'timeconsumed': u'00:00:00', u'tripreqID': 8, u'customer_pays': u'20.00', u'driver': u'sveinung.Sjoetveitt@gmail.com', u'tripstartdatetime': u'2016-01-12 15:00:00', u'pickuplat': u'11.12345', u'dropofflat': u'11.12312', u'dropofflng': u'11.13123', u'datetimetrip': u'2016-01-12 14:59:49', u'pickuplng': u'11.31232', u'etatrip': u'00:15:00', u'triporderdatetime': u'2016-01-12 15:00:00', u'etakm': u'10.0', u'tripcomplete': u'False', u'etaarrival': u'15:15:00', u'feedback': u'very good'}
+2016-11-15 22:47:00,764 [DEBUG] default: 8
+2016-11-15 22:47:00,771 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 22:47:00,781 [DEBUG] default: True
+2016-11-15 22:47:00,782 [DEBUG] default: TripRequest object
+2016-11-15 22:47:00,782 [DEBUG] default: True
+2016-11-15 22:47:00,827 [DEBUG] default: Sveinung Sjoetveit
+2016-11-15 22:48:52,499 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:48:52,500 [ERROR] default: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:48:52,500 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyyy@gmail.com"}
+2016-11-15 22:48:52,512 [ERROR] default: <tr><th><label for="id_email">Email:</label></th><td><ul class="errorlist"><li>Custom user with this Email address already exists.</li></ul><input id="id_email" name="email" type="text" value="torgeir.fladbyyy@gmail.com" required /></td></tr>
+<tr><th><label for="id_dob">Dob:</label></th><td><input id="id_dob" name="dob" type="text" value="2016-01-17" required /></td></tr>
+<tr><th><label for="id_firstname">Firstname:</label></th><td><input id="id_firstname" maxlength="40" name="firstname" type="text" value="Torgeir" required /></td></tr>
+<tr><th><label for="id_lastname">Lastname:</label></th><td><input id="id_lastname" maxlength="40" name="lastname" type="text" value="Fladbyy" required /></td></tr>
+<tr><th><label for="id_password1">Password:</label></th><td><input id="id_password1" name="password1" type="password" required /></td></tr>
+<tr><th><label for="id_password2">Password (again):</label></th><td><input id="id_password2" name="password2" type="password" required /></td></tr>
+2016-11-15 22:48:52,986 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'pickuplat': u'111.12345', u'dropofflat': u'111.12312', u'dropofflng': u'111.13123', u'pickuplng': u'111.31232', u'acceptedprice': u'True', u'requestedprice': u'10.00'}
+2016-11-15 22:48:53,002 [DEBUG] default: 9
+2016-11-15 22:48:53,009 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 22:48:53,018 [DEBUG] default: True
+2016-11-15 22:48:53,020 [DEBUG] default: TripRequest object
+2016-11-15 22:48:53,020 [DEBUG] default: False
+2016-11-15 22:48:53,070 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'rating': u'5', u'timeconsumed': u'00:00:00', u'tripreqID': 9, u'customer_pays': u'20.00', u'driver': u'sveinung.Sjoetveitt@gmail.com', u'tripstartdatetime': u'2016-01-12 15:00:00', u'pickuplat': u'11.12345', u'dropofflat': u'11.12312', u'dropofflng': u'11.13123', u'datetimetrip': u'2016-01-12 14:59:49', u'pickuplng': u'11.31232', u'etatrip': u'00:15:00', u'triporderdatetime': u'2016-01-12 15:00:00', u'etakm': u'10.0', u'tripcomplete': u'False', u'etaarrival': u'15:15:00', u'feedback': u'very good'}
+2016-11-15 22:48:53,076 [DEBUG] default: 9
+2016-11-15 22:48:53,083 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 22:48:53,092 [DEBUG] default: True
+2016-11-15 22:48:53,093 [DEBUG] default: TripRequest object
+2016-11-15 22:48:53,094 [DEBUG] default: True
+2016-11-15 22:48:53,138 [DEBUG] default: Sveinung Sjoetveit
+2016-11-15 22:49:48,671 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:49:48,672 [ERROR] default: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:49:48,672 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyyy@gmail.com"}
+2016-11-15 22:49:48,679 [ERROR] default: <tr><th><label for="id_email">Email:</label></th><td><ul class="errorlist"><li>Custom user with this Email address already exists.</li></ul><input id="id_email" name="email" type="text" value="torgeir.fladbyyy@gmail.com" required /></td></tr>
+<tr><th><label for="id_dob">Dob:</label></th><td><input id="id_dob" name="dob" type="text" value="2016-01-17" required /></td></tr>
+<tr><th><label for="id_firstname">Firstname:</label></th><td><input id="id_firstname" maxlength="40" name="firstname" type="text" value="Torgeir" required /></td></tr>
+<tr><th><label for="id_lastname">Lastname:</label></th><td><input id="id_lastname" maxlength="40" name="lastname" type="text" value="Fladbyy" required /></td></tr>
+<tr><th><label for="id_password1">Password:</label></th><td><input id="id_password1" name="password1" type="password" required /></td></tr>
+<tr><th><label for="id_password2">Password (again):</label></th><td><input id="id_password2" name="password2" type="password" required /></td></tr>
+2016-11-15 22:49:49,145 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'pickuplat': u'111.12345', u'dropofflat': u'111.12312', u'dropofflng': u'111.13123', u'pickuplng': u'111.31232', u'acceptedprice': u'True', u'requestedprice': u'10.00'}
+2016-11-15 22:49:49,160 [DEBUG] default: 10
+2016-11-15 22:49:49,169 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 22:49:49,179 [DEBUG] default: True
+2016-11-15 22:49:49,181 [DEBUG] default: TripRequest object
+2016-11-15 22:49:49,181 [DEBUG] default: False
+2016-11-15 22:49:49,227 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'rating': u'5', u'timeconsumed': u'00:00:00', u'tripreqID': 10, u'customer_pays': u'20.00', u'driver': u'sveinung.Sjoetveitt@gmail.com', u'tripstartdatetime': u'2016-01-12 15:00:00', u'pickuplat': u'11.12345', u'dropofflat': u'11.12312', u'dropofflng': u'11.13123', u'datetimetrip': u'2016-01-12 14:59:49', u'pickuplng': u'11.31232', u'etatrip': u'00:15:00', u'triporderdatetime': u'2016-01-12 15:00:00', u'etakm': u'10.0', u'tripcomplete': u'False', u'etaarrival': u'15:15:00', u'feedback': u'very good'}
+2016-11-15 22:49:49,230 [DEBUG] default: 10
+2016-11-15 22:49:49,236 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 22:49:49,248 [DEBUG] default: True
+2016-11-15 22:49:49,250 [DEBUG] default: TripRequest object
+2016-11-15 22:49:49,250 [DEBUG] default: True
+2016-11-15 22:49:49,294 [DEBUG] default: Sveinung Sjoetveit
+2016-11-15 22:50:05,667 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:50:05,668 [ERROR] default: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:50:05,668 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyyy@gmail.com"}
+2016-11-15 22:50:05,675 [ERROR] default: <tr><th><label for="id_email">Email:</label></th><td><ul class="errorlist"><li>Custom user with this Email address already exists.</li></ul><input id="id_email" name="email" type="text" value="torgeir.fladbyyy@gmail.com" required /></td></tr>
+<tr><th><label for="id_dob">Dob:</label></th><td><input id="id_dob" name="dob" type="text" value="2016-01-17" required /></td></tr>
+<tr><th><label for="id_firstname">Firstname:</label></th><td><input id="id_firstname" maxlength="40" name="firstname" type="text" value="Torgeir" required /></td></tr>
+<tr><th><label for="id_lastname">Lastname:</label></th><td><input id="id_lastname" maxlength="40" name="lastname" type="text" value="Fladbyy" required /></td></tr>
+<tr><th><label for="id_password1">Password:</label></th><td><input id="id_password1" name="password1" type="password" required /></td></tr>
+<tr><th><label for="id_password2">Password (again):</label></th><td><input id="id_password2" name="password2" type="password" required /></td></tr>
+2016-11-15 22:50:06,120 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'pickuplat': u'111.12345', u'dropofflat': u'111.12312', u'dropofflng': u'111.13123', u'pickuplng': u'111.31232', u'acceptedprice': u'True', u'requestedprice': u'10.00'}
+2016-11-15 22:50:06,133 [DEBUG] default: 11
+2016-11-15 22:50:06,140 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 22:50:06,149 [DEBUG] default: True
+2016-11-15 22:50:06,151 [DEBUG] default: TripRequest object
+2016-11-15 22:50:06,152 [DEBUG] default: False
+2016-11-15 22:50:06,196 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'rating': u'5', u'timeconsumed': u'00:00:00', u'tripreqID': 11, u'customer_pays': u'20.00', u'driver': u'sveinung.Sjoetveitt@gmail.com', u'tripstartdatetime': u'2016-01-12 15:00:00', u'pickuplat': u'11.12345', u'dropofflat': u'11.12312', u'dropofflng': u'11.13123', u'datetimetrip': u'2016-01-12 14:59:49', u'pickuplng': u'11.31232', u'etatrip': u'00:15:00', u'triporderdatetime': u'2016-01-12 15:00:00', u'etakm': u'10.0', u'tripcomplete': u'False', u'etaarrival': u'15:15:00', u'feedback': u'very good'}
+2016-11-15 22:50:06,199 [DEBUG] default: 11
+2016-11-15 22:50:06,207 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 22:50:06,215 [DEBUG] default: True
+2016-11-15 22:50:06,217 [DEBUG] default: TripRequest object
+2016-11-15 22:50:06,217 [DEBUG] default: True
+2016-11-15 22:50:06,262 [DEBUG] default: Sveinung Sjoetveit
+2016-11-15 22:51:37,812 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:51:37,812 [ERROR] default: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:51:37,812 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyyy@gmail.com"}
+2016-11-15 22:51:37,821 [ERROR] default: <tr><th><label for="id_email">Email:</label></th><td><ul class="errorlist"><li>Custom user with this Email address already exists.</li></ul><input id="id_email" name="email" type="text" value="torgeir.fladbyyy@gmail.com" required /></td></tr>
+<tr><th><label for="id_dob">Dob:</label></th><td><input id="id_dob" name="dob" type="text" value="2016-01-17" required /></td></tr>
+<tr><th><label for="id_firstname">Firstname:</label></th><td><input id="id_firstname" maxlength="40" name="firstname" type="text" value="Torgeir" required /></td></tr>
+<tr><th><label for="id_lastname">Lastname:</label></th><td><input id="id_lastname" maxlength="40" name="lastname" type="text" value="Fladbyy" required /></td></tr>
+<tr><th><label for="id_password1">Password:</label></th><td><input id="id_password1" name="password1" type="password" required /></td></tr>
+<tr><th><label for="id_password2">Password (again):</label></th><td><input id="id_password2" name="password2" type="password" required /></td></tr>
+2016-11-15 22:51:38,271 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'pickuplat': u'111.12345', u'dropofflat': u'111.12312', u'dropofflng': u'111.13123', u'pickuplng': u'111.31232', u'acceptedprice': u'True', u'requestedprice': u'10.00'}
+2016-11-15 22:51:38,284 [DEBUG] default: 12
+2016-11-15 22:51:38,292 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 22:51:38,301 [DEBUG] default: True
+2016-11-15 22:51:38,302 [DEBUG] default: TripRequest object
+2016-11-15 22:51:38,302 [DEBUG] default: False
+2016-11-15 22:51:38,348 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'rating': u'5', u'timeconsumed': u'00:00:00', u'tripreqID': 12, u'customer_pays': u'20.00', u'driver': u'sveinung.Sjoetveitt@gmail.com', u'tripstartdatetime': u'2016-01-12 15:00:00', u'pickuplat': u'11.12345', u'dropofflat': u'11.12312', u'dropofflng': u'11.13123', u'datetimetrip': u'2016-01-12 14:59:49', u'pickuplng': u'11.31232', u'etatrip': u'00:15:00', u'triporderdatetime': u'2016-01-12 15:00:00', u'etakm': u'10.0', u'tripcomplete': u'False', u'etaarrival': u'15:15:00', u'feedback': u'very good'}
+2016-11-15 22:51:38,351 [DEBUG] default: 12
+2016-11-15 22:51:38,358 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 22:51:38,368 [DEBUG] default: True
+2016-11-15 22:51:38,371 [DEBUG] default: TripRequest object
+2016-11-15 22:51:38,371 [DEBUG] default: True
+2016-11-15 22:51:38,414 [DEBUG] default: Sveinung Sjoetveit
+2016-11-15 22:52:27,662 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:52:27,663 [ERROR] default: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:52:27,663 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyyy@gmail.com"}
+2016-11-15 22:52:27,674 [ERROR] default: <tr><th><label for="id_email">Email:</label></th><td><ul class="errorlist"><li>Custom user with this Email address already exists.</li></ul><input id="id_email" name="email" type="text" value="torgeir.fladbyyy@gmail.com" required /></td></tr>
+<tr><th><label for="id_dob">Dob:</label></th><td><input id="id_dob" name="dob" type="text" value="2016-01-17" required /></td></tr>
+<tr><th><label for="id_firstname">Firstname:</label></th><td><input id="id_firstname" maxlength="40" name="firstname" type="text" value="Torgeir" required /></td></tr>
+<tr><th><label for="id_lastname">Lastname:</label></th><td><input id="id_lastname" maxlength="40" name="lastname" type="text" value="Fladbyy" required /></td></tr>
+<tr><th><label for="id_password1">Password:</label></th><td><input id="id_password1" name="password1" type="password" required /></td></tr>
+<tr><th><label for="id_password2">Password (again):</label></th><td><input id="id_password2" name="password2" type="password" required /></td></tr>
+2016-11-15 22:52:28,114 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'pickuplat': u'111.12345', u'dropofflat': u'111.12312', u'dropofflng': u'111.13123', u'pickuplng': u'111.31232', u'acceptedprice': u'True', u'requestedprice': u'10.00'}
+2016-11-15 22:52:28,129 [DEBUG] default: 13
+2016-11-15 22:52:28,137 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 22:52:28,145 [DEBUG] default: True
+2016-11-15 22:52:28,147 [DEBUG] default: TripRequest object
+2016-11-15 22:52:28,147 [DEBUG] default: False
+2016-11-15 22:52:28,201 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'rating': u'5', u'timeconsumed': u'00:00:00', u'tripreqID': 13, u'customer_pays': u'20.00', u'driver': u'sveinung.Sjoetveitt@gmail.com', u'tripstartdatetime': u'2016-01-12 15:00:00', u'pickuplat': u'11.12345', u'dropofflat': u'11.12312', u'dropofflng': u'11.13123', u'datetimetrip': u'2016-01-12 14:59:49', u'pickuplng': u'11.31232', u'etatrip': u'00:15:00', u'triporderdatetime': u'2016-01-12 15:00:00', u'etakm': u'10.0', u'tripcomplete': u'False', u'etaarrival': u'15:15:00', u'feedback': u'very good'}
+2016-11-15 22:52:28,206 [DEBUG] default: 13
+2016-11-15 22:52:28,213 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 22:52:28,221 [DEBUG] default: True
+2016-11-15 22:52:28,223 [DEBUG] default: TripRequest object
+2016-11-15 22:52:28,223 [DEBUG] default: True
+2016-11-15 22:52:28,268 [DEBUG] default: Sveinung Sjoetveit
+2016-11-15 22:52:39,721 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:52:39,721 [ERROR] default: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:52:39,721 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyyy@gmail.com"}
+2016-11-15 22:52:39,733 [ERROR] default: <tr><th><label for="id_email">Email:</label></th><td><ul class="errorlist"><li>Custom user with this Email address already exists.</li></ul><input id="id_email" name="email" type="text" value="torgeir.fladbyyy@gmail.com" required /></td></tr>
+<tr><th><label for="id_dob">Dob:</label></th><td><input id="id_dob" name="dob" type="text" value="2016-01-17" required /></td></tr>
+<tr><th><label for="id_firstname">Firstname:</label></th><td><input id="id_firstname" maxlength="40" name="firstname" type="text" value="Torgeir" required /></td></tr>
+<tr><th><label for="id_lastname">Lastname:</label></th><td><input id="id_lastname" maxlength="40" name="lastname" type="text" value="Fladbyy" required /></td></tr>
+<tr><th><label for="id_password1">Password:</label></th><td><input id="id_password1" name="password1" type="password" required /></td></tr>
+<tr><th><label for="id_password2">Password (again):</label></th><td><input id="id_password2" name="password2" type="password" required /></td></tr>
+2016-11-15 22:52:40,198 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'pickuplat': u'111.12345', u'dropofflat': u'111.12312', u'dropofflng': u'111.13123', u'pickuplng': u'111.31232', u'acceptedprice': u'True', u'requestedprice': u'10.00'}
+2016-11-15 22:52:40,212 [DEBUG] default: 14
+2016-11-15 22:52:40,219 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 22:52:40,228 [DEBUG] default: True
+2016-11-15 22:52:40,230 [DEBUG] default: TripRequest object
+2016-11-15 22:52:40,230 [DEBUG] default: False
+2016-11-15 22:52:40,281 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'rating': u'5', u'timeconsumed': u'00:00:00', u'tripreqID': 14, u'customer_pays': u'20.00', u'driver': u'sveinung.Sjoetveitt@gmail.com', u'tripstartdatetime': u'2016-01-12 15:00:00', u'pickuplat': u'11.12345', u'dropofflat': u'11.12312', u'dropofflng': u'11.13123', u'datetimetrip': u'2016-01-12 14:59:49', u'pickuplng': u'11.31232', u'etatrip': u'00:15:00', u'triporderdatetime': u'2016-01-12 15:00:00', u'etakm': u'10.0', u'tripcomplete': u'False', u'etaarrival': u'15:15:00', u'feedback': u'very good'}
+2016-11-15 22:52:40,288 [DEBUG] default: 14
+2016-11-15 22:52:40,295 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 22:52:40,303 [DEBUG] default: True
+2016-11-15 22:52:40,305 [DEBUG] default: TripRequest object
+2016-11-15 22:52:40,305 [DEBUG] default: True
+2016-11-15 22:52:40,350 [DEBUG] default: Sveinung Sjoetveit
+2016-11-15 22:53:04,518 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:53:04,518 [ERROR] default: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:53:04,518 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyyy@gmail.com"}
+2016-11-15 22:53:04,531 [ERROR] default: <tr><th><label for="id_email">Email:</label></th><td><ul class="errorlist"><li>Custom user with this Email address already exists.</li></ul><input id="id_email" name="email" type="text" value="torgeir.fladbyyy@gmail.com" required /></td></tr>
+<tr><th><label for="id_dob">Dob:</label></th><td><input id="id_dob" name="dob" type="text" value="2016-01-17" required /></td></tr>
+<tr><th><label for="id_firstname">Firstname:</label></th><td><input id="id_firstname" maxlength="40" name="firstname" type="text" value="Torgeir" required /></td></tr>
+<tr><th><label for="id_lastname">Lastname:</label></th><td><input id="id_lastname" maxlength="40" name="lastname" type="text" value="Fladbyy" required /></td></tr>
+<tr><th><label for="id_password1">Password:</label></th><td><input id="id_password1" name="password1" type="password" required /></td></tr>
+<tr><th><label for="id_password2">Password (again):</label></th><td><input id="id_password2" name="password2" type="password" required /></td></tr>
+2016-11-15 22:53:04,991 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'pickuplat': u'111.12345', u'dropofflat': u'111.12312', u'dropofflng': u'111.13123', u'pickuplng': u'111.31232', u'acceptedprice': u'True', u'requestedprice': u'10.00'}
+2016-11-15 22:53:05,004 [DEBUG] default: 15
+2016-11-15 22:53:05,012 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 22:53:05,020 [DEBUG] default: True
+2016-11-15 22:53:05,022 [DEBUG] default: TripRequest object
+2016-11-15 22:53:05,022 [DEBUG] default: False
+2016-11-15 22:53:05,071 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'rating': u'5', u'timeconsumed': u'00:00:00', u'tripreqID': 15, u'customer_pays': u'20.00', u'driver': u'sveinung.Sjoetveitt@gmail.com', u'tripstartdatetime': u'2016-01-12 15:00:00', u'pickuplat': u'11.12345', u'dropofflat': u'11.12312', u'dropofflng': u'11.13123', u'datetimetrip': u'2016-01-12 14:59:49', u'pickuplng': u'11.31232', u'etatrip': u'00:15:00', u'triporderdatetime': u'2016-01-12 15:00:00', u'etakm': u'10.0', u'tripcomplete': u'False', u'etaarrival': u'15:15:00', u'feedback': u'very good'}
+2016-11-15 22:53:05,078 [DEBUG] default: 15
+2016-11-15 22:53:05,085 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 22:53:05,094 [DEBUG] default: True
+2016-11-15 22:53:05,095 [DEBUG] default: TripRequest object
+2016-11-15 22:53:05,095 [DEBUG] default: True
+2016-11-15 22:53:05,141 [DEBUG] default: Sveinung Sjoetveit
+2016-11-15 22:53:42,078 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:53:42,078 [ERROR] default: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:53:42,078 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyyy@gmail.com"}
+2016-11-15 22:53:42,090 [ERROR] default: <tr><th><label for="id_email">Email:</label></th><td><ul class="errorlist"><li>Custom user with this Email address already exists.</li></ul><input id="id_email" name="email" type="text" value="torgeir.fladbyyy@gmail.com" required /></td></tr>
+<tr><th><label for="id_dob">Dob:</label></th><td><input id="id_dob" name="dob" type="text" value="2016-01-17" required /></td></tr>
+<tr><th><label for="id_firstname">Firstname:</label></th><td><input id="id_firstname" maxlength="40" name="firstname" type="text" value="Torgeir" required /></td></tr>
+<tr><th><label for="id_lastname">Lastname:</label></th><td><input id="id_lastname" maxlength="40" name="lastname" type="text" value="Fladbyy" required /></td></tr>
+<tr><th><label for="id_password1">Password:</label></th><td><input id="id_password1" name="password1" type="password" required /></td></tr>
+<tr><th><label for="id_password2">Password (again):</label></th><td><input id="id_password2" name="password2" type="password" required /></td></tr>
+2016-11-15 22:53:42,571 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'pickuplat': u'111.12345', u'dropofflat': u'111.12312', u'dropofflng': u'111.13123', u'pickuplng': u'111.31232', u'acceptedprice': u'True', u'requestedprice': u'10.00'}
+2016-11-15 22:53:42,592 [DEBUG] default: 16
+2016-11-15 22:53:42,605 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 22:53:42,617 [DEBUG] default: True
+2016-11-15 22:53:42,619 [DEBUG] default: TripRequest object
+2016-11-15 22:53:42,619 [DEBUG] default: False
+2016-11-15 22:53:42,668 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'rating': u'5', u'timeconsumed': u'00:00:00', u'tripreqID': 16, u'customer_pays': u'20.00', u'driver': u'sveinung.Sjoetveitt@gmail.com', u'tripstartdatetime': u'2016-01-12 15:00:00', u'pickuplat': u'11.12345', u'dropofflat': u'11.12312', u'dropofflng': u'11.13123', u'datetimetrip': u'2016-01-12 14:59:49', u'pickuplng': u'11.31232', u'etatrip': u'00:15:00', u'triporderdatetime': u'2016-01-12 15:00:00', u'etakm': u'10.0', u'tripcomplete': u'False', u'etaarrival': u'15:15:00', u'feedback': u'very good'}
+2016-11-15 22:53:42,673 [DEBUG] default: 16
+2016-11-15 22:53:42,680 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 22:53:42,690 [DEBUG] default: True
+2016-11-15 22:53:42,691 [DEBUG] default: TripRequest object
+2016-11-15 22:53:42,691 [DEBUG] default: True
+2016-11-15 22:53:42,738 [DEBUG] default: Sveinung Sjoetveit
+2016-11-15 22:54:36,657 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:54:36,657 [ERROR] default: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:54:36,657 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyyy@gmail.com"}
+2016-11-15 22:54:36,669 [ERROR] default: <tr><th><label for="id_email">Email:</label></th><td><ul class="errorlist"><li>Custom user with this Email address already exists.</li></ul><input id="id_email" name="email" type="text" value="torgeir.fladbyyy@gmail.com" required /></td></tr>
+<tr><th><label for="id_dob">Dob:</label></th><td><input id="id_dob" name="dob" type="text" value="2016-01-17" required /></td></tr>
+<tr><th><label for="id_firstname">Firstname:</label></th><td><input id="id_firstname" maxlength="40" name="firstname" type="text" value="Torgeir" required /></td></tr>
+<tr><th><label for="id_lastname">Lastname:</label></th><td><input id="id_lastname" maxlength="40" name="lastname" type="text" value="Fladbyy" required /></td></tr>
+<tr><th><label for="id_password1">Password:</label></th><td><input id="id_password1" name="password1" type="password" required /></td></tr>
+<tr><th><label for="id_password2">Password (again):</label></th><td><input id="id_password2" name="password2" type="password" required /></td></tr>
+2016-11-15 22:54:37,153 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'pickuplat': u'111.12345', u'dropofflat': u'111.12312', u'dropofflng': u'111.13123', u'pickuplng': u'111.31232', u'acceptedprice': u'True', u'requestedprice': u'10.00'}
+2016-11-15 22:54:37,178 [DEBUG] default: 17
+2016-11-15 22:54:37,196 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 22:54:37,205 [DEBUG] default: True
+2016-11-15 22:54:37,207 [DEBUG] default: TripRequest object
+2016-11-15 22:54:37,207 [DEBUG] default: False
+2016-11-15 22:54:37,258 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'rating': u'5', u'timeconsumed': u'00:00:00', u'tripreqID': 17, u'customer_pays': u'20.00', u'driver': u'sveinung.Sjoetveitt@gmail.com', u'tripstartdatetime': u'2016-01-12 15:00:00', u'pickuplat': u'11.12345', u'dropofflat': u'11.12312', u'dropofflng': u'11.13123', u'datetimetrip': u'2016-01-12 14:59:49', u'pickuplng': u'11.31232', u'etatrip': u'00:15:00', u'triporderdatetime': u'2016-01-12 15:00:00', u'etakm': u'10.0', u'tripcomplete': u'False', u'etaarrival': u'15:15:00', u'feedback': u'very good'}
+2016-11-15 22:54:37,264 [DEBUG] default: 17
+2016-11-15 22:54:37,271 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 22:54:37,282 [DEBUG] default: True
+2016-11-15 22:54:37,283 [DEBUG] default: TripRequest object
+2016-11-15 22:54:37,284 [DEBUG] default: True
+2016-11-15 22:54:37,330 [DEBUG] default: Sveinung Sjoetveit
+2016-11-15 22:55:32,629 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:55:32,629 [ERROR] default: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:55:32,629 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyyy@gmail.com"}
+2016-11-15 22:55:32,641 [ERROR] default: <tr><th><label for="id_email">Email:</label></th><td><ul class="errorlist"><li>Custom user with this Email address already exists.</li></ul><input id="id_email" name="email" type="text" value="torgeir.fladbyyy@gmail.com" required /></td></tr>
+<tr><th><label for="id_dob">Dob:</label></th><td><input id="id_dob" name="dob" type="text" value="2016-01-17" required /></td></tr>
+<tr><th><label for="id_firstname">Firstname:</label></th><td><input id="id_firstname" maxlength="40" name="firstname" type="text" value="Torgeir" required /></td></tr>
+<tr><th><label for="id_lastname">Lastname:</label></th><td><input id="id_lastname" maxlength="40" name="lastname" type="text" value="Fladbyy" required /></td></tr>
+<tr><th><label for="id_password1">Password:</label></th><td><input id="id_password1" name="password1" type="password" required /></td></tr>
+<tr><th><label for="id_password2">Password (again):</label></th><td><input id="id_password2" name="password2" type="password" required /></td></tr>
+2016-11-15 22:55:33,117 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'pickuplat': u'111.12345', u'dropofflat': u'111.12312', u'dropofflng': u'111.13123', u'pickuplng': u'111.31232', u'acceptedprice': u'True', u'requestedprice': u'10.00'}
+2016-11-15 22:55:33,142 [DEBUG] default: 18
+2016-11-15 22:55:33,152 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 22:55:33,161 [DEBUG] default: True
+2016-11-15 22:55:33,163 [DEBUG] default: TripRequest object
+2016-11-15 22:55:33,163 [DEBUG] default: False
+2016-11-15 22:55:33,212 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'rating': u'5', u'timeconsumed': u'00:00:00', u'tripreqID': 18, u'customer_pays': u'20.00', u'driver': u'sveinung.Sjoetveitt@gmail.com', u'tripstartdatetime': u'2016-01-12 15:00:00', u'pickuplat': u'11.12345', u'dropofflat': u'11.12312', u'dropofflng': u'11.13123', u'datetimetrip': u'2016-01-12 14:59:49', u'pickuplng': u'11.31232', u'etatrip': u'00:15:00', u'triporderdatetime': u'2016-01-12 15:00:00', u'etakm': u'10.0', u'tripcomplete': u'False', u'etaarrival': u'15:15:00', u'feedback': u'very good'}
+2016-11-15 22:55:33,217 [DEBUG] default: 18
+2016-11-15 22:55:33,224 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 22:55:33,236 [DEBUG] default: True
+2016-11-15 22:55:33,238 [DEBUG] default: TripRequest object
+2016-11-15 22:55:33,238 [DEBUG] default: True
+2016-11-15 22:55:33,283 [DEBUG] default: Sveinung Sjoetveit
+2016-11-15 22:55:52,348 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:55:52,348 [ERROR] default: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:55:52,348 [ERROR] default: {"password1": "267ec600500", "password2": "267ec600500", "facebookurl": "facebook.com", "firstname": "Torgeir", "phone": "95936294", "dob": "2016-01-17", "lastname": "Fladbyy", "nationality": "Norwegian", "email": "torgeir.fladbyyy@gmail.com"}
+2016-11-15 22:55:52,362 [ERROR] default: <tr><th><label for="id_email">Email:</label></th><td><ul class="errorlist"><li>Custom user with this Email address already exists.</li></ul><input id="id_email" name="email" type="text" value="torgeir.fladbyyy@gmail.com" required /></td></tr>
+<tr><th><label for="id_dob">Dob:</label></th><td><input id="id_dob" name="dob" type="text" value="2016-01-17" required /></td></tr>
+<tr><th><label for="id_firstname">Firstname:</label></th><td><input id="id_firstname" maxlength="40" name="firstname" type="text" value="Torgeir" required /></td></tr>
+<tr><th><label for="id_lastname">Lastname:</label></th><td><input id="id_lastname" maxlength="40" name="lastname" type="text" value="Fladbyy" required /></td></tr>
+<tr><th><label for="id_password1">Password:</label></th><td><input id="id_password1" name="password1" type="password" required /></td></tr>
+<tr><th><label for="id_password2">Password (again):</label></th><td><input id="id_password2" name="password2" type="password" required /></td></tr>
+2016-11-15 22:55:52,811 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'pickuplat': u'111.12345', u'dropofflat': u'111.12312', u'dropofflng': u'111.13123', u'pickuplng': u'111.31232', u'acceptedprice': u'True', u'requestedprice': u'10.00'}
+2016-11-15 22:55:52,836 [DEBUG] default: 19
+2016-11-15 22:55:52,844 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 22:55:52,854 [DEBUG] default: True
+2016-11-15 22:55:52,856 [DEBUG] default: TripRequest object
+2016-11-15 22:55:52,856 [DEBUG] default: False
+2016-11-15 22:55:52,908 [DEBUG] default: {u'customer': u'torgeir.fladbyyy@gmail.com', u'rating': u'5', u'timeconsumed': u'00:00:00', u'tripreqID': 19, u'customer_pays': u'20.00', u'driver': u'sveinung.Sjoetveitt@gmail.com', u'tripstartdatetime': u'2016-01-12 15:00:00', u'pickuplat': u'11.12345', u'dropofflat': u'11.12312', u'dropofflng': u'11.13123', u'datetimetrip': u'2016-01-12 14:59:49', u'pickuplng': u'11.31232', u'etatrip': u'00:15:00', u'triporderdatetime': u'2016-01-12 15:00:00', u'etakm': u'10.0', u'tripcomplete': u'False', u'etaarrival': u'15:15:00', u'feedback': u'very good'}
+2016-11-15 22:55:52,914 [DEBUG] default: 19
+2016-11-15 22:55:52,921 [DEBUG] default: Torgeir Fladbyy
+2016-11-15 22:55:52,930 [DEBUG] default: True
+2016-11-15 22:55:52,932 [DEBUG] default: TripRequest object
+2016-11-15 22:55:52,932 [DEBUG] default: True
+2016-11-15 22:55:52,979 [DEBUG] default: Sveinung Sjoetveit

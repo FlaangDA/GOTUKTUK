@@ -20,6 +20,7 @@ from models import TripRequest, TripSession
 from forms import CreationFormTripRequest, CreationFormTripSession
 from fields import TripRequestSerializer
 from pricing.views import calculate_price
+from debtcollector.models import DebtTable
 from datetime import datetime
 
 import logging
@@ -36,11 +37,11 @@ class TripView(View):
 
 		tripsession = TripSession.objects.get(id=request.session['tripsessionID'])
 
-		if request.POST['feedback']:
-			tripsession.feedback = request.POST['feedback']
+		if dict_data.get('feedback'):
+			tripsession.feedback = dict_data.get('feedback')
 
-		if request.POST['rating']:
-			tripsession.rating = request.POST['rating']
+		if dict_data.get('rating'):
+			tripsession.rating = dict_data.get('rating')
 
 		tripsession.save()
 
@@ -60,11 +61,14 @@ class TripView(View):
 		str_datetime = datetime.strptime(conv_time, '%Y-%m-%d %H:%M:%S').time()
 
 		income_dict = calculate_price(str_datetime, int(tripsession.etakm))
-
+		print income_dict
 		tripsession.customer_pays = income_dict.get("customer_paid")
 		tripsession.profit = income_dict.get("driver_owes")
-		DriverDetails.objects.get(user_instance=triprequest.driver).debtUSD += income_dict.get("driver_owes")
-
+		l2.debug(request.user)
+		dd = DriverDetails.objects.get(user_instance=request.user)
+		debt_instance = DebtTable.objects.get(driver=dd)
+		debt_instance.debt += income_dict.get("driver_owes")
+		debt_instance.save()
 		triprequest.save()
 		tripsession.save()
 
@@ -87,6 +91,7 @@ class TripView(View):
 			triprequest.save()
 			trobj = TripSession.objects.create_tripsession(triprequest, dict_data)
 			request.session['tripsessionID'] = trobj.id
+			l2.debug(trobj.id)
 			return HttpResponse(serializers.serialize("json", [trobj,]), "Triprequest successfully accepted, created new Tripsession")
 		else:
 			return HttpResponse("TripRequest has already been accepted by someone else.")
@@ -105,7 +110,10 @@ class TripView(View):
 		l2.debug(request.user.is_authenticated())
 		try:
 			triprequest = TripRequest.objects.get(id=request.session['triprequestID'])
+			l2.debug(triprequest)
+			l2.debug(triprequest.accepted)
 			if triprequest.accepted:
+				request.session['trip_driver_email'] = triprequest.driver.email
 				return HttpResponse(serializers.serialize("json", [TripSession.objects.get(triprequest=triprequest),])) 
 
 		except Exception, e:	
@@ -148,7 +156,7 @@ class TripView(View):
 
 		except Exception, e:
 			l2.error(request, user_instance)
-		return HttpResponse(serializers.serialize('json', TripRequest.objects.all().filter(tripcompleted=False)), content_type="application/json")
+		return HttpResponse(serializers.serialize('json', TripRequest.objects.all().filter(accepted=False, tripcompleted=False)), content_type="application/json")
 
 	def setTripRequest(self, user, hasrequest):
 
@@ -164,9 +172,20 @@ class TripView(View):
 
 		return HttpResponse(income_dict.get('customer_paid'))
 
+	def cancel_trip(self, request):
+
+		try:
+			TripRequest.objects.get(id=request.session['triprequestID']).delete()
+			return HttpResponse("Trip canceled.")
+		except Exception as e:
+			TripRequest.objects.get(id=request.session['triprequestID']).tripcompleted=True
+			return HttpResponseBadRequest("TripRequest could not be deleted. Marked as complete.")
+
 	def request_trip(self, request):
 
 		json_data = json.loads(request.body)
+
+		l2.debug(json_data)
 
 		requestingCustomer = CustomUser.objects.get(email=json_data.get('customer'))
 
@@ -179,13 +198,14 @@ class TripView(View):
 					pickuplng = json_data['pickuplng'],
 					dropofflat = json_data['dropofflat'],
 					dropofflng = json_data['dropofflng'],
-					requestedprice=json_data['requestedprice'], 
-					acceptedprice=json_data['acceptedprice'], 
+					requestedprice=json_data['requestedprice'],
+					acceptedprice=json_data['acceptedprice'],
 					active=True)
 				#request.session['triprequestID'] = triprequest
 				#self.setTripRequest(requestedDriver, True)
 				#triprequest.active = True
 				triprequest.save()
+				l2.debug(triprequest.id)
 				request.session['triprequestID'] = triprequest.id
 				return HttpResponse(json.dumps(["triprequest id", str(triprequest.id)]), content_type="application/json")
 			else:
@@ -234,23 +254,25 @@ class TripView(View):
 		return None
 
 	def post(self, request, *args, **kwargs):
-		if request.path == '/ping_triprequest/':
+		if request.path == '/ping_triprequest':
 			return self.ping_triprequest(request)
-		elif request.path == '/request_trip/':
+		elif request.path == '/request_trip':
 			return self.request_trip(request)
-		elif request.path == '/accept_triprequest/':
+		elif request.path == '/accept_triprequest':
 			return self.accept_triprequest(request)
-		elif request.path == '/finish_trip/':
+		elif request.path == '/finish_trip':
 			return self.finish_trip(request)
-		elif request.path == '/add_rating/':
+		elif request.path == '/add_rating':
 			return self.add_rating(request)
 		elif request.path == '/check_price':
 			return self.check_price(request)
+		elif request.path == '/cancel_trip':
+			return self.cancel_trip(request)
 
 		return HttpResponse(status=404)
 
 	def get(self, request):
-		if request.path == '/check_triprequest/':
+		if request.path == '/check_triprequest':
 			return self.check_triprequest(request)
 		elif request.path == '/get_trip_graphics':
 			return self.get_trip_graphics(request)

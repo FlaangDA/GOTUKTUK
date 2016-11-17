@@ -6,8 +6,8 @@ from views import PackagedealView
 from src import settings
 urlpatterns = [
 	
-    url(r'^create_packagedeal/?$', PackagedealView.as_view()),
-    url(r'^get_packagedeals/?$', PackagedealView.as_view()),
+    url(r'^create_packagedeal?$', PackagedealView.as_view()),
+    url(r'^get_packagedeals?$', PackagedealView.as_view()),
     url(r'^media/(packagedeals/headers/.*)$', django.views.static.serve,{'document_root': settings.MEDIA_ROOT, 'show_indexes': False}),
 
   ]

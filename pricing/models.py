@@ -43,86 +43,93 @@ class BasePricing(models.Model):
 
 
 class EarlyMorning(BasePricing):
-	name = models.CharField(max_length=100, default="EarlyMorning base price")
+	name = models.CharField(primary_key=True, max_length=100, default="EarlyMorning")
 
 	class Meta:
 		verbose_name = "6:00 AM - 8:00 AM Early morning"
 
-class EarlyMorningProfit(EarlyMorning):
-	nameProfit = models.CharField(max_length=100, default="EarlyMorning profit")
+class EarlyMorningProfit(BasePricing):
+	nameProfit = models.CharField(max_length=100, default="EarlyMorning", primary_key=True)
 
+	related = models.OneToOneField(EarlyMorning)
 	class Meta:
 		verbose_name = "EarlyMorning profitss"
 
 class Morning(BasePricing):
-	name = models.CharField(max_length=100, default="Morning base price")
+	name = models.CharField(primary_key=True, max_length=100, default="Morning")
 
 	class Meta:
 		verbose_name = "8:00 PM - 12:00 AM Morning"
 
-class MorningProfit(Morning):
-	nameProfit = models.CharField(max_length=100, default="Morning profit")
+class MorningProfit(BasePricing):
+	nameProfit = models.CharField(max_length=100, default="Morning", primary_key=True)
 
+	related = models.OneToOneField(Morning)
 	class Meta:
 		verbose_name = "Morning profits"
 
 class Afternoon(BasePricing):
-	name = models.CharField(max_length=100, default="Afternoon base price")
+	name = models.CharField(primary_key=True, max_length=100, default="Afternoon")
 
 	class Meta:
 		verbose_name = "12:00 AM - 2:00 PM Afternoon"
 
-class AfternoonProfit(Afternoon):
-	nameProfit = models.CharField(max_length=100, default="Afternoon profit")
+class AfternoonProfit(BasePricing):
+	nameProfit = models.CharField(max_length=100, default="Afternoon", primary_key=True)
 
+	related = models.OneToOneField(Afternoon)
 	class Meta:
 		verbose_name = "Afternoon profits"
 
 class EarlyAfternoon(BasePricing):
-	name = models.CharField(max_length=100, default="EarlyAfternoon base price")
+	name = models.CharField(primary_key=True, max_length=100, default="EarlyAfternoon")
 
 	class Meta:
 		verbose_name = "2:00 PM - 5:00 PM Early afternoon"
 
-class EarlyAfternoonProfit(EarlyAfternoon):
-	nameProfit = models.CharField(max_length=100, default="EarlyAfternoon profit")
+class EarlyAfternoonProfit(BasePricing):
+	nameProfit = models.CharField(max_length=100, default="EarlyAfternoon", primary_key=True)
 
+	related = models.OneToOneField(EarlyAfternoon)
 	class Meta:
 		verbose_name = "EarlyAfternoon profits"
 
 class LateAfternoon(BasePricing):
-	name = models.CharField(max_length=100, default="LateAfternoon base price")
+	name = models.CharField(primary_key=True, max_length=100, default="LateAfternoon")
 
 	class Meta:
 		verbose_name = "5:00 PM - 6:00 PM Late afternoon"
 
-class LateAfternoonProfit(LateAfternoon):
-	nameProfit = models.CharField(max_length=100, default="LateAfternoon profit")
+class LateAfternoonProfit(BasePricing):
+	nameProfit = models.CharField(max_length=100, default="LateAfternoon", primary_key=True)
 
+	related = models.OneToOneField(LateAfternoon)
 	class Meta:
 		verbose_name = "LateAfternoon profits"
 
 class Evening(BasePricing):
-	name = models.CharField(max_length=100, default="Evening base price")
+	name = models.CharField(primary_key=True, max_length=100, default="Evening")
 
 	class Meta:
 		verbose_name = "6:00 PM - 8:00 PM Evening"
 
-class EveningProfit(Evening):
-	nameProfit = models.CharField(max_length=100, default="Evening profit")
+class EveningProfit(BasePricing):
+	nameProfit = models.CharField(max_length=100, default="Evening", primary_key=True)
 
+	related = models.OneToOneField(Evening)
 	class Meta:
 		verbose_name = "Evening profits"
 
 class Nighttime(BasePricing):
-	name = models.CharField(max_length=100, default="Nighttime base price")
+	name = models.CharField(primary_key=True, max_length=100, default="Nighttime")
 
 	class Meta:
 		verbose_name = "8:00 PM - 6:00 AM Nighttime"
 
-class NighttimeProfit(Nighttime):
-	nameProfit = models.CharField(max_length=100, default="Nighttime profit")
+class NighttimeProfit(BasePricing):
+	nameProfit = models.CharField(max_length=100, default="Nighttime", primary_key=True)
 
+	related = models.OneToOneField(Nighttime)
 	class Meta:
 		verbose_name = "Nighttime profits"
 

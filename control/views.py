@@ -76,7 +76,7 @@ class AvailabilityView(View):
 	def get(self, request):
 
 		if request.method == 'GET':
-			if request.path == '/available_drivers/':
+			if request.path == '/available_drivers':
 				return self.available_drivers(request)
 
 class DriverListView(ListView):

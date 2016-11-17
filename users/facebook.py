@@ -8,6 +8,6 @@ from django.template.context import RequestContext
 from django.views.decorators.csrf import csrf_exempt
 from django.core.cache import cache
 
-from social_auth.models import UserSocialAuth
-from social_auth.views import complete as social_complete
-from social_auth.backends.facebook import FacebookBackend
+#from social_auth.models import UserSocialAuth
+#from social_auth.views import complete as social_complete
+#from social_auth.backends.facebook import FacebookBackend

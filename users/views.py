@@ -21,7 +21,7 @@ from forms.register import RegistrationFormCustomer, RegistrationFormDriver, Reg
 from forms.authenticate import AuthenticationForm
 from forms.forms import DriverDetailsChangeForm, CustomerDetailsChangeForm
 from backends import EmailAuthBackend
-
+from debtcollector.models import DebtTable
 
 #logging
 import logging
@@ -61,6 +61,9 @@ class CreationView(View):
 		if detailsForm.is_valid():
 			dd = DriverDetails.objects.create_driver_details(user=user, phone=json_data.get('phone'), facebookurl=json_data.get('facebookurl'))
 			dd.save()
+			driver_name = user.firstname + " " + user.lastname
+			debt = DebtTable(driver = dd, debt = 0.0, driver_email=user.email, driver_name=driver_name)
+			debt.save()
 
 		return HttpResponse(user, content_type="application/json")
 		
@@ -69,7 +72,7 @@ class CreationView(View):
 		l.debug(request)
 		l2.error(request)
 		l2.error(request.body)
-		if request.path == '/create_customer/':
+		if request.path == '/create_customer':
 			form = self.customerForm(json.loads(request.body))
 			if form.is_valid():
 				user = form.save()
@@ -77,7 +80,7 @@ class CreationView(View):
 			l2.error(form)
 			return HttpResponseBadRequest("Customer form is not valid.")
 
-		if request.path == '/create_driver/':
+		if request.path == '/create_driver':
 			form = self.driverForm(json.loads(request.body))
 			if form.is_valid():
 				user = form.save()
@@ -103,9 +106,9 @@ class AuthView(View):
 
 
 		if form.is_valid():
-			user = authenticate(email=username, password=password)
 
 			try:
+				user = authenticate(email=username, password=password)
 				if user.is_authenticated():
 					request.session['user_email'] = username
 					if user.is_active:
@@ -115,35 +118,38 @@ class AuthView(View):
 						return HttpResponse("Inactive user.")
 				else:
 					return HttpResponse("User is None.(views.login())")
-			except ObjectDoesNotExist:
+			except Exception:
 				return HttpResponseBadRequest
-		return HttpResponse("User form invalid")
+
+		return HttpResponseBadRequest("User form invalid")
 
 	def logout(self, request):
 
 		json_data = json.loads(request.body)
 
-		user = CustomUser.objects.get(email=json_data.get('email'))
+		user = request.user
 
-		driver_instance = DriverDetails.objects.get(user_instance=user)
+		if user.user_type == 'D':
+			driver_instance = DriverDetails.objects.get(user_instance=user)
 
 		try:
 			django_logout(request)
-			driver_instance.available=False
+			if user.user_type == 'D':
+				driver_instance.available=False
 
 			return HttpResponse("User logged out.")
 		except Exception, e:
 			raise e
 
-		return HttpResponse("User logged out.")
+		return HttpResponseBadRequest
 
 	def post(self, request, *args, **kwargs):
 
-		if request.path == '/login/':
+		if request.path == '/login':
 			return self.login(request)
-
-		if request.path == '/logout/':
+		elif request.path == '/logout':
 			return self.logout(request)
+		return Http404("url does not exist")
 
 class DetailsView(View):
 
@@ -193,12 +199,12 @@ class DetailsView(View):
 
 		try:
 
-			driver_email = json.loads(request.body).get('driver')
+			driver_email = request.session['trip_driver_email']
 
 			user_instance = CustomUser.objects.get(email=driver_email)
 
 			dd = DriverDetails.objects.get(user_instance=user_instance)
-			return HttpResponse(serializers.serialize("json", [dd]))
+			return HttpResponse(serializers.serialize("json", [user_instance, dd]))
 		except Exception, e:
 			return HttpResponse("Driver not found")
 
@@ -212,9 +218,9 @@ class DetailsView(View):
 		return dd.available
 
 	def post(self, request):
-		if request.path == '/get_driver_details/':
+		if request.path == '/get_driver_details':
 			return self.get_driver_details(request)
-		elif request.path =='/add_profile_pic/':
+		elif request.path =='/add_profile_pic':
 			if request.user.user_type == 'C':
 				return self.add_profile_pic(request, CustomerDetails.objects.get(user_instance=request.user))
 			elif request.user.user_type == 'D':

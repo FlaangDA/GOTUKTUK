@@ -1,5 +1,6 @@
 from django import forms
 from users.models import CustomUser, DriverDetails, CustomerDetails
+from debtcollector.models import DebtTable
 
 class RegistrationFormCustomer(forms.ModelForm):
 
@@ -13,7 +14,8 @@ class RegistrationFormCustomer(forms.ModelForm):
 		fields = ['email', 'dob', 'firstname', 'lastname']
 
 		widgets = {
-			'password' : forms.PasswordInput(),
+			'password1' : forms.PasswordInput(),
+			'password2' : forms.PasswordInput(),
 		}
 
 	def clean_password(self):
@@ -58,8 +60,10 @@ class RegistrationFormCustomerDetails(forms.ModelForm):
 
 	def save(self, commit=True):
 		details = super(RegistrationFormCustomerDetails, self).save(commit=False)
+
 		if commit:
 			details.save()
+
 		return details
 
 class RegistrationFormDriver(forms.ModelForm):
@@ -74,7 +78,8 @@ class RegistrationFormDriver(forms.ModelForm):
 		fields = ['email', 'dob', 'firstname', 'lastname']
 
 		widgets = {
-			'password' : forms.PasswordInput(),
+			'password1' : forms.PasswordInput(),
+			'password2' : forms.PasswordInput(),
 		}
 
 	def clean_password(self):
@@ -117,5 +122,17 @@ class RegistrationFormDriverDetails(forms.ModelForm):
 		details = super(RegistrationFormDriverDetails, self).save(commit=False)
 		if commit:
 			details.save()
-
+		print "JHESUS CHRIST", details.user_instance
+		user = details.user_instance
+		print user.firstname, user.lastname
+		driver_name = user.firstname + " " + user.lastname
+		debt = DebtTable(driver = details, debt = 0.0, driver_email=user.email, driver_name=driver_name)
+		
+		debt.save()
+		print debt
 		return details
+
+
+
+
+

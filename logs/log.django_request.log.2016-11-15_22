@@ -1,0 +1,317 @@
+2016-11-15 19:42:38,572 [WARNING] django.request: Not Found: /favicon.ico
+2016-11-15 19:43:50,669 [DEBUG] django.request: <WSGIRequest: POST '/create_driver'>
+2016-11-15 19:50:03,907 [ERROR] django.request: Internal Server Error: /admin/debtcollector/debttable/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1657, in changelist_view
+    selection_note=_('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 238, in __len__
+    self._fetch_all()
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1087, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+ProgrammingError: column debtcollector_debttable.driver_name does not exist
+LINE 1: ...e"."driver_id", "debtcollector_debttable"."debt", "debtcolle...
+                                                             ^
+
+2016-11-15 19:50:34,079 [DEBUG] django.request: <WSGIRequest: POST '/create_driver'>
+2016-11-15 19:51:50,969 [DEBUG] django.request: <WSGIRequest: POST '/create_driver'>
+2016-11-15 19:53:28,259 [DEBUG] django.request: <WSGIRequest: POST '/create_driver'>
+2016-11-15 19:54:41,608 [WARNING] django.request: Not Found: /login/
+2016-11-15 19:54:41,619 [WARNING] django.request: Not Found: /login/
+2016-11-15 19:54:41,630 [WARNING] django.request: Not Found: /request_trip/
+2016-11-15 19:54:41,640 [WARNING] django.request: Not Found: /check_triprequest/
+2016-11-15 19:54:41,651 [WARNING] django.request: Not Found: /ping_triprequest/
+2016-11-15 19:55:28,893 [ERROR] django.request: Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 131, in get_response
+    response = middleware_method(request, response)
+  File "/Library/Python/2.7/site-packages/django/middleware/clickjacking.py", line 32, in process_response
+    if response.get('X-Frame-Options') is not None:
+TypeError: unbound method get() must be called with HttpResponseBadRequest instance as first argument (got str instance instead)
+2016-11-15 19:55:29,173 [ERROR] django.request: Internal Server Error: /request_trip
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 257, in post
+    return self.request_trip(request)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 187, in request_trip
+    requestingCustomer = CustomUser.objects.get(email=json_data.get('customer'))
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+DoesNotExist: CustomUser matching query does not exist.
+2016-11-15 19:57:03,785 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 19:57:58,770 [WARNING] django.request: Not Found: /media/profilepics/default.png
+2016-11-15 19:57:58,803 [WARNING] django.request: Not Found: /media/profilepics/default.png
+2016-11-15 19:59:05,369 [WARNING] django.request: Not Found: /media/profilepics/default.png
+2016-11-15 19:59:05,397 [WARNING] django.request: Not Found: /media/profilepics/default.png
+2016-11-15 20:01:27,129 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 20:01:27,766 [ERROR] django.request: Internal Server Error: /finish_trip
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 263, in post
+    return self.finish_trip(request)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 68, in finish_trip
+    debt_instance = DebtTable.objects.get(driver=dd)
+NameError: global name 'DebtTable' is not defined
+2016-11-15 20:02:35,998 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 20:02:55,246 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 20:04:14,511 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 20:04:38,296 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 20:07:48,439 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 20:08:38,824 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 20:10:06,925 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 20:10:07,556 [ERROR] django.request: Internal Server Error: /finish_trip
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 264, in post
+    return self.finish_trip(request)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 63, in finish_trip
+    income_dict = calculate_price(str_datetime, int(tripsession.etakm))
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/pricing/views.py", line 21, in calculate_price
+    print tripordertime, morning <= tripordertime < earlyafternoon
+TypeError: can't compare datetime.datetime to datetime.time
+2016-11-15 20:11:30,772 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 20:13:33,138 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 20:15:24,002 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 20:20:03,927 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 21:08:16,099 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 21:18:56,204 [ERROR] django.request: Internal Server Error: /admin/pricing/afternoon/1/change/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1512, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 185, in inner
+    return func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1479, in changeform_view
+    media = media + inline_formset.media
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/helpers.py", line 307, in _media
+    media = self.opts.media + self.formset.media
+  File "/Library/Python/2.7/site-packages/django/forms/formsets.py", line 408, in media
+    if self.forms:
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Library/Python/2.7/site-packages/django/forms/formsets.py", line 144, in forms
+    for i in range(self.total_form_count())]
+  File "/Library/Python/2.7/site-packages/django/forms/formsets.py", line 118, in total_form_count
+    initial_forms = self.initial_form_count()
+  File "/Library/Python/2.7/site-packages/django/forms/models.py", line 893, in initial_form_count
+    return super(BaseInlineFormSet, self).initial_form_count()
+  File "/Library/Python/2.7/site-packages/django/forms/models.py", line 573, in initial_form_count
+    return len(self.get_queryset())
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 238, in __len__
+    self._fetch_all()
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1087, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+ProgrammingError: column pricing_afternoonprofit.id does not exist
+LINE 1: SELECT "pricing_afternoonprofit"."id", "pricing_afternoonpro...
+               ^
+
+2016-11-15 21:59:52,359 [ERROR] django.request: Internal Server Error: /admin/pricing/afternoon/1/change/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1512, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 185, in inner
+    return func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1479, in changeform_view
+    media = media + inline_formset.media
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/helpers.py", line 307, in _media
+    media = self.opts.media + self.formset.media
+  File "/Library/Python/2.7/site-packages/django/forms/formsets.py", line 408, in media
+    if self.forms:
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Library/Python/2.7/site-packages/django/forms/formsets.py", line 144, in forms
+    for i in range(self.total_form_count())]
+  File "/Library/Python/2.7/site-packages/django/forms/formsets.py", line 118, in total_form_count
+    initial_forms = self.initial_form_count()
+  File "/Library/Python/2.7/site-packages/django/forms/models.py", line 893, in initial_form_count
+    return super(BaseInlineFormSet, self).initial_form_count()
+  File "/Library/Python/2.7/site-packages/django/forms/models.py", line 573, in initial_form_count
+    return len(self.get_queryset())
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 238, in __len__
+    self._fetch_all()
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1087, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+ProgrammingError: column pricing_afternoonprofit.usd1km does not exist
+LINE 1: SELECT "pricing_afternoonprofit"."usd1km", "pricing_afternoo...
+               ^
+
+2016-11-15 22:24:08,185 [WARNING] django.request: Not Found: /admin/pricing/afternoon/1/change/
+2016-11-15 22:25:34,474 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:25:35,140 [ERROR] django.request: Internal Server Error: /finish_trip
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 264, in post
+    return self.finish_trip(request)
+  File "/Users/tormodfladby/Documents/TorgeirsArbeid/GOtuk/trip/views.py", line 69, in finish_trip
+    debt_instance = DebtTable.objects.get(driver=dd)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+DoesNotExist: DebtTable matching query does not exist.
+2016-11-15 22:26:27,222 [DEBUG] django.request: <WSGIRequest: POST '/create_driver'>
+2016-11-15 22:27:26,658 [DEBUG] django.request: <WSGIRequest: POST '/create_driver'>
+2016-11-15 22:27:29,959 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:33:35,768 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:33:45,663 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:35:26,630 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:36:25,331 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:44:54,180 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:47:00,173 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:48:52,499 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:49:48,671 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:50:05,667 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:51:37,812 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:52:27,662 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:52:39,721 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:53:04,518 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:53:42,078 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:54:36,657 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:55:32,629 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>
+2016-11-15 22:55:52,348 [DEBUG] django.request: <WSGIRequest: POST '/create_customer'>

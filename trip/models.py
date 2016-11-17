@@ -9,6 +9,8 @@ import django
 from users.models import CustomUser
 from src import settings
 
+import logging
+l2 = logging.getLogger('default')
 # Create your models here.
 
 json.JSONEncoder.default = lambda self,obj: (obj.isoformat() if isinstance(obj, datetime) else None)
@@ -24,7 +26,7 @@ class TripSessionManager(models.Manager):
 	
 	def create_tripsession(self, triprequest, kwargs):
 		#remember to call create_tripsession with all arguments for **kwargs "2016-01-12 14:59:49"
-
+		l2.debug(kwargs)
 		tripsession = self.model(
 			triprequest=triprequest,
 			pickuplat = kwargs.get('pickuplat'),

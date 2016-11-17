@@ -21,8 +21,8 @@ urlpatterns = [
     url(r'^', include(trip_urls)),
     url(r'^', include(packagedeals_urls)),
 
-    url(r'^enable_driver/?$', AvailabilityView.as_view()),
-    url(r'^disable_driver/?$', AvailabilityView.as_view()),
-    url(r'^available_drivers/?$', AvailabilityView.as_view()),
+    url(r'^enable_driver?$', AvailabilityView.as_view()),
+    url(r'^disable_driver?$', AvailabilityView.as_view()),
+    url(r'^available_drivers?$', AvailabilityView.as_view()),
 
 ]

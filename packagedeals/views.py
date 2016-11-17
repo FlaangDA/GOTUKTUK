@@ -39,10 +39,10 @@ class PackagedealView(View):
 
 	def post(self, request, *args, **kwargs):
 
-		if request.path == '/create_packagedeal/':
+		if request.path == '/create_packagedeal':
 			return self.create_packagedeal(request)
 
 	def get(self, request, *args, **kwargs):
 
-		if request.path == '/get_packagedeals/':
+		if request.path == '/get_packagedeals':
 			return self.get_packagedeals(request)
