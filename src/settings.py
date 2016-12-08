@@ -27,9 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 # Application definition
-FACEBOOK_APP_ID = '1708805619367202'
+FACEBOOK_APP_ID = 'secret'
 
-FACEBOOK_API_SECRET = '29f3bfb9d42e2d23eec766eafc354919'
+FACEBOOK_API_SECRET = 'secret'
 
 FACEBOOK_EXTENDED_PERMISSIONS = ['email']
 
@@ -241,8 +241,6 @@ STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'
 
-MEDIA_ROOT = BASE_DIR + "/media/"
-
-print MEDIA_ROOT
+MEDIA_ROOT = os.path.join(BASE_DIR, "/media/")
 
 STATIC_ROOT = os.path.join(BASE_DIR, "/static/")
